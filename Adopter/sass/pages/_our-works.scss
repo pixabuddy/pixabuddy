@@ -1,0 +1,333 @@
+/* ============================================ */
+/* ================ About campaing section modification================ */
+/* ============================================ */
+
+.about-page {
+
+  &_campaing-carousel_box {
+
+    @include respond(phone) {
+      margin-top: 3.5rem;
+    }
+
+    .item {
+      margin: 0;
+
+      &-img {
+
+        img {
+          width: 100%;
+        }
+
+        &-text_box {
+
+          @include respond(phone) {
+            padding: 4rem !important;
+          }
+
+          @include respond(tab-land) {
+            padding: 3.5rem 2rem;
+          }
+
+          &-heading {
+
+            @include respond(tab-land) {
+              font-size: 1.8rem;
+            }
+          }
+
+          .paragraph {
+            @include respond(tab-land) {
+              font-size: 1.2rem;
+              line-height: 1.6rem !important;
+            }
+          }
+
+          .achieve-grp {
+
+            @include respond(tab-land) {
+              margin-top: -1rem !important;
+            }
+
+            &__tittle {
+              @include respond(tab-land) {
+                font-size: 1.3rem;
+              }
+            }
+
+            &__progress-bar {
+
+              span {
+
+                @include respond(phone) {
+                  width: 85% !important;
+                }
+
+                @include respond(tab-land) {
+                  width: 18rem;
+                }
+              }
+            }
+          }
+
+          &-btm_grp {
+
+            @include respond(phone) {
+              margin-top: 2.8rem !important;
+            }
+
+            @include respond(tab-land) {
+              margin-top: 2.2rem;
+            }
+
+            &-tittle {
+              @include respond(tab-land) {
+                font-size: 1.2rem;
+              }
+            }
+
+            &-des {
+              @include respond(tab-land) {
+                font-size: 1.5rem !important;
+                margin-top: 3px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ============================================ */
+/* ================ About donation section modification================ */
+/* ============================================ */
+
+.about_section-donate_partner {
+  margin-top: 10rem;
+}
+
+/* ============================================ */
+/* ================ About testimonia section ================ */
+/* ============================================ */
+
+.about-section_testimonia {
+  background-color: $color-tertiary;
+  padding: 9rem 0 1rem 0;
+  margin-top: 0 !important;
+
+  @include respond(phone) {
+    padding: 7rem 0 1rem 0;
+  }
+
+  &-carousel {
+    margin-top: 5rem;
+
+    @include respond(phone) {
+      margin-top: 3rem;
+    }
+
+    .about-testimonia {
+
+      .item {
+        width: 100%;
+        height: 40rem;
+        border-radius: 8px;
+        cursor: pointer;
+
+        @include flex-row;
+        align-items: center;
+        justify-content: space-between;
+
+        @include respond(tab-land) {
+          height: 35rem;
+        }
+
+        @include respond(phone) {
+          flex-direction: column;
+          height: auto;
+        }
+
+        &-vdo_box {
+          width: 92%;
+          height: 40rem;
+          background-color: $color-secondary;
+          overflow: hidden;
+          border-radius: 1rem;
+
+          @include respond(tab-land) {
+            height: 35rem;
+          }
+
+          @include respond(phone) {
+            width: 100% !important;
+            height: 25rem;
+          }
+
+          @include respond(tab-land) {
+            width: 95%;
+          }
+
+          img {
+            height: 100%;
+            width: auto;
+            margin-left: -7rem;
+
+            @include respond(phone) {
+              width: 150% !important;
+              height: auto;
+              margin-top: -9rem !important;
+              margin-left: -10rem !important;
+            }
+          }
+        }
+
+        &-text_box {
+          width: 100%;
+          height: auto;
+
+          @include respond(phone) {
+            margin-top: 3.5rem;
+          }
+
+          &-founder {
+            margin-top: 0;
+            
+            @include flex-row;
+            align-items: stretch;
+
+            &_img {
+              width: 7.5rem;
+              height: 7.5rem;
+              border-radius: 6px;
+              overflow: hidden;
+
+              @include card-type__box-shadow_light;
+
+              @include respond(phone) {
+                width: 6rem;
+                height: 6rem;
+              }
+
+              img {
+                width: 100%;
+              }
+            }
+
+            &_text {
+              margin-left: 2.8rem;
+
+              @include flex-column;
+              align-items: flex-start;
+              justify-content: space-between;
+
+              @include respond(phone) {
+                justify-content: flex-start;
+              }
+
+              &-name {
+                font-size: 3rem;
+                color: $color-primary;
+                font-family: Montserrat-Bold;
+                letter-spacing: -.15px;
+
+                @include respond(phone) {
+                  font-size: 2.1rem;
+                }
+              }
+
+              &-post {
+                font-size: 2rem;
+                color: $color-secondary;
+                font-family: Avenir-Medium;
+
+                @include respond(phone) {
+                  font-size: 1.5rem;
+                  margin-top: 5px !important;
+                }
+              }
+            }
+          }
+
+          &-quotation {
+            width: 85%;
+            font-size: 2.2rem;
+            font-family: Avenir-Book;
+            color: $color-primary-light;
+            margin-top: 3.2rem;
+            line-height: 3.1rem;
+            font-style: italic;
+            letter-spacing: -.15px;
+
+            @include respond(tab-land) {
+              width: 100%;
+              font-size: 2rem;
+              line-height: 2.7rem;
+              margin-top: 2rem;
+            }
+
+            @include respond(phone) {
+              width: 100%;
+              font-size: 1.8rem;
+              line-height: 2.7rem;
+              margin-top: 2rem;
+            }
+          }
+
+          &-presented-box {
+            margin-top: 4rem;
+
+            @include flex-column;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            @include respond(phone) {
+              margin-top: 3rem;
+            }
+
+            &_sml-text {
+              font-size: 1.6rem;
+              font-family: Avenir-Roman;
+              color: $color-primary-dark;
+
+              @include respond(phone) {
+                font-size: 1.3rem;
+              }
+            }
+          }
+
+          .logo-box {
+            margin-top: -5px;
+        
+            &__link {
+              text-decoration: none;
+              transition: all .3s;
+        
+              &:hover {
+                transform: translateY(-2px);
+                text-shadow: -2px 4px 8px rgba($color-primary-dark, 0.2);
+              }
+            }
+        
+            &__text {
+              font-family: Montserrat-Bold;
+              font-size: 3rem;
+              color: $color-primary-light;
+              letter-spacing: -0.18px;
+
+              @include respond(phone) {
+                font-size: 2.5rem;
+              }
+        
+              span {
+                font-size: inherit;
+                color: $color-secondary;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// ======== about text box

@@ -1,0 +1,148 @@
+.button {
+
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    font-family: Montserrat-Medium;
+    letter-spacing: .15px;
+    padding: .8rem 2.2rem;
+    display: inline-block;
+    border-radius: 4px;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    font-size: 1.4rem;
+    border: none;
+    @include btn-shadow_default;
+    cursor: pointer;
+    transform: scale(1);
+
+    &:hover {
+      background-color: $color-primary-light;
+      color: white;
+      @include btn-shadow_hover;
+      transform: scale(0.9);
+    }
+  }
+
+  &--green {
+    background-color: $color-secondary;
+    color: $color-white;
+
+    .banner-search__for-location {
+      font-size: 1.2rem;
+      padding-right: 1rem;
+    }
+
+    span {
+      padding-left: 4px;
+    }
+  }
+
+  &--blue-dark {
+    background-color: $color-primary;
+    color: $color-white;
+  }
+
+  &--blue-light {
+    background-color: $color-primary-light !important;
+    color: $color-white;
+    
+
+    &:hover {
+      background-color: $color-primary !important;
+    }
+  }
+
+  &-text {
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-family: Montserrat-Medium;
+    color: $color-primary-light;
+    letter-spacing: 0;
+    transition: all .3s;
+
+    span {
+      font-size: 1.1rem;
+      color: inherit;
+      padding-left: 0.5rem;
+      transition: inherit;
+    }
+  }
+}
+
+.btn--subscribe {
+  text-decoration: none;
+  background-color: $color-secondary;
+  width: 7.4rem;
+  height: 7.4rem;
+  border-radius: 50%;
+  margin-top: 5rem;
+  padding: .8rem 2.2rem;
+  display: inline-block;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border: none;
+  @include btn-shadow_default;
+  cursor: pointer;
+  transform: scale(1);
+
+  &:hover {
+    background-color: $color-primary-light;
+    color: white;
+    @include btn-shadow_hover;
+    transform: scale(0.9);
+  }
+
+  span {
+    font-size: 2.4rem;
+    color: $color-white;
+  }
+}
+
+.contact-from__submit-btn {
+  @extend .button;
+  @extend .button--green;
+  padding: 1.5rem 4rem;
+  font-size: 1.8rem;
+
+  span {
+    margin-left: 6px;
+    font-size: 1.6rem;
+  }
+}
+
+.see-all__btn-box {
+
+  @include flex-row;
+  justify-content: flex-end;
+
+  &_btn {
+    text-decoration: underline;
+    color: $color-secondary;
+    font-size: 1.8rem;
+    font-family: Montserrat-Medium;
+    margin-top: 7rem;
+    transition: all .3s;
+
+    &:hover {
+      text-decoration: none;
+      color: $color-white;
+      background-color: $color-primary-light;
+      padding: 0.2rem 1rem;
+      border-radius: 4px;
+      box-shadow: 2px 4px 8px inset rgba($color-primary-dark, 0.3),
+        -4px 8px 14px -5px rgba($color-primary-dark, 0.2);
+      transform: translateY(-.5rem);
+    }
+  }
+}
+
+.header-top_bar-donation__button {
+
+  @include respond(phone) {
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem 0 !important;
+  }
+}

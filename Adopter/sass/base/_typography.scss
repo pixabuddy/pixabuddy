@@ -1,0 +1,134 @@
+/* =================== Adding font from local folder =================== */
+
+// =================== Montserrat font types
+
+@font-face {
+  font-family: 'Montserrat-ExtraBold';
+  src: url(../fonts/montserrat/Montserrat-ExtraBold.otf);
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url(../fonts/montserrat/Montserrat-Bold.otf);
+}
+
+@font-face {
+  font-family: 'Montserrat-SemiBold';
+  src: url(../fonts/montserrat/Montserrat-SemiBold.otf);
+}
+
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: url(../fonts/montserrat/Montserrat-Medium.otf);
+}
+
+// =================== Avenir font types
+
+@font-face {
+  font-family: 'Avenir-Medium';
+  src: url(../fonts/avnir/AvenirLTStd-Medium.otf);
+}
+
+@font-face {
+  font-family: 'Avenir-Roman';
+  src: url(../fonts/avnir/AvenirLTStd-Roman.otf);
+}
+
+@font-face {
+  font-family: 'Avenir-Book';
+  src: url(../fonts/avnir/AvenirLTStd-Book.otf);
+}
+
+
+/* =================== Typography part =================== */
+
+body {
+  font-family: "Avenir-Roman", sans-serif;
+  ;
+  font-size: 16px;
+  line-height: 1.7;
+  color: $color-grey-dark;
+}
+
+.heading-primary,
+.heading-secondary {
+  color: $color-primary;
+  font-family: Montserrat-Bold;
+}
+
+.heading-primary {
+  font-size: 5.5rem;
+  letter-spacing: -.35px;
+  margin-bottom: 3.5rem;
+  margin-top: 1.5rem;
+
+  @include respond(phone) {
+    font-size: 4.2rem;
+  }
+
+  @include respond(tab-land) {
+    font-size: 3.5rem;
+  }
+
+  span {
+    color: $color-primary-light;
+  }
+}
+
+.heading-secondary {
+  font-size: 4.2rem;
+  letter-spacing: -.15rem;
+  transition: all .2s;
+
+  @include respond(tab-port) {
+    font-size: 3rem;
+    letter-spacing: .1px;
+  }
+
+  @include respond(phone) {
+    width: 85%;
+    font-size: 2.5rem;
+  }
+
+  @include respond(sm-phone) {
+    width: 75%;
+  }
+
+
+  &:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+
+    @include respond(tab-port) {
+      transform: none;
+    }
+  }
+}
+
+.heading-tertiary {
+  font-size: $default-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
+
+}
+
+.section-intro__sml-text {
+  font-family: Avenir-Medium;
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+  color: $color-secondary;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-family: Avenir-Book;
+  font-size: 1.4rem;
+  letter-spacing: 0;
+  color: $color-grey-dark;
+  line-height: 2.1rem;
+  text-align: justify;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}

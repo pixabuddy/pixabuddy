@@ -1,0 +1,94 @@
+// .loader-wrapper {
+//   width: 100%;
+//   height: 100%;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   z-index: 9999999;
+//   background-image:
+//     linear-gradient(to right bottom, $color-primary, $color-primary-supporting);
+
+//   @include flex-row_center;
+// }
+
+// .loader {
+//   display: inline-block;
+//   width: 40px;
+//   height: 40px;
+//   position: relative;
+//   border: 6px solid #Fff;
+//   animation: loader 2s infinite ease;
+
+//   @include respond(big-desktop) {
+//     width: 80px;
+//     height: 80px;
+//   }
+
+//   @include respond(tab-land) {
+//     width: 60px;
+//     height: 60px;
+//   }
+
+//   @include respond(tab-port) {
+//     width: 40px;
+//     height: 40px;
+//   }
+
+//   @include respond(phone) {
+//     width: 30px;
+//     height: 30px;
+//     border: 4px solid #Fff;
+//   }
+// }
+
+// .loader-inner {
+//   vertical-align: top;
+//   display: inline-block;
+//   width: 100%;
+//   background-color: #fff;
+//   animation: loader-inner 2s infinite ease-in;
+// }
+
+// @keyframes loader {
+//   0% {
+//     transform: rotate(0deg);
+//   }
+
+//   25% {
+//     transform: rotate(180deg);
+//   }
+
+//   50% {
+//     transform: rotate(180deg);
+//   }
+
+//   75% {
+//     transform: rotate(360deg);
+//   }
+
+//   100% {
+//     transform: rotate(360deg);
+//   }
+// }
+
+// @keyframes loader-inner {
+//   0% {
+//     height: 0%;
+//   }
+
+//   25% {
+//     height: 0%;
+//   }
+
+//   50% {
+//     height: 100%;
+//   }
+
+//   75% {
+//     height: 100%;
+//   }
+
+//   100% {
+//     height: 0%;
+//   }
+// }

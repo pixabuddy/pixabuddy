@@ -1,0 +1,124 @@
+/* ============================================ */
+/* ================ Subscribe newslatter section ================ */
+/* ============================================ */
+
+.section-subscribe {
+}
+
+/* --------------- Subscribe form --------------- */
+
+.subscribe-box {
+	width: 100%;
+	border-radius: 8px;
+	margin: 0 0 5rem 0;
+	@include flex-column_center;
+
+	@include respond(phone) {
+		padding: 0 !important;
+	}
+
+	&__form {
+		width: 100%;
+		@include flex-column_center;
+
+		&-name,
+		&-email {
+			width: 65%;
+
+			@include respond(tab-land) {
+				width: 70%;
+			}
+
+			@include respond(tab-port) {
+				width: 80%;
+			}
+		}
+
+		&-name {
+			position: relative;
+		}
+
+		&-email {
+			position: relative;
+			margin-top: 7px;
+
+			@include respond(tab-land) {
+				margin-top: 10px;
+			}
+
+			@include respond(tab-port) {
+				margin-top: 10px;
+			}
+
+			@include respond(phone) {
+				margin-top: 6px;
+			}
+		}
+
+		&-name,
+		&-email {
+			span {
+				position: absolute;
+				bottom: 1.9rem;
+				font-size: 1.8rem;
+				color: $color-primary;
+			}
+		}
+
+		label {
+			position: absolute;
+			bottom: 13px;
+			font-size: 1.8rem;
+			color: $color-primary;
+			text-shadow: -1px 3px 6px rgba($color-primary, 0.15);
+
+			@include respond(tab-port) {
+				bottom: 10px;
+				font-size: 1.6rem;
+			}
+		}
+
+		input {
+			width: 100%;
+			padding: 1.3rem 2rem 1.3rem 3.4rem;
+			margin: 8px 0;
+			display: inline-block;
+			border: 0;
+			border-bottom: 1px solid $color-primary;
+			font-size: 1.6rem;
+
+			@include respond(tab-land) {
+				margin: 6px 0;
+			}
+
+			@include respond(tab-port) {
+				margin: 4px 0;
+			}
+		}
+
+		input:focus {
+			border-color: $color-primary;
+		}
+
+		::placeholder {
+			font-family: Avenir-Book;
+			font-size: 1.6rem;
+			letter-spacing: -0.05px;
+			line-height: 2.4rem;
+			color: rgba($color-grey-dark-2, 0.85) !important;
+		}
+
+		.error-text {
+			@extend .paragraph;
+			color: orangered;
+			display: block;
+			font-size: 1.2rem;
+			position: absolute;
+			bottom: -2.4rem;
+
+			@include respond(phone) {
+				font-size: 1.1rem;
+			}
+		}
+	}
+}

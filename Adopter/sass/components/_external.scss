@@ -1,0 +1,62 @@
+/* ============================================ */
+/* ================ Owl caraousel ================ */
+/* ============================================ */
+
+// --------------- Owl carousel for campaign section
+
+.owl {
+
+  &-carousel,
+  &-stage-outer {
+    padding: .5rem 0 4rem 0;
+  }
+}
+
+.owl-theme .owl-dots {
+  text-align: right;
+  margin-right: 40px;
+}
+
+.section-campaing {
+
+  .owl-theme .owl-dots {
+    margin-top: -4rem;
+
+    @include respond(phone) {
+      margin: 0;
+      margin-right: 40px !important;
+    }
+
+    @include respond(tab-port) {
+      margin: 0;
+      margin-right: 40px !important;
+    }
+
+    @include respond(tab-land) {
+      margin: 0;
+      margin-right: 40px !important;
+    }
+  }
+}
+
+.owl-carousel button.owl-dot {
+  span {
+    width: 12px;
+    height: 12px;
+    margin: 5px 0px;
+    background: #D6D6D6;
+    display: block;
+    transition: opacity .2s ease;
+    border-radius: 50%;
+    transform: scale(.5);
+    transition: all .3s;
+
+    @include form-icon_shadow;
+  }
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .hghlgt-row-2.owl-theme .owl-dots .owl-dot:hover span {
+  margin: 5px 4px;
+  background-color: $color-secondary;
+  transform: scale(1);
+}

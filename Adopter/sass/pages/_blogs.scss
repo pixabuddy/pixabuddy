@@ -1,0 +1,170 @@
+/* ============================================ */
+/* ================ Blogs page box ================ */
+/* ============================================ */
+
+.section-blogs_page {
+  padding: 0;
+  margin-top: 5rem;
+
+  @include respond(phone) {
+    margin-top: 0;
+  }
+}
+
+.blogs_page-box {
+  width: 100%;
+  height: auto;
+  @include card-type__box-shadow_light;
+  margin-top: 5rem;
+  border-radius: 1rem;
+  overflow: hidden;
+
+  @include flex-column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  &_img {
+    height: 28rem;
+    width: 100%;
+    background-color: $color-secondary;
+    overflow: hidden;
+
+    @include respond(phone) {
+      height: 23rem;
+    }
+
+    img {
+      width: 100%;
+
+      @include respond(tab-land) {
+        height: 100%;
+      }
+
+      @include respond(phone) {
+        height: auto !important;
+        width: 100%;
+      }
+    }
+  }
+
+  &_text {
+    padding: 4rem 5rem;
+
+    @include respond(phone) {
+      padding: 3rem 3.5rem;
+    }
+
+    /* ------------- blogs page box text top row ------------- */
+    &-top_row {
+
+      @include flex-row;
+      align-items: center;
+      justify-content: flex-start;
+
+      &-date,
+      &-user {
+        font-size: 1.3rem;
+        font-family: Avenir-Roman;
+        color: $color-primary;
+  
+        @include flex-row;
+        align-items: center;
+        justify-content: flex-start;
+  
+        span {
+          margin-right: 9px;
+          font-size: 1.4rem;
+          color: $color-secondary;
+        }
+      }
+
+      &-date {
+        margin-right: 2.2rem;
+      }
+    }
+
+    /* ------------- blogs page box text heading ------------- */
+    &-heading {
+      font-size: 2.2rem;
+      color: $color-primary-light;
+      font-family: Montserrat-SemiBold;
+      margin: 1.8rem 0;
+      letter-spacing: -.35px;
+      line-height: 3.2rem;
+
+      @include respond(tab-land) {
+        font-size: 1.9rem;
+        line-height: 2.8rem;
+      }
+    }
+
+    /* ------------- blogs page box text bottom row ------------- */
+    &-bottom_row {
+
+      @include flex-row;
+      align-items: center;
+      justify-content: space-between;  
+      
+      &-like,
+      &-comment,
+      &-save {
+        font-size: 1.4rem;
+        font-family: Avenir-Book;
+        color: $color-primary-light;
+  
+        @include flex-row;
+        align-items: center;
+        justify-content: flex-start;
+  
+        span {
+          margin-right: 7px;
+          font-size: 1.5rem;
+          color: $color-secondary;
+        }
+      }
+    }
+  }
+}
+
+.blogs_section-donate_partner {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(to right bottom, rgba($color-primary-dark, 0.65),                                      rgba($color-primary-dark, 0.5)),
+                url(../img/donate_background-img2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+
+  margin-top: 2rem;
+
+  @include respond(phone) {
+    margin-top: 0;
+  }
+}
+
+
+
+
+/* ============================================ */
+/* ================ Down carousel section modifications ================ */
+/* ============================================ */
+
+.section-latest_blogs {
+  background-color: $color-tertiary;
+  padding-top: 7rem;
+  margin-top: 0 !important;
+
+  @include respond(phone) {
+    padding-top: 3rem;
+  }
+}
+
+.section-popular_blogs {
+  margin-top: 7rem;
+
+  @include respond(phone) {
+    margin-top: 3rem;
+  }
+}
+

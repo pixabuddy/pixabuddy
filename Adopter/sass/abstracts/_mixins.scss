@@ -1,0 +1,272 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin center__both {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// ======== mixins for flex row 
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-row_center {
+  @include flex-row;
+  justify-content: center;
+  align-items: center;
+} 
+
+// ======== for flex column
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-column_center {
+  @include flex-column;
+  justify-content: center;
+  align-items: center;
+} 
+
+// ======== mixin for icon shadow
+
+@mixin icon-shadow {
+  text-shadow: -2px 4px 8px rgba($color-secondary, 0.1);
+}
+
+// ======== mixin for form icon shadow
+
+@mixin form-icon_shadow {
+  text-shadow: -1px 3px 6px rgba($color-secondary, 0.4);
+}
+
+// ======== mixin for default letter spacing for avenir fonts
+@mixin avenir-ltr_spacing {
+  letter-spacing: -5px;
+}
+
+
+// ======== mixin for button shadow 
+
+@mixin btn-shadow_default {
+  box-shadow: 2px 5px 12px inset rgba($color-secondary-dark, 0.15),
+              0 3px 12px rgba($color-secondary, 0.6);
+}
+
+// ======== mixin for button (hover) shadow
+
+@mixin  btn-shadow_hover {
+  box-shadow: 2px 5px 12px inset rgba($color-primary, 0.15),
+              0 3px 12px rgba($color-primary-light, 0.6);
+}
+
+// ======== mixin for card with hover
+
+@mixin card-with__hover {
+  .surprise-card__item {
+    background-color: $color-secondary;
+    box-shadow: 5px 10px 20px inset rgba($color-secondary-dark, 0.2);
+
+    i {
+      color: $color-white;
+    }
+  }
+
+  .surprise-card__heading {
+    color: $color-primary;
+  }
+
+  .button-text {
+    text-decoration: none;
+    color: $color-secondary;
+
+    i {
+      color: inherit;
+    }
+  }
+}
+
+
+// ======== mixin for card type box shadow light
+
+@mixin card-type__box-shadow_light {
+  box-shadow: .5rem 1rem 3.2rem rgba($color-primary, 0.14);
+}
+
+// ======== mixin for card type box shadow 
+
+@mixin card-type__box-shadow {
+  box-shadow: 0 0 3rem 0 inset rgba($color-primary-light, 0.13),
+      0 2rem 4rem 0 rgba($color-primary-light, 0);
+}
+// ======== mixin for card type box shadow on hover
+
+@mixin card-type__box-shadow_hover {
+  box-shadow: 0 0 3rem 0 inset rgba($color-primary-light, 0.0),
+        0 2rem 4rem 0 rgba($color-primary-light, 0.3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// MEDIA QUERY MANAGER 
+/*
+
+0 - 350px;         Small Phone
+350 - 600px;       Phone
+600 - 900px;       Table potrait
+900 - 1200px;      Table landscape
+1200 - 1800px ( is where the normal style is applies )
+1200 - 1800+ px;   Big desktop
+
+$breakpoint arguement choices :
+
+- sm-phone
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ ORDER: Base + Typography > genarel layout + grid > page layout > components
+
+*/
+
+@mixin respond($breakpoint) {
+
+  @if $breakpoint == sm-phone {
+    @media only screen and (max-width: 21.5em) { @content }; // 350px;
+  }
+
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) { @content }; // 600px;
+  }
+
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) { @content };  // 900px;
+  }
+
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) { @content };  // 1200px;
+  }
+
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) { @content }; // 1800px;
+  }
+}

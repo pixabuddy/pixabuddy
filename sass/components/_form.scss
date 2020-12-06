@@ -1,0 +1,222 @@
+/* =============================================== */
+/* =================== Contact page form =================== */
+/* =============================================== */
+
+.contact-page__form {
+	padding: 5rem 6rem;
+	background-color: $color-white;
+	border-radius: 15px;
+	box-shadow: 3px 18px 28px rgba(225,226,230,.4);
+
+	@include respond(phone) {
+		padding: 32px 20px;
+    margin: 0 15px;
+	}
+
+	.form-group {
+		margin-top: -7px;
+
+		@include respond(phone) {
+			margin-top: -5px;
+			margin-bottom: 3px;
+		}
+	}
+
+	.form-group__custom {
+		@include flex-row;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+
+	label {
+		font-family: $para-medium;
+		font-size: 2rem;
+		color: $color-primary;
+		letter-spacing: -0.15px;
+		margin-bottom: 1rem;
+		transition: all 0.3s;
+
+		@include respond(phone) {
+			font-size: 2.2rem;
+		}
+	}
+
+	.form-check-label {
+		font-size: 1.4rem !important;
+	}
+
+	input#subject.form-control,
+	input#city.form-control,
+	input#pincode.form-control {
+		padding: 13px 20px;
+		height: auto !important;
+
+		@include respond(tab-land) {
+			padding: 14px 18px;
+		}
+
+		@include respond(phone) {
+			padding: 12px 15px;
+		}
+	}
+
+	.form-control {
+		padding: 13px 20px;
+		height: auto !important;
+		font-size: 1.7rem;
+		font-family: $para-regular;
+		color: $color-grey-dark;
+		border-radius: 6px;
+
+		&:last-child {
+			padding-top: 1.8rem;
+		}
+
+		@include respond(tab-land) {
+			padding: 14px 18px;
+		}
+
+		@include respond(phone) {
+			padding: 12px 15px;
+		}
+	}
+
+	select {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-o-appearance: none;
+		appearance: none;
+
+		padding: 2.8rem;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+
+	.form-control_custom {
+		display: block;
+		width: 100%;
+		padding: 1.5rem 2.8rem;
+		background-color: #fff;
+		background-clip: padding-box;
+		border: 1px solid #ced4da;
+		border-radius: 4px;
+		transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+		font-family: $para-regular;
+		font-size: 1.7rem;
+		color: $color-grey-dark-2;
+	}
+
+	/*style the arrow inside the select element:*/
+	.select-selected:after {
+		position: absolute;
+		content: "";
+		top: 14px;
+		right: 10px;
+		width: 0;
+		height: 0;
+		border: 6px solid transparent;
+		border-color: $color-primary transparent transparent transparent;
+	}
+
+	/*point the arrow upwards when the select box is open (active):*/
+	.select-selected.select-arrow-active:after {
+		border-color: transparent transparent $color-primary transparent;
+		top: 7px;
+	}
+
+	/*style the items (options), including the selected item:*/
+	.select-items div,
+	.select-selected {
+		color: $color-primary;
+		padding: 8px 16px;
+		border: 1px solid transparent;
+		border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+		cursor: pointer;
+		user-select: none;
+	}
+
+	.contact-btn__box {
+		@include flex-row_center;
+	}
+
+	.form-mute__text-adjustment {
+		font-family: $para-regular;
+		font-size: 1.3rem;
+		color: rgba($color-grey-dark-2, 0.6) !important;
+		letter-spacing: 0;
+		margin-top: 5px;
+	}
+
+	.contact-from__submit-btn {
+		margin-top: 0;
+
+		@include respond(tab-land) {
+			margin-top: 8px;
+		}
+
+		span {
+			margin-left: 5px;
+		}
+	}
+
+	.error-text {
+		@extend .paragraph;
+		color: orangered;
+		margin: 1rem;
+		font-size: 1.4rem;
+
+		@include respond(phone) {
+			font-size: 1.3rem;
+		}
+	}
+
+	.form-btn_text {
+		color: $color-primary;
+		@extend .paragraph;
+		transition: all 0.3s;
+		// text-decoration: underline;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	::placeholder {
+		font-family: $para-regular;
+		font-size: 1.5rem;
+		letter-spacing: -0.05px;
+		line-height: 2.4rem;
+		color: rgba($color-grey-dark-2, 0.85) !important;
+
+		@include respond(phone) {
+			font-size: 1.7rem;
+		}
+	}
+}
+
+input:focus[type="text"],
+input:focus[type="search"],
+input:focus[type="password"],
+input:focus[type="email"],
+input:focus[type="number"],
+textarea:focus,
+select:focus {
+	background-color: rgba($color-primary-light, 0.2);
+	border-color: $color-primary !important;
+	-webkit-box-shadow: 0 0 1.5rem rgba($color-primary, 0.15) !important;
+	box-shadow: 0 0 1.5rem rgba($color-primary, 0.15) !important;
+}
+
+select:focus,
+.banner-location__form input:focus,
+.subscribe-box__form input:focus {
+	outline: none;
+	background-color: transparent;
+	box-shadow: none !important;
+}
+
+button[type="submit"]:focus {
+	outline: none;
+	box-shadow: none !important;
+}

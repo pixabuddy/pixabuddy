@@ -1,0 +1,796 @@
+/* ============================================ */
+/* ================ banner part ================ */
+/* ============================================ */
+
+.section-banner {
+	padding: 0rem 0 9rem 0;
+	margin-top: -2px;
+	@include clip-half;
+
+	@include respond(big-desktop) {
+		padding: 0rem 0 4rem 0;
+	}
+
+	@include respond(tab-land) {
+		padding: 0rem 0 5.5rem 0;
+	}
+
+	.banner {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+
+		&__main {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 6rem;
+
+			height: auto;
+			// background-color: orangered;
+
+			@include respond(tab-land) {
+				margin-bottom: 0;
+			}
+
+			&-dark {
+				width: 100%;
+
+				display: flex;
+				flex-direction: row;
+				justify-content: flex-end;
+				align-items: center;
+
+				@include respond(tab-land) {
+					margin-right: 4rem;
+				}
+
+				@include respond(tab-port) {
+					margin-right: 2rem;
+				}
+
+				@include respond(phone) {
+					justify-content: center;
+				}
+
+				&_text {
+					font-size: 12.5rem;
+					font-family: $heading-black;
+					text-transform: uppercase;
+					letter-spacing: -2px;
+					color: rgba($color-primary-light, 0.95);
+					text-shadow: 1rem 2.5rem 1rem rgba($color-primary-light, 0.3);
+					margin-top: -3.5rem;
+
+					-webkit-user-select: none;
+
+					@include respond(big-desktop) {
+						font-size: 10.5rem;
+					}
+
+					@include respond(tab-land) {
+						font-size: 10.5rem;
+					}
+
+					@include respond(tab-port) {
+						font-size: 10rem;
+					}
+
+					@include respond(phone) {
+						font-size: 6.2rem;
+						margin-top: 2px;
+						color: rgba($color-primary-light, 1);
+					}
+
+					@include respond(sm-phone) {
+						font-size: 5.2rem;
+						margin-top: 2px;
+					}
+				}
+			}
+
+			&-division {
+				margin-top: -2rem;
+
+				@include respond(big-desktop) {
+					margin-top: 0;
+				}
+
+				@include respond(tab-port) {
+					margin-top: -1rem;
+				}
+
+				@include respond(phone) {
+					margin-top: 0;
+				}
+
+				&_left {
+					padding: 0 0 0 12rem;
+
+					@include respond(tab-port) {
+						padding: 0 0 0 11rem;
+					}
+
+					@include respond(phone) {
+						padding: 0 5rem 0 5rem;
+						text-align: center;
+					}
+
+					&-t-box {
+						padding-top: 1rem;
+
+						&_hello-text,
+						&_intro-text {
+							font-size: 1.8rem;
+							color: $color-grey-dark-2;
+							line-height: 3rem;
+							letter-spacing: -0.02px;
+
+							@include respond(big-desktop) {
+								width: 100% !important;
+								font-size: 1.6rem;
+								line-height: 31px;
+							}
+
+							@include respond(tab-land) {
+								width: 100%;
+								font-size: 1.9rem;
+								line-height: 2.8rem;
+							}
+
+							@include respond(tab-port) {
+								line-height: 2.2rem;
+							}
+
+							@include respond(phone) {
+								width: 100%;
+								line-height: 2.6rem;
+							}
+						}
+
+						&_hello-text {
+							padding-bottom: 5px;
+
+							img {
+								width: auto;
+								height: 42px;
+								margin-top: -18px;
+								transform: rotate(20deg);
+								animation: helloPixabuddy 1.3s linear infinite;
+
+								@include respond(phone) {
+									height: 36px;
+								}
+							}
+						}
+
+						&_intro-text {
+							margin: 2rem 6rem 3rem 0;
+
+							@include respond(tab-land) {
+								font-size: 1.6rem;
+							}
+
+							@include respond(phone) {
+								width: 100%;
+							}
+
+							& span {
+								color: $color-primary-medium-dark;
+							}
+						}
+					}
+				}
+
+				&_right {
+					display: flex;
+					padding: 0 0 0 7rem;
+					justify-content: center;
+					// background-color: orange;
+
+					@include respond(big-desktop) {
+						padding: 0 0 0 2rem;
+					}
+
+					@include respond(tab-land) {
+						padding: 0 0 0 1.5rem;
+						justify-content: center;
+					}
+
+					@include respond(tab-port) {
+						padding: 0;
+						justify-content: center;
+						margin-left: -3rem;
+    				margin-top: 0;
+					}
+
+					@include respond(phone) {
+						padding: 0;
+						margin-top: 0;
+						margin-left: 0;
+						justify-content: center;
+					}
+
+					&-img_box {
+						margin-left: -10rem;
+						margin-top: -6rem;
+						border: 100%;
+						position: relative;
+
+						@include respond(big-desktop) {
+							padding: 0;
+							margin-top: -3rem;
+							margin-left: -6rem;
+						}
+
+						@include respond(tab-land) {
+							margin-left: -5rem;
+							margin-top: -3rem;
+						}
+
+						@include respond(tab-port) {
+							margin-left: 0;
+							margin-top: 0;
+						}
+
+						@include respond(phone) {
+							margin: 0 auto;
+							margin-bottom: 5.5rem;
+							margin-top: 0;
+						}
+
+						&::before {
+							content: "";
+							position: absolute;
+							left: 0px;
+							top: 0px;
+							width: 360px;
+							height: 360px;
+							border-radius: 50%;
+							background-color: $color-primary;
+							animation: pixaBgLoopBig 2s linear infinite;
+							z-index: 0;
+
+							@include respond(big-desktop) {
+								height: 360px;
+								width: 360px;
+							}
+
+							@include respond(tab-land) {
+								height: 300px;
+								width: 300px;
+							}
+
+							@include respond(tab-port) {
+								height: 220px;
+								width: 220px;
+							}
+
+							@include respond(phone) {
+								height: 140px;
+								width: 140px;
+							}
+						}
+
+						&::after {
+							content: "";
+							position: absolute;
+							left: 0px;
+							top: 0px;
+							width: 360px;
+							height: 360px;
+							border-radius: 50%;
+							border: 1px solid $color-primary-supporting;
+							animation: pixaBgLoopSmall 4s linear infinite;
+							z-index: 0;
+
+							@include respond(big-desktop) {
+								height: 360px;
+								width: 360px;
+							}
+
+							@include respond(tab-land) {
+								height: 300px;
+								width: 300px;
+							}
+
+							@include respond(tab-port) {
+								height: 220px;
+								width: 220px;
+							}
+
+							@include respond(phone) {
+								height: 140px;
+								width: 140px;
+							}
+						}
+
+						& .hero_img {
+							width: 360px;
+							height: 360px;
+							border-radius: 50%;
+							position: relative;
+							z-index: 99;
+
+							-webkit-user-drag: none;
+							-webkit-user-select: none;
+
+							@include respond(big-desktop) {
+								height: 360px;
+								width: 360px;
+							}
+
+							@include respond(tab-land) {
+								height: 300px;
+								width: 300px;
+							}
+
+							@include respond(tab-port) {
+								height: 220px;
+								width: 220px;
+							}
+
+							@include respond(phone) {
+								height: 140px;
+								width: 140px;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&__bottom {
+			margin-top: 8rem;
+
+			@include respond(big-desktop) {
+				margin-top: -2vh;
+			}
+
+			@include respond(tab-land) {
+				margin-top: 8vh !important;
+			}
+
+			@include respond(tab-port) {
+				margin-top: 9vh !important;
+			}
+
+			@include respond(phone) {
+				margin-top: 4.5vh !important;
+			}
+
+			&-box {
+				position: relative;
+
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+
+				@include respond(big-desktop) {
+					margin-top: 11rem;
+				}
+
+				&_scrolling-text {
+					position: absolute;
+					left: -4rem;
+					bottom: 5.5rem;
+
+					font-size: 1.8rem;
+					color: $color-grey-dark-2;
+
+					transform: rotate(-90deg);
+
+					@include flex-row_center;
+
+					@include respond(big-desktop) {
+						left: -5.5rem;
+					}
+
+					@include respond(tab-land) {
+						left: -3rem;
+					}
+
+					@include respond(phone) {
+						display: none;
+					}
+
+					& span {
+						color: $color-primary;
+						font-size: 2.5rem;
+						padding-right: 1.6rem;
+						margin-left: -1.2rem;
+					}
+				}
+			}
+
+			&-box_location-text,
+			&-follow_box-text {
+				position: absolute;
+				right: 11rem;
+				bottom: 0rem;
+				font-size: 1.8rem;
+				letter-spacing: -0.08px;
+				color: $color-grey-dark-2;
+			}
+
+			&-box_location-text {
+				right: 0;
+				left: -7rem;
+
+				@include respond(big-desktop) {
+					left: -11rem;
+				}
+
+				strong {
+					color: $color-primary;
+					font-family: $para-medium;
+				}
+
+				@include respond(tab-land) {
+					right: 0;
+					left: -14rem;
+					font-size: 1.6rem;
+				}
+
+				@include respond(tab-port) {
+					right: 0;
+					left: -11rem;
+				}
+
+				@include respond(phone) {
+					right: 0;
+					left: -10rem;
+				}
+			}
+
+			&-follow_box-text {
+				right: 9rem;
+
+				strong {
+					color: $color-primary;
+				}
+
+				img {
+					width: auto;
+					margin-left: 8px;
+					height: 18px;
+					margin-top: -5px;
+				}
+
+				@include respond(phone) {
+					// right: -2.5rem;
+					// bottom: 28rem;
+					// transform: rotate(90deg);
+
+					display: none;
+				}
+			}
+
+			&-follow_box {
+			}
+
+			&-icon_grp {
+				list-style-type: none;
+				position: absolute;
+				right: 1.5rem;
+				bottom: 0;
+
+				@include respond(tab-land) {
+					right: 2rem;
+				}
+
+				@include respond(phone) {
+					right: 0;
+					bottom: 0;
+
+					@include flex-row;
+					justify-content: center;
+
+					position: relative;
+				}
+
+				&-list {
+					padding-top: 0.8rem;
+
+					@include respond(phone) {
+						&:not(:first-child) {
+							padding-left: 2.5rem;
+						}
+					}
+
+					&:not(:last-child) {
+						padding-bottom: 1.2rem;
+					}
+
+					&_link {
+						text-decoration: none;
+						color: $color-primary-medium-dark;
+						transition: all 0.2s;
+						font-size: 1.8rem;
+
+						@include respond(phone) {
+							font-size: 2rem;
+						}
+
+						&:hover {
+							color: $color-primary;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* ============================================ */
+/* ================ About part ================ */
+/* ============================================ */
+
+.section-about {
+	-webkit-user-select: none;
+	padding-top: 0;
+
+	@include respond(big-desktop) {
+		padding-top: 5rem;
+	}
+
+	@include respond(phone) {
+		padding-top: 3rem;
+	}
+}
+
+// home about section
+
+.about-box {
+	&_left-box {
+		width: 100%;
+		margin-top: 6rem;
+		@include flex-row_center;
+
+		@include respond(phone) {
+			margin-top: 5rem;
+		}
+
+		img {
+			height: 480px;
+			-webkit-user-drag: none;
+			margin-top: -4.6rem;
+
+			@include respond(big-desktop) {
+				height: 33rem;
+				margin-top: 2rem;
+			}
+
+			@include respond(tab-land) {
+				height: 31rem;
+			}
+
+			@include respond(phone) {
+				height: 28rem;
+				margin-top: -2rem;
+			}
+		}
+	}
+
+	&_right-box {
+		width: 100%;
+		margin-top: 7rem;
+
+		@include flex-column;
+		justify-content: center;
+		align-items: flex-start;
+
+		@include respond(phone) {
+			margin-top: 4rem;
+		}
+
+		.paragraph {
+			width: 100%;
+			margin-top: 2rem;
+
+			@include respond(tab-land) {
+				width: 90%;
+			}
+
+			@include respond(tab-port) {
+				width: 92%;
+			}
+
+			@include respond(phone) {
+				width: 100% !important;
+			}
+		}
+	}
+}
+
+/* ============================================ */
+/* ================ What I Do part ================ */
+/* ============================================ */
+
+.section__what-i--do {
+}
+
+/* ============================================ */
+/* ================ Portfolio part ================ */
+/* ============================================ */
+
+.section-portfolio {
+}
+
+/* ============================================ */
+/* ================ Resources part ================ */
+/* ============================================ */
+
+.section-resources {
+}
+
+// for home page resources section
+
+.resource-box {
+	margin-top: 5rem;
+
+	&_left-part {
+		.heading-tertiary__about {
+			width: 100%;
+			letter-spacing: -0.02px;
+
+			@include respond(big-desktop) {
+				width: 100%;
+			}
+
+			@include respond(tab-land) {
+				width: 90%;
+			}
+
+			@include respond(phone) {
+				width: 100%;
+			}
+		}
+
+		.paragraph {
+			width: 80%;
+			margin-top: 2.5rem;
+
+			@include respond(big-desktop) {
+				width: 90%;
+			}
+
+			@include respond(tab-land) {
+				width: 90%;
+			}
+
+			@include respond(phone) {
+				width: 100%;
+				margin-top: 2rem;
+			}
+		}
+
+		.btn-text {
+			margin-top: 10px;
+
+			@include respond(phone) {
+				margin-top: 0;
+			}
+		}
+	}
+
+	&_right-part {
+		&_main {
+			width: 100%;
+
+			@include flex-row;
+			justify-content: space-between;
+			flex-wrap: wrap;
+
+			@include respond(phone) {
+				margin-top: 3rem;
+			}
+
+			.resource-item_box {
+				width: 30%;
+				height: auto;
+				padding: 2rem 0;
+				background-color: $color-white;
+				border-radius: 8px;
+				box-shadow: 0 5px 16px #010f1a12;
+				transition: all 0.2s;
+
+				@include flex-column_center;
+
+				@include respond(phone) {
+					width: 47%;
+					margin-top: 2.4rem !important;
+					box-shadow: 0 6px 18px #010f1a12;
+				}
+
+				&:hover {
+					box-shadow: 0 12px 20px -5px #00cefe1c;
+					transform: scale(1.04);
+				}
+
+				.item-link {
+					text-decoration: none;
+					border: none;
+
+					&:focus {
+						outline: none !important;
+					}
+				}
+
+				.item {
+					&:hover {
+						.item-name {
+							color: $color-primary;
+						}
+
+						.item-source_number {
+							color: $color-primary-medium-dark;
+						}
+					}
+
+					&-name {
+						font-family: $heading-extrabold;
+						font-size: 2.5rem;
+						color: $color-primary;
+						margin-bottom: 1rem;
+
+						@include respond(phone) {
+							font-size: 2.4rem;
+						}
+					}
+
+					&-name,
+					&-source_number {
+						transition: all 0.3s;
+					}
+
+					&-source_number {
+						font-size: 1.7rem;
+						color: $color-primary-dark;
+					}
+				}
+			}
+		}
+	}
+
+	.btn-box {
+		width: 100%;
+		@include flex-row;
+		justify-content: flex-start;
+		align-items: center;
+		margin-top: 2rem !important;
+
+		@include respond(tab-land) {
+			justify-content: center !important;
+			margin-top: 6rem !important;
+		}
+
+		@include respond(tab-port) {
+			margin-top: 2rem !important;
+		}
+
+		@include respond(phone) {
+			margin-top: 5rem !important;
+		}
+	}
+}
+
+/* ============================================ */
+/* ================ Blogs part ================ */
+/* ============================================ */
+
+.section-blogs {
+}
+
+/* ============================================ */
+/* ================ Carousel Designs part ================ */
+/* ============================================ */
+
+.carousel_design {
+}
+
+/* ============================================ */
+/* ================ Contact part ================ */
+/* ============================================ */
+
+.section-contact {
+}

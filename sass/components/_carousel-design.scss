@@ -1,0 +1,103 @@
+/* ============================================ */
+/* ================ Carousel Designs part ================ */
+/* ============================================ */
+
+.carousel_design {
+	&-box {
+		width: 100%;
+		height: auto;
+		background-color: #fff;
+		border-radius: 12px;
+		box-shadow: 0 5px 16px #010f1a12;
+		overflow: hidden;
+		margin-top: 40px;
+		@include flex-column;
+		transition: all 0.2s;
+
+		&-first {
+			@include respond(phone) {
+				margin-top: 0 !important;
+			}
+		}
+
+		&:hover {
+			box-shadow: 0 12px 20px -5px #00cefe1c;
+			transform: scale(1.04);
+		}
+
+		&_img {
+			width: 100%;
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		&_text {
+			padding: 3rem 3.5rem 4rem 3.5rem;
+
+			@include respond(big-desktop) {
+				padding: 3rem 2.2rem;
+			}
+
+			&-heading {
+				font-size: 2.1rem;
+				font-family: $heading-bold;
+				margin: 14px 0 20px 0;
+				line-height: 2.8rem;
+				letter-spacing: -0.1px;
+
+				@include respond(big-desktop) {
+					font-size: 2rem;
+					line-height: 2.7rem;
+				}
+
+				@include respond(Phone) {
+					font-size: 2.2rem !important;
+				}
+			}
+
+			&-date {
+				&_text {
+					font-size: 1.5rem;
+					color: $color-grey-dark;
+
+					span {
+						color: $color-primary;
+						font-size: 1.6rem;
+						margin-right: 8px;
+					}
+				}
+			}
+		}
+	}
+
+	.heading-para {
+		margin-bottom: -40px;
+
+		@include respond(phone) {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.carousel_page-heading_adjusted {
+	margin-top: -3rem;
+
+	@include respond(phone) {
+		margin-top: 1rem;
+	}
+}
+
+.carousel_design {
+	.button-text_box {
+
+		@include respond(tab-land) {
+			margin-top: 4.5rem;
+		}
+
+		@include respond(phone) {
+			margin-top: 40px !important;
+		}
+	}
+}

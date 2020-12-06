@@ -1,0 +1,1237 @@
+
+/* ============================================ */
+/* ================ banner part ================ */
+/* ============================================ */
+
+.section-banner {
+  width: 100%;
+  height: calc(100vh - 13.2rem);
+  // ( header-top_bar (5rem) - header-nav_group(8.2rem) ) = 13.2rem 
+  padding: 4rem 0;
+  margin: 0 0 0 0 !important;
+
+  @include respond(phone) {
+    padding: 2rem 0 !important;
+  }
+
+  @include respond(tab-land) {
+    height: auto;
+  }
+}
+
+.banner {
+
+  // ======== banner text box
+  &-text__box {
+    width: 100%;
+    height: auto;
+    padding: 2rem 0;
+
+    @include respond(phone) {
+      margin-top: 3rem;
+    }
+
+    .banner-short__intro-text {
+      font-family: Avenir-Book;
+      font-size: 1.8rem;
+      color: $color-grey-dark-3;
+      letter-spacing: -.05px;
+      line-height: 2.5rem;
+      width: 80%;
+    }
+  }
+
+  // ======== banner svg box
+  &-svg__box {
+    width: 100%;
+    height: auto;
+    padding: 3rem 0;
+
+    @include flex-row_center;
+
+    @include respond(phone) {
+      margin-top: 2.5rem;
+    }
+
+    svg {
+      width: 42rem;
+      height: 45rem;
+      background-image: url(../img/hero-svg.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+  // ======== banner scroll down icon
+  &-scroll__down {
+    height: 100%;
+    padding: 2rem 0 0 0;
+
+    @include flex-row_center;
+
+    &-icon {
+      font-size: 2.5rem;
+      color: $color-primary-light;
+      text-shadow: 0.5px 0.7px 1px inset rgba($color-primary, 0.25),
+        -2px 3px 6px rgba($color-primary, 0.25);
+        
+      animation: arrowBounce 2s linear infinite;
+    }
+  }
+}
+
+
+/* ============================================ */
+/* ================ surprise part ================ */
+/* ============================================ */
+
+.section-surprise {
+  margin-top: 8rem !important;
+
+  @include respond(phone) {
+    margin-top: 5rem !important;
+  }
+}
+
+.surprise {
+
+  // ======== surprise heading box
+  &-heading__box {
+    width: 100%;
+    height: auto;
+    margin-bottom: 8rem;
+
+    @include flex-column_center;
+
+    @include respond(phone) {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      @include respond(phone) {
+        text-align: center;
+      }
+    }
+  }
+
+  // ======== surprise card
+  &-card {
+    width: 100%;
+    height: auto;
+    background-color: $color-white;
+    @include card-type__box-shadow;
+    padding: 5rem 2rem;
+    border-radius: 8px;
+    transition: all .3s;
+
+    @include flex-column_center;
+
+    @include respond(phone) {
+      @include card-with__hover;
+      margin-top: 2rem !important;
+      @include card-type__box-shadow_hover;
+    }
+
+    &__active {
+      transform: translateY(-1.6rem);
+      @include card-type__box-shadow_hover;
+
+      @include respond(phone) {
+        transform: translateY(0);
+      }
+
+      .surprise-card__item {
+        span {
+          color: $color-white;
+        }
+      }
+    }
+
+    &:hover {
+      transform: translateY(-1.6rem);
+      @include card-type__box-shadow_hover;
+
+      @include respond(phone) {
+        transform: translateY(0);
+      }
+
+      .surprise-card__item {
+        span {
+          color: $color-white;
+        }
+      }
+    }
+
+    &__item {
+      width: 16rem;
+      height: 16rem;
+      background-color: rgba($color-tertiary, 0.8);
+      border-radius: 50%;
+      transition: all .3s;
+
+      @include flex-row_center;
+
+      @include respond(phone) {
+        width: 12rem;
+        height: 12rem;
+      }
+
+      span {
+        font-size: 4rem;
+        color: $color-secondary;
+        @include icon-shadow;
+        transition: all .3s;
+
+        @include respond(phone) {
+          font-size: 3.2rem;
+          color: $color-white;
+        }
+      }
+    }
+
+    &__heading {
+      font-size: 2.8rem;
+      font-family: Montserrat-Medium;
+      letter-spacing: -.35px;
+      color: $color-secondary;
+      margin: 3.5rem 0 2rem 0;
+      text-align: center;
+      transition: all .3s;
+      letter-spacing: 0;
+
+      @include respond(tab-land) {
+        font-size: 2.2rem !important;
+        line-height: 2.5rem;
+      }
+    }
+
+    .paragraph {
+      width: 90%;
+      height: 6rem;
+      text-align: center;
+      overflow: hidden;
+    }
+  }
+
+  // ======== surprise card hover for changing heading color and button text color
+  &-card:hover,
+  &-card__active {
+
+    @include card-with__hover;
+  }
+}
+
+/* ============================================ */
+/* ================ About part ================ */
+/* ============================================ */
+
+.section-about {
+  width: 100%;
+  height: auto;
+  background-color: $color-tertiary;
+  padding: 10rem 0;
+
+  @include respond(phone) {
+    padding: 6rem 0;
+  }
+}
+
+.about {
+
+  // ======== about text box
+  &-text__box {
+    margin-top: 4.5rem;
+    width: 70%;
+
+    @include flex-column;
+    align-items: flex-start;
+
+    @include respond(phone) {
+      width: 100%;
+
+      .about-short__details-para {
+        width: 95%;
+      }
+    }
+
+    &-sml__line-top {
+      width: 14%;
+      height: 2px;
+      background-color: $color-secondary;
+      border-radius: 5rem;
+      margin-bottom: 4rem;
+    }
+  }
+
+  &-sub__heading {
+    font-size: 2.2rem;
+    font-family: Montserrat-Medium;
+    color: $color-primary-light;
+    margin-bottom: 2.5rem;
+    letter-spacing: 0;
+
+    @include respond(phone) {
+      font-size: 1.7rem;
+    }
+  }
+
+  &-short__details-para {
+    margin-bottom: 4.5rem !important;
+  }
+
+  // ======== about img box
+  &-img__box {
+    width: 85%;
+    height: 42rem;
+    overflow: hidden;
+    padding: 6.5rem 0 0 6.5rem;
+    border: 2.5rem solid rgba($color-secondary, 0.4);
+
+    @include flex-row;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    @include respond(phone) {
+      margin-top: 5rem;
+      border: 7px solid rgba($color-secondary, 0.4) !important;
+    }
+
+    @include respond(tab-port) {
+      height: 35rem;
+      border: 2rem solid rgba($color-secondary, 0.4);
+    }
+
+    &-img {
+      height: 45rem;
+      background-color: $color-secondary;
+      border-radius: 8px;
+      position: absolute;
+      top:16%;
+      left: 17%;
+      box-shadow: -1rem 2rem 4rem rgba($color-secondary, 0.30);
+
+      @include respond(phone) {
+        height: 38rem;
+        top: 17%;
+        left: 10%;
+      }
+
+      @include respond(tab-port) {
+        height: 34rem;
+      }
+    }
+  }
+}
+
+/* ============================================ */
+/* ================ Our work part ================ */
+/* ============================================ */
+
+.section__our-work {
+
+}
+
+.our-work__top-row {
+
+  @include flex-row;
+  align-items: center;
+  justify-content: space-between;
+
+  @include respond(phone) {
+    margin-bottom: 1.5rem;
+  }
+
+  .heading-box {
+    width: 60%;
+
+    @include respond(phone) {
+      width: 80%;
+    }
+  }
+}
+
+.work-box {
+  width: 100%;
+  height: auto;
+  background-color: $color-white;
+  border-radius: 8px;
+  @include card-type__box-shadow;
+  margin-top: 12rem;
+  padding: 4rem 2rem;
+  transition: all .3s;
+
+  @include flex-row_center;
+
+  @include respond(tab-land) {
+    margin-top: 8rem;
+  }
+
+  &:hover {
+    @include card-type__box-shadow_hover;
+
+    .work-box_circle {
+      background-color: $color-secondary;
+      @include card-type__box-shadow_light;
+
+      &-icon {
+        color: $color-white;
+      }
+    }
+
+    .work-box_text {
+
+      &_tittle {
+        color: $color-primary-dark;
+      }
+
+      &_num-of_work {
+        color: $color-primary-light;
+      }
+
+      &_short-details {
+        color: $color-secondary;
+      }
+    }
+  }
+
+  @include respond(phone) {
+    padding-bottom: 3rem;
+    @include card-type__box-shadow_hover;
+  }
+
+  &_circle {
+    width: 16rem;
+    height: 16rem;
+    border-radius: 50%;
+    background-color: $color-tertiary;
+    position: absolute;
+    top: 4.5rem;
+    left: 22%;
+    transition: all .3s;
+
+    @include flex-row_center;
+
+    @include respond(phone) {
+      left: 36% !important;
+      top: 2.5rem !important;
+    }
+
+    @include respond(tab-land) {
+      width: 12rem;
+      height: 12rem;
+      background-color: $color-secondary;
+      box-shadow: 5px 10px 20px inset rgba($color-secondary-dark, 0.3);
+      left: 28%;
+      top: 4rem;
+    }
+
+    &-icon {
+      color: $color-secondary;
+      font-size: 4.5rem;
+      transition: all .3s;
+      @include icon-shadow;
+
+      @include respond(phone) {
+        font-size: 3.2rem;
+        color: $color-white;
+      }
+
+      @include respond(tab-land) {
+        font-size: 3.2rem;
+        color: $color-white;
+      }
+    }
+  }
+
+  &_text {
+    text-align: center;
+    margin-top: 7rem;
+
+    @include respond(phone) {
+      margin-top: 4rem !important;
+    }
+
+    @include respond(tab-land) {
+      margin-top: 4.8rem;
+    }
+
+
+    &_tittle {
+      height: 6rem;
+      font-size: 2.2rem;
+      font-family: Montserrat-Medium;
+      color: $color-primary-light;
+      line-height: 3rem;
+      margin-top: 2rem;
+
+      @include respond(phone) {
+        margin-top: 1rem;
+        height: 3rem;
+      }
+
+      @include respond(tab-land) {
+        font-size: 1.8rem !important;
+        line-height: 2.5rem;
+      }
+    }
+
+    &_num-of_work {
+      font-size: 3rem;
+      font-family: Montserrat-Bold;
+      color: $color-secondary;
+      letter-spacing: .1rem;
+      margin-top: 3rem;
+
+      @include respond(phone) {
+        margin-top: 2rem;
+      }
+
+      @include respond(tab-land) {
+        font-size: 2.5rem !important;
+        line-height: 2.5rem;
+      }
+    }
+
+    &_short-details {
+      font-size: 1.2rem;
+      font-family: Avenir-Medium;
+      color: $color-primary-light;
+
+      @include respond(phone) {
+        margin-top: -.7rem;
+      }
+    }
+
+    &_tittle,
+    &_num-of_work,
+    &_short-details {
+      transition: all .3s;
+    }
+  }
+}
+
+/* ============================================ */
+/* ================ Active Campaing part ================ */
+/* ============================================ */
+
+
+.section-campaing {
+
+  .heading-box {
+    width: 45%;
+
+    @include respond(phone) {
+      width: 80%;
+    }
+  }
+}
+
+.campaing-carousel_box {
+  margin-top: 5.5rem;
+
+  @include respond(phone) {
+    margin-top: 2.5rem;
+  }
+
+  .item {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    @include card-type__box-shadow_light;
+    margin: 0 18rem 4rem 18rem;
+
+    @include respond(phone) {
+      margin: 0;
+    }
+
+    @include respond(tab-port) {
+      margin: 0;
+    }
+
+    &-img {
+      width: 100%;
+      height: 20rem;
+      border-radius: inherit;
+      overflow: hidden;
+    }
+
+    &-text_box {
+      padding: 4rem 3rem;
+
+      &-heading {
+        font-size: 2.2rem;
+        color: $color-primary-light;
+        margin-bottom: 2rem;
+        font-family: Montserrat-Bold;
+        letter-spacing: 0;
+
+        @include respond(phone) {
+          font-size: 1.8rem;
+        }
+
+        @include respond(tab-land) {
+          font-size: 2rem;
+        }
+      }
+
+      .paragraph {
+        text-align: left;
+      }
+
+      .achieve-grp {
+        margin-top: 2.6rem;
+
+        &__tittle {
+          font-size: 1.5rem;
+          color: $color-primary-light;
+          font-family: Montserrat-Medium;
+          margin-bottom: 0 !important;
+        }
+
+        &__progress-bar {
+          font-size: 1.2rem;
+          font-family: Avenir-Medium;
+          color: $color-primary-light;
+          
+          @include flex-row;
+          justify-content: space-between;
+          align-items: flex-end;
+
+          span {
+            width: 24rem;
+            height: 4px;
+            background-color: rgba($color-grey-dark-2, .25);
+            margin-top: -5px;
+            border-radius: 8px;
+            position: relative;
+
+            @include respond(phone) {
+              width: 31rem;
+            }
+
+            &::before {
+              content: "";
+              height: inherit;
+              width: 50%;
+              background-color: $color-secondary;
+              border-radius: inherit;
+              position: absolute;
+              top: 0;
+              left: 0;
+
+              @include respond(phone) {
+                width: 40%;
+              }
+            }
+          }
+
+          .achieve-grp__progress-bar{
+
+            &_1 {
+              &::before {
+                width: 50%;
+              }
+            }
+            &_2 {
+              &::before {
+                width: 68%;
+              }
+            }
+            &_3 {
+              &::before {
+                width: 13%;
+              }
+            }
+            &_4 {
+              &::before {
+                width: 34%;
+              }
+            }
+            &_5 {
+              &::before {
+                width: 46%;
+              }
+            }
+            &_6 {
+              &::before {
+                width: 37%;
+              }
+            }
+            &_7 {
+              &::before {
+                width: 55%;
+              }
+            }
+            &_8 {
+              &::before {
+                width: 68%;
+              }
+            }
+          }
+        }
+      }
+
+      .item-text_box-btm_grp {
+        margin-top: 3rem;
+        width: 100%;
+
+        @include flex-row;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        &-raised__box,
+        &-target__box,
+        &-donators__box {
+
+          @include flex-column;
+          justify-content: flex-start;
+        }
+
+        &-tittle {
+          font-size: 1.5rem;
+          font-family: Montserrat-Medium;
+          color: $color-primary-light;
+        }
+
+        &-des {
+          font-size: 1.8rem;
+          font-family: Montserrat-SemiBold;
+          color: $color-secondary;
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}
+
+/* ============================================ */
+/* ================ Donate partner section ================ */
+/* ============================================ */
+
+.section-donate_partner {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(to right bottom, rgba($color-primary-dark, 0.5),                                      rgba($color-primary-dark, 0.5)),
+                url(../img/donate_background-img.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  margin-top: 4rem;
+  padding: 10rem 0;
+
+  &-box {
+    width: 100%;
+    
+    @include flex-row;
+    align-items: stretch;
+    justify-content: space-between;
+
+    &_text-grp {
+      width: 100%;
+      height: auto;
+
+      @include flex-row;
+      justify-content: flex-start;
+
+      @include respond(phone) {
+        justify-content: center;
+
+        .heading-box {
+          text-align: center;
+        }
+      }
+      
+      h2 {
+        color: $color-tertiary;
+
+        @include respond(phone) {
+          width: 100%;
+        }
+      }
+    }
+
+    &_btn-grp {
+      width: 100%;
+      height: auto;
+
+      @include flex-row;
+      justify-content: flex-end;
+
+      @include respond(phone) {
+        justify-content: center;
+      }
+
+      .button {
+        font-family: Montserrat-Medium;
+        font-size: 2rem;
+        padding: 1.5rem 3.5rem;
+        margin: 3.5rem 0 0 0;
+      }
+    }
+  }
+}
+
+/* ============================================ */
+/* ================ Testimonials section ================ */
+/* ============================================ */
+
+.section-testimonial {
+  
+  @include flex-row;
+  align-items: stretch;
+
+  .heading-box {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.testimonial-box {
+  width: 100%;
+  height: auto;
+  @include card-type__box-shadow_light;
+  margin-top: 10rem;
+  border-radius: 8px;
+  padding: 4rem 4.5rem;
+
+  @include flex-column;
+
+  // ======== Testimonial box top
+  &_top {
+    width: 100%;
+    position: absolute;
+    top: 5rem;
+    left: -6rem;
+
+    @include flex-column;
+    align-items: flex-end;
+
+    @include respond(phone) {
+      width: 70%;
+      align-items: flex-start;
+      left: 6.2rem;
+    }
+  }
+
+  &_img {
+    width: 12.5rem;
+    height: 12.5rem;
+    overflow: hidden;
+    border-radius: 3rem;
+    box-shadow: 0 1.2rem 2.4rem rgba($color-secondary, 0.18);
+    
+    img {
+      width: 100%;
+    }
+  }
+
+  &_name {
+    font-size: 2.2rem;
+    font-family: Montserrat-SemiBold;
+    color: $color-primary-light;
+    margin-top: 3.5rem;
+    letter-spacing: -.35px;
+
+    @include respond(tab-land) {
+      font-size: 1.8rem !important;
+      line-height: 2.5rem;
+    }
+  }
+
+  &_location {
+    margin-top: 1rem;
+    color: $color-secondary;
+    
+    @include flex-row;
+    align-items: center;
+
+    span {
+      font-size: 1.4rem;
+      padding-right: 9px;
+      margin-top: -6px;
+    }
+
+    &-text {
+      font-size: 1.4rem;
+      font-family: Avenir-Roman;
+    }
+  }
+
+  // ======== Testimonial box middle
+  &_middle {
+
+    margin-top: 15rem;
+
+    span {
+      font-size: 6.8rem;
+      letter-spacing: -.35px;
+      color: $color-tertiary;
+
+      position: absolute;
+      top: 22rem;
+
+      @include respond(phone) {
+        transform: rotateY(180deg);
+        right: 6.2rem;
+      }
+    }
+
+    .paragraph {
+      height: 12rem;
+      overflow: hidden;
+      margin-top: 2.5rem;
+    }
+  }
+
+  // ======== Testimonial box bottom
+  &_bottom {
+    margin-top: 2.5rem;
+
+    @include flex-row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    &-star_grp {
+      width: 9rem;
+
+      @include flex-row;
+      justify-content: space-between;
+
+      span {
+        font-size: 1.1rem;
+        color: $color-star;
+      }
+
+      .star-ass_color {
+        color: rgba($color-grey-dark-2, 0.3);
+      }
+    }
+
+    &-rating {
+
+      @include flex-column;
+      align-items: flex-end;
+
+      &_point {
+        font-size: 2.2rem;
+        font-family: Montserrat-Bold;
+        color: $color-primary-light;
+
+        @include respond(tab-land) {
+          font-size: 1.8rem !important;
+          line-height: 2.5rem;
+        }
+      }
+
+      &_sml-text {
+        font-size: 1.2rem;
+        font-family: Avenir-Book;
+        color: $color-secondary;
+        margin-top: -2px;
+      }
+    }
+  }
+}
+
+/* ============================================ */
+/* ================ Charitable blogs section ================ */
+/* ============================================ */
+
+.section-charitable_blogs {
+  padding: 0;
+}
+
+.charitable-blogs__top-row {
+  @include flex-row;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  @include respond(phone) {
+    margin-bottom: 1.5rem;
+  }
+
+  .heading-box {
+    width: 60%;
+
+    @include respond(phone) {
+      width: 80%;
+    }
+  }
+}
+
+.Blogs-carousel_box {
+  margin-top: 5.5rem;
+
+  @include respond(phone) {
+    margin-top: 2.5rem;
+  }
+
+  .item {
+
+    .charitable-blogs__box {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      overflow: hidden;
+
+      @include card-type__box-shadow_light;
+
+      @include flex-column;
+
+      &-img_box {
+        width: 100%;
+        height: 22rem;
+
+        img {
+          height: 100%;
+        }
+      }  
+      
+      &-text_box {
+        margin: 0;
+        padding: 3rem;
+
+        @include flex-column;
+        align-items: stretch;
+
+        &-tp__sml-text {
+          font-size: 1.4rem;
+          font-family: Avenir-Book;
+          color: $color-primary;
+
+          span {
+            color: $color-secondary;
+          }
+        }
+
+        &-heading {
+          font-size: 2.2rem;
+          font-family: Montserrat-Bold;
+          color: $color-primary-light;
+          margin: 2rem 0 1.5rem 0;
+          letter-spacing: 0;
+
+          @include respond(phone) {
+            font-size: 1.8rem;
+          }
+          
+          @include respond(tab-land) {
+            font-size: 2rem;
+          }
+        }
+
+        .paragraph { text-align: left; }
+
+        &-btm__grp {
+
+          padding-bottom: 1.2rem;
+          
+          @include flex-row;
+          justify-content: space-between;
+          align-items: center;
+
+          @include respond(phone) {
+            padding-bottom: 8px;
+          }
+
+          .button--green span {
+            margin-right: 8px;
+          }
+
+          .share-icon__blog {
+            font-size: 2.2rem;
+            color: $color-primary-light;
+            @include icon-shadow;
+            transition: all .3s;
+
+            &:hover {
+              color: $color-secondary;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ============================================ */
+/* ================ Upcoming events section ================ */
+/* ============================================ */
+
+.section-upcoming_events {
+  padding: 0;
+  margin-top: 0;
+
+  @include respond(phone) {
+    margin-top: 2rem;
+  }
+
+  @include respond(tab-land) {
+    margin-top: -3rem;
+  }
+}
+
+.upcoming-events__top-row {
+  @include flex-row;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  @include respond(phone) {
+    margin-bottom: 1.5rem;
+  }
+
+  .heading-box {
+    width: 60%;
+
+    @include respond(phone) {
+      width: 80%;
+    }
+  }
+}
+
+.event-box {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 5.5rem;
+  overflow: hidden;
+  transition: all .3s;
+
+  @include card-type__box-shadow;
+  @include flex-column;
+  align-items: stretch;
+
+  @include respond(phone) {
+    margin-top: 2.5rem;
+  }
+
+  &:hover {
+    @include card-type__box-shadow_hover;
+    transform: translateY(-1.6rem);
+    
+    .event-box_text {
+
+      &-date,
+      &-post_by {
+        color: $color-primary;
+
+        span {
+          color: $color-primary-light;
+        }
+      }
+
+      &-heading {
+        color: $color-secondary;
+      }
+    }
+
+  }
+
+  &_img {
+    width: 100%;
+    height: 17rem;
+    overflow: hidden;
+    background-color: $color-secondary;
+
+    @include respond(phone) {
+      height: 26rem;
+    }
+
+    img {
+      height: 100%;
+
+      @include respond(phone) {
+        width: inherit;
+      }
+    }
+  }
+
+  &_text {
+    width: 100%;
+    padding: 3rem;
+
+    @include flex-column;
+
+    &-date,
+    &-post_by {
+      font-size: 1.2rem;
+      color: $color-primary-light;
+      font-family: Avenir-Book;
+      letter-spacing: 0;
+      transition: all .3s;
+
+      @include flex-row;
+
+      span {
+        font-size: 1.3rem;
+        color: $color-secondary;
+        padding: 0 .6rem;
+        transition: all .3s;
+      }
+    }
+
+    &-date {
+      span {
+        padding: 0 1rem 0 0;
+      }
+    }
+
+    &-post_by {
+      margin-top: 1.7rem;
+
+      span {
+        font-family: Avenir-Medium;
+      }
+    }
+
+    &-heading {
+      font-size: 1.6rem;
+      color: $color-primary;
+      font-family: Montserrat-SemiBold;
+      margin-top: 2.2rem;
+      line-height: 2.4rem;
+      transition: all .3s;
+      letter-spacing: 0;
+
+      @include respond(phone) {
+        font-size: 2rem !important;
+        line-height: 2.6rem !important;
+      }
+
+      @include respond(tab-land) {
+        font-size: 1.4rem ;
+        line-height: 2rem ;
+      }
+    }
+  }
+}
+
+
+/* ============================================ */
+/* ================ Subscribe newslatter section ================ */
+/* ============================================ */
+
+.section-subscribe {
+  padding: 0;
+}
+
+.subscribe-box {
+  width: 100%;
+  border-radius: 8px;
+  margin: -1rem 0 5rem 0;
+  @include flex-column_center;
+}
+
+.subscribe-full_box-mrgn_btm-adjustment {
+  margin-bottom: 6rem;
+
+  @include respond(phone) {
+    margin-bottom: 4rem !important;
+  }
+
+  @include respond(tab-land) {
+    margin-bottom: 5rem !important;
+  }
+}
+

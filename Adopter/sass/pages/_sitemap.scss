@@ -1,0 +1,158 @@
+.section-sitemap {
+  margin-top: 0 !important;
+  width: 100%;
+  height: 100vh;
+  background-color: $color-tertiary;
+
+  .logo-box {
+    height: 13vh;
+
+    @include flex-row;
+    align-items: flex-end;
+    justify-content: flex-start;
+
+    @include respond(tab-land) {
+      height: 12vh;
+    }
+
+    @include respond(phone) {
+      height: 15vh !important;
+    }
+
+    &__link {
+      text-decoration: none;
+      transition: all .3s;
+
+      &:hover {
+        transform: translateY(-2px);
+        text-shadow: -1px 2px 4px rgba($color-secondary, 0.4);
+      }
+    }
+
+    &__text {
+      font-family: Montserrat-Bold;
+      font-size: 4rem;
+      color: $color-primary-light;
+      letter-spacing: -0.18px;
+
+      span {
+        font-size: inherit;
+        color: $color-secondary;
+      }
+    }
+  }
+
+  .sitemap-main {
+    width: 100%;
+    height: 47vh;
+
+    @include flex-row_center;
+
+    @include respond(tab-land) {
+      height: 48vh;
+    }
+
+    @include respond(phone) {
+      height: 60vh !important;
+    }
+
+    &_box {
+      position: relative;
+      @include flex-column_center;
+
+      &-top_row {
+
+        .sitemap__big-link {
+          padding: 2rem 4rem !important;
+          font-size: 2.4rem;
+
+          @include respond(phone) {
+            padding: 1.6rem 3.4rem !important;
+            font-size: 2rem !important;
+            z-index: 999 !important;
+          }
+
+          span {
+            margin-right: 5px;
+
+            @include respond(phone) {
+              margin: 0 !important;
+            }
+          }
+        }
+      }
+
+      .middle-line_vertical {
+        width: 11.7rem;
+        border-bottom: 0.5px solid #9acb34;
+        position: absolute;
+        top: 13.4rem;
+        left: 46%;
+        transform: rotate(90deg);
+
+        @include respond(tab-land) {
+          left: 45.4%;
+        }
+
+        @include respond(phone) {
+          display: none !important;
+        }
+      }
+
+      .middle-line_horizontal {
+        width: 60rem;
+        border-bottom: .5px solid rgba($color-secondary, 1);
+        position: absolute;
+        bottom: 3rem;
+
+        @include respond(phone) {
+          width: 27rem;
+          top: 6rem;
+          left: 50%;
+          transform: rotate(90deg);
+        }
+      }
+
+      &-bottom_row {
+        width: 70%;
+        margin-top: 9rem;
+
+        @include flex-row;
+        align-items: center;
+        justify-content: space-between;
+
+        @include respond(phone) {
+          @include flex-column_center;
+          margin-top: 2.5rem;
+        }
+
+        .sitemap__small-link {
+          padding: 1.5rem 3rem !important;
+          font-size: 1.8rem !important;
+
+          @include respond(phone) {
+            margin-top: 2.5rem;
+            padding: 1.1rem 2.5rem !important;
+            font-size: 1.5rem !important;
+          }
+        }
+      }
+    }
+  }
+
+  .sitemap_back-btn_box {
+    width: 100%;
+    height: 40vh;
+
+    @include flex-column_center;
+
+    @include respond(phone) {
+      height: auto !important;
+      margin-top: 3rem;
+    }
+
+    .button--green {
+      padding: 1.7rem 3.7rem !important;
+    }
+  }
+}

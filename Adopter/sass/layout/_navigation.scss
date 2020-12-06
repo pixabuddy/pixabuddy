@@ -1,0 +1,272 @@
+/* ============================================ */
+/* ================ Header Navigation ================ */
+/* ============================================ */
+
+// header nav bar
+.header-nav {
+  width: 100%;
+  height: auto;
+  background-color: $color-primary;
+
+  .logo-box {
+    width: 25%;
+
+    &__link {
+      text-decoration: none;
+      transition: all .3s;
+
+      &:hover {
+        transform: translateY(-2px);
+        text-shadow: -2px 4px 8px rgba($color-primary-dark, 0.2);
+      }
+    }
+
+    &__text {
+      font-family: Montserrat-Bold;
+      font-size: 3rem;
+      color: $color-tertiary;
+      letter-spacing: -0.18px;
+
+      span {
+        font-size: inherit;
+        color: $color-secondary;
+      }
+    }
+  }
+
+  // Main navigation
+
+    .navbar-nav {
+      list-style-type: none;
+
+      li {
+        display: inline-block;
+        border-bottom: 3px solid transparent;
+
+        &:hover {
+          border-bottom: 3px solid $color-secondary;
+
+          a {
+            text-decoration: none !important;     
+            color: $color-secondary !important; 
+          }
+        }
+
+        &:not(:first-child) {
+          margin-left: 4rem;
+        }
+
+        a {
+
+          &:link,
+          &:visited {
+
+            font-size: 1.8rem;
+            font-family: Avenir-Medium;
+            color: $color-tertiary;
+            padding: 2.3rem 0;
+            transition: all .3s;
+          }
+        }
+      }
+    }
+  
+  // Sticky navigation
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba($color-secondary, 0.98);
+    z-index: 9999;
+    box-shadow: 5px 10px 20px inset rgba($color-secondary-dark, 0.2),
+      0 8px 14px 0 rgba($color-secondary-dark, 0.2);
+
+    .logo-box {
+
+      &__text {
+
+        &:hover {
+          text-shadow: -2px 4px 8px rgba($color-secondary-dark, 0.2) !important;
+        }
+
+        span {
+          color: $color-primary;
+        }
+      }
+    }
+
+    .navbar-nav {
+      list-style-type: none;
+
+      li {
+        display: inline-block;
+        border-bottom: 3px solid transparent;
+
+        &:hover {
+          border-bottom: 3px solid $color-primary;
+
+          a {
+            text-decoration: none !important; 
+            color: $color-primary !important;
+          }
+        }
+
+        &:not(:first-child) {
+          margin-left: 4rem;
+        }
+
+        a {
+
+          &:link,
+          &:visited {
+            font-size: 1.8rem;
+            font-family: Avenir-Medium;
+            color: $color-tertiary;
+            padding: 1.8rem 0;
+            transition: all .3s;
+          }
+        }
+      }
+    }
+  }
+
+  .navbar-nav {
+
+    .active-page {
+      border-bottom: 3px solid $color-secondary;
+
+      @include respond(phone) {
+        border-bottom: 3px solid transparent;
+      }
+
+      a {
+        text-decoration: none !important;
+        color: $color-secondary !important;
+      }
+    }
+  }
+
+  .sticky {
+
+    @include respond(phone) {
+      display: none;
+    }
+
+    .navbar-nav {
+
+      .active-page {
+        border-bottom: 3px solid $color-primary;
+
+        a {
+          text-decoration: none !important;
+          color: $color-primary !important;
+        }
+      }
+    }
+  }
+}
+
+/* ----------------- Header Navigation navbar ----------------- */
+
+.navbar { 
+  padding: 0 !important;
+
+  @include respond(phone) {
+    padding: 2rem !important;
+  }
+}
+
+
+.header-nav .navbar-nav li {
+
+  @include respond(phone) {
+    margin-left: 4rem;
+  }
+}
+
+.navbar-expand-sm .navbar-collapse {
+
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+/* ----------------- Header Navigation toggler icon ----------------- */
+.navbar-toggler-icon {
+  width: 30px !important;
+  
+  display: flex;
+  flex-direction: column !important;
+  align-items: flex-end !important;
+  cursor: pointer;
+}
+
+.bar1, .bar2 {
+  height: 3px;
+  background-color: $color-tertiary;
+  border-radius: 50px;
+  transition: 0.4s;
+
+}
+
+.bar1 { width: 100%; }
+.bar2 { 
+  width: 70%; 
+  margin: 6px 0;
+}
+
+
+
+/* ============================================ */
+/* ================ Footer Navigation ================ */
+/* ============================================ */
+
+.footer-top_box-details {
+  &__ul {
+    list-style-type: none;
+
+    &-li {
+      width: 60%;
+
+      @include respond(phone) {
+        width: 100%;
+      }
+
+      &:not(:first-child) {
+        margin-top: 1.2rem;
+      }
+
+      &__link {
+        font-size: 1.4rem;
+        color: rgba($color-tertiary, 0.55);
+        font-family: Avenir-Roman;
+        transition: all .3s;
+
+        @include flex-row;
+        align-items: center;
+        justify-content: flex-start;
+
+        &:hover {
+          text-decoration: none;
+          color: $color-secondary;
+
+          span {
+            width: 1.5rem;
+            opacity: 1;
+            margin-right: 1rem;
+          }
+        }
+
+        span {
+          width: 0;
+          height: 2px;
+          border-radius: 5px;
+          background-color: $color-primary-light;
+          opacity: 0;
+          transition: all .3s;
+        }
+      }
+    }
+  }
+}

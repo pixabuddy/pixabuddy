@@ -1,0 +1,308 @@
+/* ============================================ */
+/* ================ All inner page banner section ================ */
+/* ============================================ */
+
+.inner-page_banner {
+  margin-top: 0 !important;
+  width: 100%;
+  height: 35rem;
+  background-image: linear-gradient(to right bottom, rgba($color-primary-dark, 0.8), rgba($color-primary-dark, 0.7)),
+    url(../img/inner-page_banner-image.jpg);
+  background-size: cover;
+  background-position: center;
+
+  @include flex-column;
+  align-items: center;
+  justify-content: center;
+
+  @include respond(phone) {
+    height: 24rem;
+  }
+
+  .main-box {
+
+    @include flex-column;
+    align-items: center;
+    justify-content: center;
+
+    &_heading {
+      color: $color-secondary;
+      font-size: 5.5rem;
+      font-family: Montserrat-Bold;
+      letter-spacing: -.35px;
+
+      @include respond(phone) {
+        font-size: 4.5rem !important;
+      }
+
+      @include respond(tab-land) {
+        font-size: 5rem;
+      }
+    }
+
+    &_heading-sub {
+      font-size: 2.4rem;
+      font-family: Avenir-Roman;
+      color: $color-tertiary;
+      margin-top: 1.4rem;
+
+      @include flex-row;
+      align-items: center;
+      justify-content: center;
+
+      @include respond(phone) {
+        font-size: 2rem !important;
+        margin-top: 8px;
+      }
+
+      @include respond(tab-land) {
+        font-size: 2.2rem;
+      }
+
+      span {
+        margin-right: 2rem;
+
+        i {
+          margin-right: 8px;
+        }
+      }
+
+      &__second-span {
+        margin-left: 2rem;
+      }
+    }
+  }
+}
+
+
+/* ============================================ */
+/* ================ About page about section ================ */
+/* ============================================ */
+
+.about-page__section-about {
+  background-color: transparent !important;
+  margin-top: 3rem;
+
+  @include respond(tab-land) {
+    margin-top: 0;
+  }
+}
+
+/* ============================================ */
+/* ================ About projects section ================ */
+/* ============================================ */
+
+.section-projects {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(to right bottom, rgba($color-primary-dark, 0.8), rgba($color-primary-dark, 0.7)),
+    url(../img/about-pg_project-back.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 9rem 0;
+
+  @include flex-row;
+  align-items: center;
+  justify-content: space-between;
+
+  @include respond(phone) {
+    height: auto !important;
+    padding: 4rem 0 8rem 0;
+  }
+
+  @include respond(tab-land) {
+    margin-top: 5rem;
+    height: auto;
+  }
+}
+
+.project {
+
+  @include flex-column;
+  align-items: center;
+  justify-content: center;
+
+  @include respond(phone) {
+    margin-top: 7rem !important;
+  }
+
+  &-icon {
+    margin-bottom: 2.5rem;
+    color: $color-secondary;
+    font-size: 5rem;
+    @include icon-shadow;
+
+    @include respond(tab-land) {
+      font-size: 4rem;
+    }
+  }
+
+  &-number {
+    font-size: 4.8rem;
+    font-family: Montserrat-Medium;
+    color: $color-tertiary;
+    letter-spacing: .8px;
+    margin-bottom: 1.6rem;
+    text-shadow: -2px 4px 8px rgba($color-primary-dark, 0.5);
+
+    @include respond(tab-land) {
+      font-size: 3.8rem;
+      font-family: Montserrat-SemiBold;
+    }
+
+    span {
+      font-family: Montserrat-SemiBold !important;
+      margin-right: 7px;
+    }
+  }
+
+  &-tittle {
+    text-transform: uppercase;
+    color: $color-secondary;
+    font-size: 1.8rem;
+    letter-spacing: .2px;
+    font-family: Avenir-Medium;
+
+    @include respond(tab-land) {
+      font-size: 1.7rem;
+    }
+  }
+}
+
+/* ============================================ */
+/* ================ About team section ================ */
+/* ============================================ */
+
+.section-team {
+  padding: 0;
+}
+
+.team-box {
+  width: 100%;
+  height: auto;
+  padding: 15rem 0 4.5rem 0;
+  border-radius: 2rem;
+  transition: all .3s;
+  margin-top: 11.5rem;
+  position: relative;
+
+  @include card-type__box-shadow;
+
+  @include flex-column;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    @include card-type__box-shadow_hover;
+
+    .team-box_name {
+      color: $color-secondary;
+    }
+
+    .team-box_post {
+      color: $color-primary-light;
+    }
+  }
+
+  &_img {
+    width: 55%;
+    height: 20rem;
+    border-radius: 2.7rem;
+    overflow: hidden;
+
+    @include center__both;
+    top: 10%;
+
+    @include respond(phone) {
+      height: 20rem !important;
+    }
+
+    @include respond(tab-land) {
+      height: 17rem;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &_name {
+    font-size: 2.3rem;
+    font-family: Montserrat-SemiBold;
+    color: $color-primary-light;
+    letter-spacing: -.35px;
+    margin-top: 2rem;
+    transition: all .3s;
+  }
+
+  &_post {
+    font-size: 1.8rem;
+    color: $color-secondary;
+    font-family: Avenir-Roman;
+    margin-top: 1.8rem;
+    transition: all .3s;
+  }
+
+  &_social {
+    width: 70%;
+    margin-top: 2.8rem;
+
+    @include flex-row;
+    align-items: center;
+    justify-content: space-between;
+
+    &-link {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      background-color: $color-white;
+      box-shadow: 2px 4px 16px inset rgba($color-primary-light, .17),
+        0 5px 13px rgba($color-primary-light, .17);
+      transition: all .3s;
+
+      @include flex-row;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        text-decoration: none;
+        box-shadow: 2px 4px 16px inset rgba($color-secondary, .3),
+          0 5px 13px rgba($color-secondary, .3);
+
+
+        span {
+          color: $color-secondary;
+        }
+      }
+
+
+      span {
+        font-size: 2rem;
+        color: $color-primary-light;
+        transition: all .3s;
+      }
+    }
+  }
+}
+
+/* ============================================ */
+/* ================ About event section ================ */
+/* ============================================ */
+
+.about-page__upcoming-events {
+  margin-top: 9rem;
+
+  @include respond(phone) {
+    margin-top: 7rem;
+  }
+}
+
+
+/* ============================================ */
+/* ================ About journey section ================ */
+/* ============================================ */
+
+.journey-stories_calender-icon__right-margin {
+  margin-right: 6px;
+}

@@ -1,0 +1,56 @@
+// ======== COLORS
+
+$color-primary: #00cefe;
+$color-primary-supporting: #00c0eb;
+$color-primary-light: #eaf7f9;
+$color-primary-medium: #00f2a6;
+$color-primary-medium-dark: #010f1a;
+$color-primary-dark: #010f1a;
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #e8e8e8;
+
+$color-grey-dark: #5b5b5b;
+$color-grey-dark-2: #3f3f3f;
+
+$color-white: #fff;
+$color-black: #000;
+
+// ========== FONT size
+
+$default-font-size: 1.6rem;
+
+// ========== FONT Family
+
+// for heading font
+
+$heading-black: Mulish-Black;
+$heading-extrabold: Mulish-ExtraBold;
+$heading-bold: Mulish-Bold;
+$heading-semibold: Mulish-SemiBold;
+$heading-medium: Mulish-Medium;
+$heading-regular: Mulish-Regular;
+$heading-regular-italic: Mulish-MediumItalic;
+$heading-light: Mulish-Light;
+
+// for default or paragraph font
+
+$para-medium: Mulish-Medium;
+$para-regular: Mulish-Regular;
+$para-italic: Mulish-Italic;
+
+// $para-medium: Avenir-Medium;
+// $para-book: Avenir-Book;
+// $para-roman: Avenir-Roman;
+
+// ========== GRID & GUTTER
+
+$grid-width: 114rem;
+
+$gutter-vertical: 8rem;
+$gutter-vertical-medium: 6rem;
+$gutter-vertical-small: 5rem;
+$gutter-vertical-very-small: 3rem;
+
+$gutter-horizontal: 6rem;
+$gutter-horizontal-small: 4rem;

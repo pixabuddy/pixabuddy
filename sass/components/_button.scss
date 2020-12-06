@@ -1,0 +1,272 @@
+.button {
+
+	&,
+	&:link,
+	&:visited {
+		text-decoration: none;
+		padding: 1.3rem 2.8rem;
+		display: inline-block;
+		border-radius: 0.8rem;
+		-webkit-transition: all 0.2s;
+		transition: all 0.2s;
+		position: relative;
+		font-family: $heading-medium;
+		font-size: 1.5rem;
+		letter-spacing: 0.5px;
+		border: none;
+		cursor: pointer;
+
+		// Change the button element
+		// border: none;
+		// cursor: pointer;
+
+		@include respond(phone) {
+			font-size: 1.6rem;
+		}
+	}
+
+	&:hover {
+		-webkit-transform: translateY(-3px);
+		transform: translateY(-3px);
+		-webkit-box-shadow: 0 7px 18px -7px rgba($color-primary, 0.5);
+		box-shadow: 0 7px 18px -7px rgba($color-primary, 0.5);
+
+		&::after {
+			-webkit-transform: scaleX(1.4) scaleY(1.6);
+			transform: scaleX(1.4) scaleY(1.6);
+			opacity: 0;
+		}
+	}
+
+	&:active,
+	&:focus {
+		outline: none;
+		-webkit-transform: translateY(-1px);
+		transform: translateY(-1px);
+		-webkit-box-shadow: 0 0.5rem 1rem rgba($color-primary, 0.3);
+		box-shadow: 0 0.5rem 1rem rgba($color-primary, 0.3);
+	}
+
+	&--main {
+		background-image: linear-gradient(to right bottom,
+				$color-primary,
+				$color-primary-supporting);
+		color: $color-white;
+		transition: all 0.3s;
+		-webkit-box-shadow: 0 7px 18px -10px rgba($color-primary, 0.6);
+		box-shadow: 0 7px 18px -10px rgba($color-primary, 0.6);
+
+		&:hover {
+			background-image: linear-gradient(to right bottom,
+					$color-primary-supporting,
+					$color-primary);
+			color: $color-white;
+		}
+
+		&::after {
+			background-color: $color-primary;
+		}
+	}
+
+	&--light {
+		text-decoration: none !important;
+		display: inline-block;
+		border-radius: 0.8rem;
+		font-size: $default-font-size;
+		letter-spacing: 0.5px;
+		border: none;
+		cursor: pointer;
+		padding: 1.1rem 2.5rem;
+		font-family: $heading-regular !important;
+		background-color: $color-white;
+		color: rgba($color-primary-medium-dark, 1);
+		-webkit-box-shadow: 0 10px 18px -11px rgba($color-primary-dark, 1);
+		box-shadow: 0 10px 18px -11px rgba($color-primary-dark, 1);
+		transition: all 0.3s;
+
+		@include respond(tab-land) {
+			font-size: 1.2rem;
+			padding: 1.1rem 2rem;
+			-webkit-box-shadow: 0 10px 18px -11px rgba($color-primary-dark, 0.2);
+			box-shadow: 0 10px 18px -11px rgba($color-primary-dark, 0.2);
+		}
+
+		@include respond(phone) {
+			font-size: 1.3rem;
+		}
+
+		&::after {
+			background-color: $color-grey-light-2;
+		}
+
+		&:hover {
+			background-color: $color-white;
+			color: $color-primary;
+			-webkit-box-shadow: 0 10px 18px -11px rgba($color-primary, 0.5);
+			box-shadow: 0 10px 18px -11px rgba($color-primary, 0.5);
+		}
+	}
+
+	&::after {
+		content: "";
+		display: inline-block;
+		height: 100%;
+		width: 100%;
+		border-radius: 0.8rem;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		-webkit-transition: all 0.4s;
+		transition: all 0.4s;
+	}
+
+	&--animated {
+		-webkit-animation: moveInBottom 0.5s ease-out 0.75s;
+		animation: moveInBottom 0.5s ease-out 0.75s;
+		-webkit-animation-fill-mode: backwards;
+		animation-fill-mode: backwards;
+	}
+}
+
+.btn-text {
+	@include respond(phone) {
+		font-size: 1.8rem !important;
+	}
+
+	&:link,
+	&:visited {
+		font-family: $heading-semibold;
+		font-size: $default-font-size;
+		color: $color-primary;
+		display: inline-block;
+		text-decoration: none;
+		border-bottom: 1px solid $color-primary;
+		padding: 3px;
+		-webkit-transition: all 0.2s;
+		transition: all 0.2s;
+	}
+
+	&:hover {
+		background-color: $color-primary;
+		color: $color-white;
+		-webkit-box-shadow: 0 11px 22px -8px rgba($color-primary, 0.2);
+		box-shadow: 0 11px 22px -8px rgba($color-primary, 0.2);
+		-webkit-transform: translateY(-2px);
+		transform: translateY(-2px);
+	}
+
+	&:active {
+		-webkit-box-shadow: 0 11px 14px -8px rgba($color-primary-dark, 0.25);
+		box-shadow: 0 11px 14px -8px rgba($color-primary-dark, 0.25);
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	&_secondary {
+		transition: all 0.3s;
+
+		&:link,
+		&:visited {
+			color: $color-primary-medium-dark;
+			border-bottom: 1px solid $color-primary-medium-dark;
+		}
+
+		&:hover {
+			color: $color-white;
+			background-color: $color-primary-medium-dark;
+			-webkit-box-shadow: 0 11px 22px -8px rgba($color-primary-medium-dark, 0.3);
+			box-shadow: 0 11px 22px -8px rgba($color-primary-medium-dark, 0.3);
+		}
+	}
+}
+
+.btn--subscribe {
+	@extend .button;
+	@extend .button--main;
+	margin-top: 3rem;
+
+	span {
+		padding-left: 2px;
+	}
+}
+
+// Back to top btn customization
+
+.jquery-back-to-top {
+	
+	@include respond(phone) {
+		right: 13px !important;
+		bottom: 88px !important;
+		width: 50px !important;
+		height: 50px !important;
+		line-height: 50px !important;
+	}
+
+	i {
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		top: 50%;
+	}
+}
+
+// Kiwismedia floating btn
+
+.floating_btn-kiwi {
+	position: fixed;
+	bottom: 30px;
+	right: 86px;
+	letter-spacing: -0.02px;
+	background-color: $color-white;
+	width: auto;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.8rem;
+	color: $color-primary-dark;
+	font-family: $heading-medium;
+	padding: 16px 24px;
+	text-decoration: none !important;
+	border-radius: 12px;
+	box-shadow: -2px 5px 20px #0000002e;
+	z-index: 1000;
+	transition: all .2s;
+
+	@include respond(phone) {
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		padding: 17px 24px;
+		box-shadow: 0px -10px 25px #0000001c;
+	}
+
+	span {
+		font-family: $heading-bold;
+		font-size: 1.8rem;
+		margin-left: 9px;
+		color: #142cd6;
+		display: flex;
+		align-items: center;
+		transition: all .2s;
+
+		img {
+			width: 24px;
+			height: auto;
+			margin-right: 3px;
+		}
+	}
+
+	&_hide {
+		opacity: 0 !important;
+	}
+}
+
+.floating_btn-kiwi:hover {
+	color: $color-primary-dark;
+
+	span {
+		color: #ed0f69;
+	}
+}

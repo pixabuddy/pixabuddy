@@ -1,0 +1,313 @@
+/* =================== All form field custom styling =================== */
+
+// Header location form field
+
+form {
+  position: relative;
+}
+
+.banner-location__form,
+.subscribe-box__form {
+
+  input {
+    width: 100%;
+    padding: 1.3rem 2rem 1.3rem 3.4rem;
+    margin: 8px 0;
+    display: inline-block;
+    border: 0;
+    border-bottom: 1px solid $color-secondary;
+    font-size: 1.6rem;
+  }
+
+  input:focus {
+    border-color: $color-secondary-light;
+  }
+}
+
+.banner-location__form {
+  width: 45%;
+
+  @include respond(phone) {
+
+    margin-top: -2rem;
+  }
+}
+
+.subscribe-box {
+
+  @include respond(phone) {
+    padding: 0 !important;
+  }
+
+  &__form {
+    width: 100%;
+    @include flex-column_center;
+
+    &-name,
+    &-email {
+      width: 65%;
+
+      @include respond(phone) {
+        width: 80%;
+      }
+    }
+
+    &-name {
+      position: relative;
+    }
+
+    &-email {
+      position: relative;
+    }
+
+    &-name,
+    &-email {
+
+      span {
+        position: absolute;
+        bottom: 1.9rem;
+        font-size: 1.8rem;
+        color: $color-secondary;
+
+        @include form-icon_shadow;
+      }
+    }
+  }
+}
+
+.banner-location__form {
+
+  &-location {
+    position: relative;
+
+    span {
+      position: absolute;
+      bottom: 1.9rem;
+      font-size: 1.8rem;
+      color: $color-secondary;
+
+      @include form-icon_shadow;
+
+      @include respond(tab-land) {
+        bottom: 2.2rem;
+      }
+    }
+  }
+}
+
+// form field placeholder
+
+::-webkit-input-placeholder {
+  /* Edge */
+  font-family: Avenir-Book;
+  font-size: 1.3rem;
+  letter-spacing: -0.05px;
+  line-height: 2.4rem;
+  color: $color-grey-dark-2;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer */
+  font-family: Avenir-Book;
+  font-size: 1.3rem;
+  letter-spacing: -0.05px;
+  line-height: 2.4rem;
+  color: $color-grey-dark-2;
+}
+
+::placeholder {
+  font-family: Avenir-Book;
+  font-size: 1.3rem;
+  letter-spacing: -0.05px;
+  line-height: 2.4rem;
+  color: $color-grey-dark-2;
+}
+
+// Contact page form
+
+.contact-page__form {
+  margin-top: 2.5rem;
+
+  @include respond(phone) {
+    padding: 1rem;
+  }
+
+  .form-group {
+    margin-top: 1.4rem;
+  }
+
+  .form-group__custom {
+    
+    @include flex-row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  label {
+    font-family: Avenir-Medium;
+    font-size: 1.8rem;
+    color: $color-primary-light;
+    letter-spacing: -.15px;
+    margin-bottom: 1rem;
+    transition: all .3s;
+  }
+
+  .form-check-label {
+    font-size: 1.4rem !important;
+  }
+
+  input#subject.form-control,
+  input#city.form-control,
+  input#pincode.form-control {
+    padding: 2.8rem;
+  }
+
+  .form-control {
+    padding: 2.8rem;
+    font-size: 1.7rem;
+    font-family: Avenir-Roman;
+    color: $color-grey-dark-3;
+
+
+    &:last-child {
+      padding-top: 1.8rem;
+    }
+  }
+
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+
+    padding: 2.8rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .form-control_custom {
+    display: block;
+    width: 100%;
+    padding: 1.5rem 2.8rem;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+    font-family: Avenir-Roman;
+    font-size: 1.7rem;
+    color: $color-grey-dark-3;
+  }
+
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: $color-secondary transparent transparent transparent;
+  }
+
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent $color-secondary transparent;
+    top: 7px;
+  }
+
+  /*style the items (options), including the selected item:*/
+  .select-items div,
+  .select-selected {
+    color: $color-secondary;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+  }
+
+
+  .contact-btn__box {
+    @include flex-row_center;
+  }
+
+  .form-mute__text-adjustment {
+    font-family: Avenir-Roman;
+    font-size: 1.1rem;
+    color: rgba($color-grey-dark-3, 0.6) !important;
+    letter-spacing: 0;
+    margin-top: 5px;
+  }
+
+  .contact-from__submit-btn {
+    margin-top: 3rem;
+  }
+
+  .error-text {
+    @extend .paragraph;
+    color: orangered;
+    margin: 1rem;
+  }
+
+  .form-btn_text {
+    color: $color-secondary;
+    @extend .paragraph;
+    transition: all .3s;
+    // text-decoration: underline;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  ::placeholder {
+    font-family: Avenir-Book;
+    font-size: 1.3rem;
+    letter-spacing: -0.05px;
+    line-height: 2.4rem;
+    color: rgba($color-grey-dark-2, 0.85) !important;
+  }
+}
+
+
+input:focus[type='text'], input:focus[type='search'], input:focus[type='password'], input:focus[type='email'], input:focus[type='number'], textarea:focus, select:focus, {
+  background-color: #fff;
+  border-color: $color-secondary !important;
+  -webkit-box-shadow: 0 0 14px rgba($color-secondary, 0.25) !important;
+  box-shadow: 0 0 14px rgba($color-secondary, 0.25) !important;
+}
+
+select:focus,
+.banner-location__form input:focus, .subscribe-box__form input:focus { 
+  outline: none;
+  background-color: transparent;
+  box-shadow: none !important; 
+}
+
+button[type='submit']:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,295 @@
+/* ============================================ */
+/* ================ footer part ================ */
+/* ============================================ */
+
+.footer {
+  margin-top: 4rem;
+  background-color: $color-primary;
+  color: $color-tertiary;
+  width: 100%;
+  padding: 10rem 0 0 0;
+  letter-spacing: .3px;
+
+  @include respond(phone) {
+    padding: 4rem 0 0 0 !important;
+    margin-top: 1rem;
+  }
+
+  @include respond(tab-land) {
+    padding: 5rem 0 0 0 !important;
+    margin-top: 1rem;
+  }
+
+  // ======== footer top box
+  &-top_box {
+    width: 100%;
+    height: auto;
+    padding: 0;
+
+    @include flex-column;
+    align-items: stretch;
+    justify-content: flex-start;
+
+    @include respond(phone) {
+      padding: 0 2.5rem;
+      align-items: flex-start;
+    }
+
+    .logo-box {
+
+      &__link {
+        text-decoration: none;
+        transition: all .3s;
+
+        &:hover {
+          transform: translateY(-2px);
+          text-shadow: -2px 4px 8px rgba($color-primary-dark, 0.8);
+        }
+      }
+
+      &__text {
+        font-family: Montserrat-Bold;
+        font-size: 4rem;
+        color: $color-tertiary;
+        letter-spacing: -0.18px;
+
+        @include respond(tab-land) {
+          font-size: 3.3rem;
+        }
+
+        span {
+          font-size: inherit;
+          color: $color-secondary;
+        }
+      }
+    }
+
+    .paragraph {
+      font-size: 1.2rem;
+      line-height: 1.9rem;
+      width: 80%;
+      text-align: left;
+      color: rgba($color-tertiary, 0.55);
+      letter-spacing: .2px;
+
+      @include respond(phone) {
+        width: 100%;
+      }
+    }
+  }
+
+  // ======== footer bottom box
+
+  &-bottom_box {
+    width: 100%;
+    margin-top: 6rem;
+
+    @include flex-column;
+    align-items: stretch;
+    justify-content: flex-start;
+
+    @include respond(phone) {
+      padding: 0 2.5rem;
+      margin-top: 2.5rem;
+    }
+
+    @include respond(tab-land) {
+      margin-top: 2.5rem;
+    }
+  }
+
+  // ======== footer headings
+
+  &-top_box-heading,
+  &-bottom_box-heading {
+    margin-bottom: 3rem;
+    height: 4rem;
+    width: 100%;
+    @include flex-row;
+    align-items: center;
+    justify-content: flex-start;
+
+    @include respond(phone) {
+      margin-bottom: 2.2rem;
+      margin-top: 3.2rem;
+    }
+
+    @include respond(tab-land) {
+      margin-bottom: 2.4rem;
+      margin-top: 3.2rem;
+    }
+
+    p {
+      font-size: 2.3rem;
+      font-family: Montserrat-SemiBold;
+      letter-spacing: -.15px;
+
+      @include respond(tab-land) {
+        font-size: 2rem;
+        letter-spacing: 0;
+      }
+    }
+  }
+
+  // ======== footer details
+
+  &-top_box-details,
+  &-bottom_box-details {
+
+    @include flex-column;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+
+  // ======== footer top box details
+  &-top_box-details {
+
+    // ======== footer contact
+
+    &__contact {
+      font-size: 1.4rem;
+
+      @include flex-row;
+      align-items: flex-start;
+      justify-content: flex-start;
+
+      &:not(:first-child) {
+        margin-top: 1.2rem;
+      }
+
+      span {
+        margin-right: 1.2rem;
+        font-size: 1.4;
+        color: $color-secondary;
+        text-shadow: -1px 3px 5px rgba($color-primary-dark, 0.06);
+      }
+
+      p {
+        color: rgba($color-tertiary, 0.55);
+        font-family: Avenir-Roman;
+      }
+    }
+  }
+
+  // ======== footer bottom box details
+
+  &-bottom_box-details {
+
+    &__social {
+      width: 40%;
+      @include flex-row;
+      align-items: center;
+      justify-content: space-between;
+
+      @include respond(phone) {
+        width: 60%;
+      }
+
+
+      &-link {
+        width: 5rem;
+        height: 5rem;
+        background-color: $color-primary-light;
+        border-radius: 50%;
+        box-shadow: 0 5px 13px inset rgba($color-primary-dark, 0.25),
+          0 5px 13px rgba($color-primary-dark, 0.2);
+        transition: all .3s;
+
+        @include flex-row;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+          text-decoration: none;
+          background-color: $color-secondary;
+          box-shadow: 0 5px 13px inset rgba($color-secondary-dark, 0.5),
+            0 5px 13px rgba($color-primary-dark, 0.2);
+        }
+
+        span {
+          font-size: 1.8rem;
+          color: $color-tertiary;
+        }
+      }
+    }
+
+    // ======== footer donation details
+
+    &__donate {
+      width: 70%;
+
+      @include flex-row;
+      align-items: center;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+
+      @include respond(phone) {
+        width: 100%;
+      }
+
+      span {
+        margin-right: 8px;
+        font-size: 4.2rem;
+        color: rgba($color-primary-light, 0.6);
+        margin-top: -1.6rem;
+      }
+    }
+  }
+
+  // ======== footer Dark bottom part
+
+  &-dark__bottom {
+    width: 100%;
+    height: auto;
+    padding: 2rem 0;
+    margin-top: 7rem;
+    background-color: $color-primary-dark;
+
+    @include respond(phone) {
+      padding: 3.5rem 0;
+    }
+
+    &-left_box,
+    &-right_box {
+      width: 100%;
+
+      @include flex-row;
+      align-items: center;
+
+      p {
+        font-size: 1.4rem;
+        font-family: Avenir-Book;
+        color: $color-primary-light;
+        letter-spacing: .4px;
+
+        span {
+
+          a {
+            color: $color-secondary;
+
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+
+    &-left_box {
+      justify-content: flex-start;
+
+      @include respond(phone) {
+        justify-content: center;
+      }
+    }
+
+    &-right_box {
+      justify-content: flex-end;
+
+      @include respond(phone) {
+        justify-content: center;
+        margin-top: 2rem;
+      }
+    }
+  }
+}

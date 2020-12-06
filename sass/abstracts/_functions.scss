@@ -1,0 +1,7 @@
+$total: 100;
+$header-bottom_big: 9vh;
+
+
+@function header-height-big() {
+  @return ($total - $header-bottom_big)+vh;
+}

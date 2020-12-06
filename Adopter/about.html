@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Adopter (Start adoption)</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+  <!-- Latest font awesome 5 version  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/brands.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/regular.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/solid.min.css">
+
+  <!-- Latest Owl carousel version  -->
+  <link rel="stylesheet" href="css/vendor/owl.carousel.min.css">
+
+  <!-- Latest Animate css version  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+  <!-- Latest back to top css -->
+  <link rel="stylesheet" href="css/vendor/jquery-backToTop.min.css">
+
+  <!-- For favicon -->
+
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="shortcut icon" href="favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+   <!-- ============================================ -->
+  <!-- header -->
+  <!-- ============================================ -->
+  <header class="header">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- ================= header top bar ================= -->
+        <div class="header-top_bar">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-sm-12">
+                <div class="left-box">
+                  <div class="left-box_item">
+                    <span><div class="left-box_item-icon"><i class="fas fa-phone-alt"></i></div>+1 (454) 556-5656</span>
+                  </div>
+                  <div class="left-box_item">
+                    <span><div class="left-box_item-icon"><i class="fas fa-envelope"></i></div>info@adopter.com</span>
+                  </div>
+                  <div class="left-box_item">
+                    <span>
+                      <div class="left-box_item-icon"><i class="fas fa-globe"></i></div>
+                      <select name="lang-list" id="lang-list">
+                        <option lang="hin" value="0">Hindi</option>
+                        <option lang="en" value="1" selected>English</option>
+                        <option lang="ben" value="2">Bengali</option>
+                        <!-- other language options -->
+                      </select>
+                      <div class="left-box_item-icon_sml"><i class="fas fa-sort-down icon-down__sml"></i></div>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-12">
+                <div class="right-box">
+                  <a href="contact.html"
+                    class="button button--green header-top_bar-donation__button wow flash delay-2s">Make a
+                    donation</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ================= header nav bar ================= -->
+        <div class="header-nav">
+          <nav class="navbar navbar-expand-sm" id="nav">
+            <div class="container">
+              <div class="logo-box navbar-brand">
+                <a href="index.html" class="logo-box__link">
+                  <p class="logo-box__text">Adop<span>ter</span></p>
+                </a>
+              </div>
+              <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                <div class="navbar-toggler-icon" onclick="myFunction(x)">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                </div>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="main-nav navbar-nav">
+                  <li class="nav-item navigation-item"><a class="nav-link" href="index.html">Home</a></li>
+                  <li class="nav-item navigation-item active-page"><a class="nav-link" href="about.html">About</a></li>
+                  <li class="nav-item navigation-item"><a class="nav-link" href="our_works.html">Our works</a></li>
+                  <li class="nav-item navigation-item"><a class="nav-link" href="blogs.html">Blogs</a></li>
+                  <li class="nav-item navigation-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================ -->
+  <!-- About banner section -->
+  <!-- ============================================ -->
+
+  <section class="inner-page_banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="main-box">
+            <h1 class="main-box_heading">About</h1>
+            <h4 class="main-box_heading-sub">
+              <span><i class="fas fa-home"></i> Home</span> | <span
+                class="main-box_heading-sub__second-span">About</span>
+            </h4>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================ -->
+  <!-- About section -->
+  <!-- ============================================ -->
+
+  <section class="section-about about-page__section-about">
+    <div class="container">
+      <div class="row">
+        <!-- ================= About left side box ================= -->
+        <div class="col-sm-12 col-md-6">
+          <!-- ================= About heading box ================= -->
+          <div class="heading-box wow fadeInUp delay-.4s">
+            <p class="section-intro__sml-text">ABOUT US</p>
+            <h2 class="heading-secondary">A dream in their mind
+              is our mission
+            </h2>
+          </div>
+          <!-- ================= About text box ================= -->
+          <div class="about-text__box wow fadeInUpBig delay-.5s">
+            <div class="about-text__box-sml__line-top"></div>
+            <h4 class="about-sub__heading">Collaborate with team members
+              to rally support</h4>
+            <p class="paragraph about-short__details-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+              Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+
+            <a href="#" class="button button--green">View details
+              <span><i class="fas fa-long-arrow-alt-right"></i></span>
+            </a>
+          </div>
+        </div>
+        <!-- ================= About right side box ================= -->
+        <div class="col-sm-12 col-md-6">
+          <!-- ================= About img box ================= -->
+          <div class="about-img__box">
+            <img src="img/about-img.jpg" alt="about-image" class="about-img__box-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- About projects section -->
+  <!-- ============================================ -->
+
+  <section class="section-projects">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-12">
+          <div class="project">
+            <div class="project-icon">
+              <i class="fas fa-hands"></i>
+            </div>
+            <h4 class="project-number"><span class="count-num">985</span></h4>
+            <h6 class="project-tittle">volunteer</h6>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-12">
+          <div class="project">
+            <div class="project-icon">
+              <i class="fas fa-rupee-sign"></i>
+            </div>
+            <h4 class="project-number"><span class="count-num">534</span>M</h4>
+            <h6 class="project-tittle">Raise</h6>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-12">
+          <div class="project">
+            <div class="project-icon">
+              <i class="fas fa-hand-holding-heart"></i>
+            </div>
+            <h4 class="project-number"><span class="count-num">1900</span></h4>
+            <h6 class="project-tittle">projects</h6>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-12">
+          <div class="project">
+            <div class="project-icon">
+              <i class="fas fa-birthday-cake"></i>
+            </div>
+            <h4 class="project-number"><span class="count-num">1997</span></h4>
+            <h6 class="project-tittle">since</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- About projects section -->
+  <!-- ============================================ -->
+
+  <section class="section-team">
+    <div class="container">
+      <div class="row">
+        <!-- ================= About team box heading ================= -->
+        <div class="col-sm-12">
+          <div class="heading-box wow fadeInUp delay-.4s">
+            <p class="section-intro__sml-text">TEAM WORK</p>
+            <h2 class="heading-secondary">Let's Meet The Team</h2>
+          </div>
+        </div>
+
+        <!-- ================= About team box ================= -->
+        <div class="col-md-4 col-sm-12">
+          <div class="team-box wow zoomIn delay-.5s">
+            <div class="team-box_img">
+              <img src="img/team-1.jpg" alt="team-1">
+            </div>
+            <h4 class="team-box_name">Ram Chanda</h4>
+            <h6 class="team-box_post">Volunteer</h6>
+            <div class="team-box_social">
+              <a href="https://facebook.com" target='_blank' class="team-box_social-link">
+                <span><i class="fab fa-facebook-f"></i></span>
+              </a>
+              <a href="https://instagram.com" target='_blank' class="team-box_social-link">
+                <span><i class="fab fa-instagram"></i></span>
+              </a>
+              <a href="https://twitter.com" target='_blank' class="team-box_social-link">
+                <span><i class="fab fa-twitter"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="team-box wow zoomIn delay-.5s">
+            <div class="team-box_img">
+              <img src="img/team-2.jpg" alt="team-2">
+            </div>
+            <h4 class="team-box_name">Ram Chanda</h4>
+            <h6 class="team-box_post">Volunteer</h6>
+            <div class="team-box_social">
+              <a href="https://facebook.com" target='_blank' class="team-box_social-link">
+                <span><i class="fab fa-facebook-f"></i></span>
+              </a>
+              <a href="https://instagram.com" target='_blank' class="team-box_social-link">
+                <span><i class="fab fa-instagram"></i></span>
+              </a>
+              <a href="https://twitter.com" target='_blank' class="team-box_social-link">
+                <span><i class="fab fa-twitter"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="team-box wow zoomIn delay-.5s">
+            <div class="team-box_img">
+              <img src="img/team-3.jpg" alt="team-3">
+            </div>
+            <h4 class="team-box_name">Ram Chanda</h4>
+            <h6 class="team-box_post">Volunteer</h6>
+            <div class="team-box_social">
+              <a href="https://facebook.com" target='_blank' class="team-box_social-link">
+                <span><i class="fab fa-facebook-f"></i></span>
+              </a>
+              <a href="https://instagram.com" target='_blank' class="team-box_social-link">
+                <span><i class="fab fa-instagram"></i></span>
+              </a>
+              <a href="https://twitter.com" target='_blank' class="team-box_social-link">
+                <span><i class="fab fa-twitter"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- Upcoming event section -->
+  <!-- ============================================ -->
+
+  <section class="section-upcoming_events about-page__upcoming-events">
+    <div class="container">
+      <div class="row">
+        <!-- ================= Upcoming events heading box ================= -->
+        <div class="col-sm-12">
+          <div class="upcoming-events__top-row wow fadeInUp delay-.4s">
+            <div class="heading-box">
+              <p class="section-intro__sml-text">EVENTS</p>
+              <h2 class="heading-secondary">Upcoming Events</h2>
+            </div>
+
+            <div class="see-all__btn-box">
+              <a href="#" class="see-all__btn-box_btn">See all</a>
+            </div>
+          </div>
+        </div>
+        <!-- ================= Upcoming events event box ================= -->
+
+        <!-- ------------ Upcoming events event box 1 ------------ -->
+        <div class="col-md-3 col-sm-12">
+          <div class="event-box wow fadeIn delay-.5s">
+            <div class="event-box_img">
+              <img src="img/blog-3.jpg" alt="event box pic 1" class="img-fluid">
+            </div>
+            <div class="event-box_text">
+              <div class="event-box_text-date">
+                <span><i class="far fa-calendar-alt"></i></span>03 March 2019
+              </div>
+              <h4 class="event-box_text-heading">Increasing Prosperity With Positive Thinking</h4>
+              <div class="event-box_text-post_by">
+                By <span> Abdullah</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ------------ Upcoming events event box 2 ------------ -->
+        <div class="col-md-3 col-sm-12">
+          <div class="event-box wow fadeIn delay-.5s">
+            <div class="event-box_img">
+              <img src="img/camp-6.jpg" alt="event box pic 2" class="img-fluid">
+            </div>
+            <div class="event-box_text">
+              <div class="event-box_text-date">
+                <span><i class="far fa-calendar-alt"></i></span>03 March 2019
+              </div>
+              <h4 class="event-box_text-heading">Increasing Prosperity With Positive Thinking</h4>
+              <div class="event-box_text-post_by">
+                By <span> Abdullah</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ------------ Upcoming events event box 3 ------------ -->
+        <div class="col-md-3 col-sm-12">
+          <div class="event-box wow fadeIn delay-.5s">
+            <div class="event-box_img">
+              <img src="img/camp-4.jpg" alt="event box pic 3" class="img-fluid">
+            </div>
+            <div class="event-box_text">
+              <div class="event-box_text-date">
+                <span><i class="far fa-calendar-alt"></i></span>03 March 2019
+              </div>
+              <h4 class="event-box_text-heading">Increasing Prosperity With Positive Thinking</h4>
+              <div class="event-box_text-post_by">
+                By <span> Abdullah</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ------------ Upcoming events event box 4 ------------ -->
+        <div class="col-md-3 col-sm-12">
+          <div class="event-box wow fadeIn delay-.5s">
+            <div class="event-box_img">
+              <img src="img/blog-5.jpg" alt="event box pic 4" class="img-fluid">
+            </div>
+            <div class="event-box_text">
+              <div class="event-box_text-date">
+                <span><i class="far fa-calendar-alt"></i></span>03 March 2019
+              </div>
+              <h4 class="event-box_text-heading">Increasing Prosperity With Positive Thinking</h4>
+              <div class="event-box_text-post_by">
+                By <span> Abdullah</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- About journey section -->
+  <!-- ============================================ -->
+
+  <section class="section-charitable_blogs">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <!-- ================= Our work heading box ================= -->
+          <div class="charitable-blogs__top-row wow fadeInUp delay-.4s">
+            <div class="heading-box">
+              <p class="section-intro__sml-text">OUR JOURNEY</p>
+              <h2 class="heading-secondary">Some stories about our journey</h2>
+            </div>
+
+            <div class="see-all__btn-box">
+              <a href="#" class="see-all__btn-box_btn">See all</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= Our work charitable blogs box ================= -->
+        <div class="col-sm-12">
+          <div class="Blogs-carousel_box wow fadeIn delay-.5s">
+            <div class="loop owl-carousel owl-theme">
+              <!-- ------------ Acive campaing carousel box item 1 ------------ -->
+              <div class="item">
+                <div class="charitable-blogs__box">
+                  <div class="charitable-blogs__box-img_box">
+                    <img src="img/journey-2.jpg" alt="journey-1">
+                  </div>
+                  <div class="charitable-blogs__box-text_box">
+                    <p class="charitable-blogs__box-text_box-tp__sml-text">
+                      <span class="journey-stories_calender-icon__right-margin"><i
+                          class="far fa-calendar-alt"></i></span> 29/04/1997
+                    </p>
+                    <h4 class="charitable-blogs__box-text_box-heading">Collaborate With Team Members To Rise</h4>
+                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore molestias
+                      repellendus dolor.</p>
+                    <div class="charitable-blogs__box-text_box-btm__grp">
+                      <a href="#" class="button button--green">
+                        <span><i class="far fa-eye"></i></span> View story</a>
+                      <a href="#" class="share-icon__blog">
+                        <i class="fas fa-share-alt"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ------------ Acive campaing carousel box item 2 ------------ -->
+              <div class="item">
+                <div class="charitable-blogs__box">
+                  <div class="charitable-blogs__box-img_box">
+                    <img src="img/journey-3.jpg" alt="journey-2">
+                  </div>
+                  <div class="charitable-blogs__box-text_box">
+                    <p class="charitable-blogs__box-text_box-tp__sml-text">
+                      <span class="journey-stories_calender-icon__right-margin"><i
+                          class="far fa-calendar-alt"></i></span> 29/04/1997
+                    </p>
+                    <h4 class="charitable-blogs__box-text_box-heading">Collaborate With Team Members To Rise</h4>
+                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore molestias
+                      repellendus dolor.</p>
+                    <div class="charitable-blogs__box-text_box-btm__grp">
+                      <a href="#" class="button button--green">
+                        <span><i class="far fa-eye"></i></span> View story</a>
+                      <a href="#" class="share-icon__blog">
+                        <i class="fas fa-share-alt"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ------------ Acive campaing carousel box item 3 ------------ -->
+              <div class="item">
+                <div class="charitable-blogs__box">
+                  <div class="charitable-blogs__box-img_box">
+                    <img src="img/blog-3.jpg" alt="blog 3">
+                  </div>
+                  <div class="charitable-blogs__box-text_box">
+                    <p class="charitable-blogs__box-text_box-tp__sml-text">
+                      <span class="journey-stories_calender-icon__right-margin"><i
+                          class="far fa-calendar-alt"></i></span> 29/04/1997
+                    </p>
+                    <h4 class="charitable-blogs__box-text_box-heading">Collaborate With Team Members To Rise</h4>
+                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore molestias
+                      repellendus dolor.</p>
+                    <div class="charitable-blogs__box-text_box-btm__grp">
+                      <a href="#" class="button button--green">
+                        <span><i class="far fa-eye"></i></span> View story</a>
+                      <a href="#" class="share-icon__blog">
+                        <i class="fas fa-share-alt"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ------------ Acive campaing carousel box item 4 ------------ -->
+              <div class="item">
+                <div class="charitable-blogs__box">
+                  <div class="charitable-blogs__box-img_box">
+                    <img src="img/blog-4.jpg" alt="blog 4">
+                  </div>
+                  <div class="charitable-blogs__box-text_box">
+                    <p class="charitable-blogs__box-text_box-tp__sml-text">
+                      <span class="journey-stories_calender-icon__right-margin"><i
+                          class="far fa-calendar-alt"></i></span> 29/04/1997
+                    </p>
+                    <h4 class="charitable-blogs__box-text_box-heading">Collaborate With Team Members To Rise</h4>
+                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore molestias
+                      repellendus dolor.</p>
+                    <div class="charitable-blogs__box-text_box-btm__grp">
+                      <a href="#" class="button button--green">
+                        <span><i class="far fa-eye"></i></span> View story</a>
+                      <a href="#" class="share-icon__blog">
+                        <i class="fas fa-share-alt"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ------------ Acive campaing carousel box item 5 ------------ -->
+              <div class="item">
+                <div class="charitable-blogs__box">
+                  <div class="charitable-blogs__box-img_box">
+                    <img src="img/blog-5.jpg" alt="blog 5">
+                  </div>
+                  <div class="charitable-blogs__box-text_box">
+                    <p class="charitable-blogs__box-text_box-tp__sml-text">
+                      <span class="journey-stories_calender-icon__right-margin"><i
+                          class="far fa-calendar-alt"></i></span> 29/04/1997
+                    </p>
+                    <h4 class="charitable-blogs__box-text_box-heading">Collaborate With Team Members To Rise</h4>
+                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore molestias
+                      repellendus dolor.</p>
+                    <div class="charitable-blogs__box-text_box-btm__grp">
+                      <a href="#" class="button button--green">
+                        <span><i class="far fa-eye"></i></span> View story</a>
+                      <a href="#" class="share-icon__blog">
+                        <i class="fas fa-share-alt"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ------------ Acive campaing carousel box item 6 ------------ -->
+              <div class="item">
+                <div class="charitable-blogs__box">
+                  <div class="charitable-blogs__box-img_box">
+                    <img src="img/blog-6.jpg" alt="blog 6">
+                  </div>
+                  <div class="charitable-blogs__box-text_box">
+                    <p class="charitable-blogs__box-text_box-tp__sml-text">
+                      <span class="journey-stories_calender-icon__right-margin"><i
+                          class="far fa-calendar-alt"></i></span> 29/04/1997
+                    </p>
+                    <h4 class="charitable-blogs__box-text_box-heading">Collaborate With Team Members To Rise</h4>
+                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore molestias
+                      repellendus dolor.</p>
+                    <div class="charitable-blogs__box-text_box-btm__grp">
+                      <a href="#" class="button button--green">
+                        <span><i class="far fa-eye"></i></span> View story</a>
+                      <a href="#" class="share-icon__blog">
+                        <i class="fas fa-share-alt"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ------------ Acive campaing carousel box item 7 ------------ -->
+              <div class="item">
+                <div class="charitable-blogs__box">
+                  <div class="charitable-blogs__box-img_box">
+                    <img src="img/journey-1.jpg" alt="journey-7">
+                  </div>
+                  <div class="charitable-blogs__box-text_box">
+                    <p class="charitable-blogs__box-text_box-tp__sml-text">
+                      <span class="journey-stories_calender-icon__right-margin"><i
+                          class="far fa-calendar-alt"></i></span> 29/04/1997
+                    </p>
+                    <h4 class="charitable-blogs__box-text_box-heading">Collaborate With Team Members To Rise</h4>
+                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore molestias
+                      repellendus dolor.</p>
+                    <div class="charitable-blogs__box-text_box-btm__grp">
+                      <a href="#" class="button button--green">
+                        <span><i class="far fa-eye"></i></span> View story</a>
+                      <a href="#" class="share-icon__blog">
+                        <i class="fas fa-share-alt"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- ============================================ -->
+  <!-- Footer section -->
+  <!-- ============================================ -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <!-- ================= Footer top row ================= -->
+
+        <!-- ------------ Footer top row box 1 ------------ -->
+        <div class="col-md-3 col-sm-12">
+          <div class="footer-top_box">
+            <div class="footer-top_box-heading">
+              <div class="logo-box">
+                <a href="index.php" class="logo-box__link">
+                  <p class="logo-box__text">Adop<span>ter</span></p>
+                </a>
+              </div>
+            </div>
+            <div class="footer-top_box-details">
+              <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt non voluptatem tenetur
+                cum commodi numquam, at nemo quae iusto aliquid? Animi, esse amet! Ea rem ducimus beatae laudantium
+                dolor eligendi!</p>
+            </div>
+          </div>
+        </div>
+        <!-- ------------ Footer top row box 2 ------------ -->
+        <div class="col-md-3 col-sm-12">
+          <div class="footer-top_box">
+            <div class="footer-top_box-heading">
+              <p>Navigations</p>
+            </div>
+            <!-- ---- Navigation pages link ---- -->
+            <div class="footer-top_box-details">
+              <ul class="footer-top_box-details__ul">
+                <li class="li footer-top_box-details__ul-li">
+                  <a href="index.html" class="footer-top_box-details__ul-li__link"><span></span>Home</a>
+                </li>
+                <li class="li footer-top_box-details__ul-li">
+                  <a href="about.html" class="footer-top_box-details__ul-li__link"><span></span>About</a>
+                </li>
+                <li class="li footer-top_box-details__ul-li">
+                  <a href="our_works.html" class="footer-top_box-details__ul-li__link"><span></span>Our work</a>
+                </li>
+                <li class="li footer-top_box-details__ul-li">
+                  <a href="blogs.html" class="footer-top_box-details__ul-li__link"><span></span>Blogs</a>
+                </li>
+                <li class="li footer-top_box-details__ul-li">
+                  <a href="contact.html" class="footer-top_box-details__ul-li__link"><span></span>Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- ------------ Footer top row box 3 ------------ -->
+        <div class="col-md-3 col-sm-12">
+          <div class="footer-top_box">
+            <div class="footer-top_box-heading">
+              <p>Resources</p>
+            </div>
+            <!-- ---- Navigation resource pages link ---- -->
+            <div class="footer-top_box-details">
+              <div class="footer-top_box-details">
+                <ul class="footer-top_box-details__ul">
+                  <li class="li footer-top_box-details__ul-li">
+                    <a href="sitemap.html" class="footer-top_box-details__ul-li__link"><span></span>Site map</a>
+                  </li>
+                  <li class="li footer-top_box-details__ul-li">
+                    <a href="#" class="footer-top_box-details__ul-li__link"><span></span>Help and support</a>
+                  </li>
+                  <li class="li footer-top_box-details__ul-li">
+                    <a href="#" class="footer-top_box-details__ul-li__link"><span></span>Privacy and policy</a>
+                  </li>
+                  <li class="li footer-top_box-details__ul-li">
+                    <a href="#" class="footer-top_box-details__ul-li__link"><span></span>User agreement</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ------------ Footer top row box 4 ------------ -->
+        <div class="col-md-3 col-sm-12">
+          <div class="footer-top_box">
+            <div class="footer-top_box-heading">
+              <p>Contact</p>
+            </div>
+            <div class="footer-top_box-details">
+              <div class="footer-top_box-details__contact">
+                <span><i class="fas fa-map-marker-alt"></i></span>
+                <p>Center sinthi road, Dumdum, Kolkata - 700109</p>
+              </div>
+              <div class="footer-top_box-details__contact">
+                <span><i class="fas fa-phone-alt"></i></span>
+                <p>+1 (454) 556-5656</p>
+              </div>
+              <div class="footer-top_box-details__contact">
+                <span><i class="fas fa-envelope"></i></span>
+                <p>info@adopter.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= Footer bottom row ================= -->
+
+        <!-- ------------ Footer bottom row box 1 ------------ -->
+        <div class="col-md-6 col-sm-12">
+          <div class="footer-bottom_box">
+            <div class="footer-bottom_box-heading">
+              <p>Follow us on social</p>
+            </div>
+            <!-- ------------ Footer bottom row social links ------------ -->
+            <div class="footer-bottom_box-details">
+              <div class="footer-bottom_box-details__social">
+                <a href="#" class="footer-bottom_box-details__social-link wow heartBeat delay-.5s">
+                  <span><i class="fab fa-facebook-f"></i></span>
+                </a>
+                <a href="#" class="footer-bottom_box-details__social-link wow heartBeat delay-1s">
+                  <span><i class="fab fa-instagram"></i></span>
+                </a>
+                <a href="#" class="footer-bottom_box-details__social-link wow heartBeat delay-2s">
+                  <span><i class="fab fa-twitter"></i></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ------------ Footer bottom row box 2 ------------ -->
+        <div class="col-md-6 col-sm-12">
+          <div class="footer-bottom_box">
+            <div class="footer-bottom_box-heading">
+              <p>We accept</p>
+            </div>
+            <!-- ------------ Footer bottom row donation icons ------------ -->
+            <div class="footer-bottom_box-details">
+              <div class="footer-bottom_box-details__donate">
+                <span><i class="fab fa-cc-visa"></i></span>
+                <span><i class="fab fa-cc-paypal"></i></span>
+                <span><i class="fab fa-cc-jcb"></i></span>
+                <span><i class="fab fa-cc-apple-pay"></i></span>
+                <span><i class="fab fa-cc-amazon-pay"></i></span>
+                <span><i class="fab fa-cc-stripe"></i></span>
+                <span><i class="fab fa-cc-mastercard"></i></span>
+                <span><i class="fab fa-cc-amex"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-dark__bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <div class="footer-dark__bottom-left_box">
+              <p>Copyright By@Adopter 2020. All rights reserved.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="footer-dark__bottom-right_box">
+              <p>This beautiful website Designed by - <span><a href="#">‘ Pixabuddy ’</a></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+  <!-- ============================================ -->
+  <!-- Script part -->
+  <!-- ============================================ -->
+  <!-- jQuery library -->
+  <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!-- jQuery library for ui-->
+  <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <!-- Latest Owl carousel js -->
+  <script src="js/vendor/owl.carousel.min.js"></script>
+
+  <!-- Latest Waypoint jquery plugin for sticky navi js -->
+  <script src="js/vendor/jquery.waypoints.min.js"></script>
+
+  <!-- Counter js -->
+  <script src="js/vendor/jquery.rcounter.js"></script>
+
+  <!-- My script -->
+  <script type="text/javascript" src="js/script.js"></script>
+
+  <!-- Wow js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    new WOW().init();
+
+  </script>
+
+  <!--for back to top-->
+  <script src="js/vendor/jquery-backToTop.min.js"></script>
+  <script>
+    var $button = $.backToTop({
+      theme: 'fawesome'
+    });
+
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/fontawesome.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/brands.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/solid.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/regular.min.js"></script>
+
+
+</body>
+
+</html>
