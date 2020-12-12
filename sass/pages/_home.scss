@@ -149,18 +149,6 @@
 
 						&_hello-text {
 							padding-bottom: 5px;
-
-							img {
-								width: auto;
-								height: 42px;
-								margin-top: -18px;
-								transform: rotate(20deg);
-								animation: helloPixabuddy 1.3s linear infinite;
-
-								@include respond(phone) {
-									height: 36px;
-								}
-							}
 						}
 
 						&_intro-text {
@@ -585,7 +573,7 @@
 
 		.paragraph {
 			width: 100%;
-			margin-top: 2rem;
+			margin-top: 1rem !important;
 
 			@include respond(tab-land) {
 				width: 90%;

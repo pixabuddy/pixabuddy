@@ -27,23 +27,3 @@ if ($conn->query($sql) === TRUE) {
 $conn->close();
 
 ?>
-
-
-<?php
-
-if($_POST){
-    function getCaptcha($SecretKey){
-        $Response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret="."6Lel5qcZAAAAAPiV70I2BuM2iY5wH5Ht8NVrv29C"."&response={$SecretKey}");
-        $Return = json_decode($Response);
-        return $Return;
-    }
-    $Return = getCaptcha($_POST['g-recaptcha-response']);
-    //var_dump($Return);
-    if($Return->success == true && $Return->score > 0.5){
-        echo "Succes!";
-    }else{
-        echo "You are a Robot!!";
-    }
-}
-
-?>

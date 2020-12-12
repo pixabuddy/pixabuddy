@@ -21,33 +21,13 @@ if ($conn->connect_error) {
 $sql = "INSERT INTO contact (Name, Email, Subject, Phone, Message)
 VALUES ('$name', '$email', '$subject', '$phone', '$message')";
 
-// if ($conn->query($sql) === TRUE) {
-//   echo "New record created successfully";
-// } else {
-//   echo "Error: " . $sql . "<br>" . $conn->error;
-// }
+if ($conn->query($sql) === TRUE) {
+  echo "New record created successfully";
+} else {
+  echo "Error: " . $sql . "<br>" . $conn->error;
+}
 
 $conn->close();
 
 ?>
 
-
-
-<?php
-
-if($_POST){
-    function getCaptcha($SecretKey){
-        $Response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret="."6Lel5qcZAAAAAPiV70I2BuM2iY5wH5Ht8NVrv29C"."&response={$SecretKey}");
-        $Return = json_decode($Response);
-        return $Return;
-    }
-    $Return = getCaptcha($_POST['g-recaptcha-response']);
-    //var_dump($Return);
-    if($Return->success == true && $Return->score > 0.5){
-        echo "Succes!";
-    }else{
-        echo "You are a Robot!!";
-    }
-}
-
-?>

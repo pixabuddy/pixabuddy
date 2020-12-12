@@ -2,102 +2,107 @@
 	<urlset xmlns="http://www.google.com/schemas/sitemap/0.84" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 		<url>
 			<loc>https://www.pixabuddy.com/</loc>
-			<changefreq>weekly</changefreq>
+			<changefreq>yearly</changefreq>
 		</url>
 
 		<url>
-			<loc>https://www.pixabuddy.com/about.html</loc>
-			<changefreq>weekly</changefreq>
+			<loc>http://pixabuddy.com/</loc>
+			<changefreq>yearly</changefreq>
 		</url>
 
 		<url>
-			<loc>https://www.pixabuddy.com/work.html</loc>
-			<changefreq>weekly</changefreq>
+			<loc>https://www.pixabuddy.com/about/</loc>
+			<changefreq>yearly</changefreq>
 		</url>
 
 		<url>
-			<loc>https://www.pixabuddy.com/freebies.html</loc>
-			<changefreq>weekly</changefreq>
+			<loc>https://www.pixabuddy.com/work/</loc>
+			<changefreq>yearly</changefreq>
 		</url>
 
 		<url>
-			<loc>https://www.pixabuddy.com/resources.html</loc>
-			<changefreq>weekly</changefreq>
+			<loc>https://www.pixabuddy.com/freebies/</loc>
+			<changefreq>yearly</changefreq>
 		</url>
 
 		<url>
-			<loc>https://www.pixabuddy.com/contact.html</loc>
-			<changefreq>weekly</changefreq>
+			<loc>https://www.pixabuddy.com/resources/</loc>
+			<changefreq>yearly</changefreq>
+		</url>
+
+		<url>
+			<loc>https://www.pixabuddy.com/contact/</loc>
+			<changefreq>yearly</changefreq>
 		</url>
 
 		<url>
 			<loc>https://www.pixabuddy.com/#section-home_work</loc>
-			<changefreq>weekly</changefreq>
+			<changefreq>yearly</changefreq>
 		</url>
 
 		<url>
 			<loc>https://www.pixabuddy.com/assets/mycv.pdf</loc>
-			<changefreq>weekly</changefreq>
+			<changefreq>yearly</changefreq>
 		</url>
 
 		<url>
-			<loc>https://www.pixabuddy.com/resources.html#resource-html</loc>
-			<changefreq>weekly</changefreq>
+			<loc>https://www.pixabuddy.com/resources/#resource-html</loc>
+			<changefreq>yearly</changefreq>
 		</url>
 
 		<url>
-			<loc>https://www.pixabuddy.com/resources.html#resource-css</loc>
-			<changefreq>weekly</changefreq>
+			<loc>https://www.pixabuddy.com/resources/#resource-css</loc>
+			<changefreq>yearly</changefreq>
 		</url>
 
 		<url>
-			<loc>https://www.pixabuddy.com/resources.html#resource-images</loc>
-			<changefreq>weekly</changefreq>
+			<loc>https://www.pixabuddy.com/resources/#resource-images</loc>
+			<changefreq>yearly</changefreq>
 		</url>
 
 		<url>
-			<loc>https://www.pixabuddy.com/resources.html#resource-colors</loc>
-			<changefreq>weekly</changefreq>
+			<loc>https://www.pixabuddy.com/resources/#resource-colors</loc>
+			<changefreq>yearly</changefreq>
 		</url>
 
 		<url>
-			<loc>https://www.pixabuddy.com/resources.html#resource-fonts</loc>
-			<changefreq>weekly</changefreq>
+			<loc>https://www.pixabuddy.com/resources/#resource-fonts</loc>
+			<changefreq>yearly</changefreq>
 		</url>
 
 		<url>
-			<loc>https://www.pixabuddy.com/resources.html#resource-icons</loc>
-			<changefreq>weekly</changefreq>
+			<loc>https://www.pixabuddy.com/resources/#resource-icons</loc>
+			<changefreq>yearly</changefreq>
 		</url>
 
 		<url>
 			<loc>https://www.pixabuddy.com/#</loc>
-			<changefreq>weekly</changefreq>
+			<changefreq>yearly</changefreq>
 		</url>
 
 		<url>
-			<loc>https://www.pixabuddy.com/work.html#work_carousel-design</loc>
-			<changefreq>weekly</changefreq>
+			<loc>https://www.pixabuddy.com/work/#work_carousel-design</loc>
+			<changefreq>yearly</changefreq>
 		</url>
 
 		<url>
-			<loc>https://www.pixabuddy.com/cdn-cgi/l/email-protection#9cfdfef4f5eff4f9f7dcecf5e4fdfee9f8f8e5b2fff3f1a3efe9fef6f9ffe8a1d2f9ebbceceef3f6f9ffe8</loc>
-			<changefreq>weekly</changefreq>
+			<loc>https://www.pixabuddy.com/cdn-cgi/l/email-protection#e0818288899388858ba0908998818295848499ce838f8ddf9395828a858394ddae8597c090928f8a858394</loc>
+			<changefreq>yearly</changefreq>
 		</url>
 
 		<url>
-			<loc>https://pixabuddy.com/sitemap.xml</loc>
-			<changefreq>weekly</changefreq>
+			<loc>http://pixabuddy.com/sitemap.xml</loc>
+			<changefreq>yearly</changefreq>
 		</url>
 
 		<url>
 			<loc>https://www.pixabuddy.com/tel:+91-7908-018-278</loc>
-			<changefreq>weekly</changefreq>
+			<changefreq>yearly</changefreq>
 		</url>
 
 		<url>
-			<loc>https://www.pixabuddy.com/cdn-cgi/l/email-protection#2c4d4e44455f4449476c5c45544d4e59484855024f4341135f594e46494f581164494040430d</loc>
-			<changefreq>weekly</changefreq>
+			<loc>https://www.pixabuddy.com/cdn-cgi/l/email-protection#ccadaea4a5bfa4a9a78cbca5b4adaeb9a8a8b5e2afa3a1f3bfb9aea6a9afb8f184a9a0a0a3ed</loc>
+			<changefreq>yearly</changefreq>
 		</url>
 
 	</urlset>
