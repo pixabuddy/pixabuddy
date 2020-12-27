@@ -8,7 +8,7 @@
 		height: auto;
 		background-color: #fff;
 		border-radius: 12px;
-		box-shadow: 0 5px 16px #010f1a12;
+		box-shadow: 0 4px 30px #010f1a14;
 		overflow: hidden;
 		margin-top: 40px;
 		@include flex-column;
@@ -21,8 +21,8 @@
 		}
 
 		&:hover {
-			box-shadow: 0 12px 20px -5px #00cefe1c;
-			transform: scale(1.04);
+			box-shadow: 0 4px 30px #010f1a1a;
+			transform: scale(1.02);
 		}
 
 		&_img {
@@ -34,7 +34,20 @@
 		}
 
 		&_text {
-			padding: 3rem 3.5rem 4rem 3.5rem;
+			padding: 3.2rem 3.5rem 2rem 3.5rem;
+			display: flex;
+			justify-content: space-between;
+			position: relative;
+
+			&::after {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 2px;
+				border-top: 1.2rem groove $color-primary;
+			}
 
 			@include respond(big-desktop) {
 				padding: 3rem 2.2rem;
@@ -70,6 +83,11 @@
 				}
 			}
 		}
+
+		.btn-text:link, 
+		.btn-text:visited {
+			padding: 0;
+		}
 	}
 
 	.heading-para {
@@ -91,6 +109,7 @@
 
 .carousel_design {
 	.button-text_box {
+		margin-top: 5rem;
 
 		@include respond(tab-land) {
 			margin-top: 5rem;

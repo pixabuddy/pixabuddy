@@ -11,7 +11,7 @@
 		height: auto;
 		border-radius: 10px;
 		overflow: hidden;
-		box-shadow: 0 5px 16px #010f1a12;
+		box-shadow: 0 4px 30px #010f1a14;
 		transition: all 0.2s;
 
 		@include flex-column;
@@ -23,7 +23,8 @@
 		}
 
 		&:hover {
-			box-shadow: 0 12px 20px -5px #00cefe1c;
+			box-shadow: 0 4px 30px #010f1a1a;
+			transform: scale(1.02);
 		}
 
 		&-img_box {
@@ -97,9 +98,9 @@
 
 			.blog-details {
 				@extend .paragraph;
-				font-size: 1.6rem;
-				line-height: 2.6rem;
-				margin-top: 2.2rem;
+				font-size: 1.5rem;
+				line-height: 2.4rem;
+				margin-top: 1.2rem;
 				color: $color-grey-dark-2;
 				margin-bottom: 0 !important;
 
@@ -127,7 +128,7 @@
 				justify-content: space-between;
 				align-items: center;
 				padding: 1.5rem 0;
-				margin-top: 2.4rem;
+				margin-top: 8px;
 
 				@include respond(big-desktop) {
 					margin-top: 1.8rem;

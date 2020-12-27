@@ -679,7 +679,7 @@
 				padding: 2rem 0;
 				background-color: $color-white;
 				border-radius: 8px;
-				box-shadow: 0 5px 16px #010f1a12;
+				box-shadow: 0 14px 32px #010f1a0f;
 				transition: all 0.2s;
 
 				@include flex-column_center;
@@ -687,11 +687,11 @@
 				@include respond(phone) {
 					width: 47%;
 					margin-top: 2.4rem !important;
-					box-shadow: 0 6px 18px #010f1a12;
+					box-shadow: 0 6px 18px #010f1a0f;
 				}
 
 				&:hover {
-					box-shadow: 0 12px 20px -5px #00cefe1c;
+					box-shadow: 0 12px 20px -5px #010f1a12;
 					transform: scale(1.04);
 				}
 
