@@ -22,7 +22,11 @@ $sql = "INSERT INTO contact (Name, Email, Subject, Phone, Message)
 VALUES ('$name', '$email', '$subject', '$phone', '$message')";
 
 if ($conn->query($sql) === TRUE) {
-  echo "New record created successfully";
+  ?>
+    <script type="text/javascript">
+    window.location = "../thank-you/";
+    </script>      
+  <?php
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }

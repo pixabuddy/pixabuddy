@@ -6,11 +6,11 @@
 	padding: 5rem 6rem;
 	background-color: $color-white;
 	border-radius: 15px;
-	box-shadow: 3px 18px 28px rgba(225,226,230,.4);
+	box-shadow: 3px 18px 28px #010f1a0f;
 
 	@include respond(phone) {
-		padding: 32px 20px;
-    margin: 0 15px;
+		padding: 35px 20px 40px 20px;
+    margin: 0 10px;
 	}
 
 	.form-group {

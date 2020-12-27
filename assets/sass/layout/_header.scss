@@ -86,12 +86,12 @@
 }
 
 .menu-icon__line {
-	height: 2px;
+	height: 3px;
 	width: 30px;
 	display: block;
-	border-radius: 10px;
+	border-radius: 20px;
 	background-color: $color-primary-dark;
-	margin-bottom: 7px;
+	margin-bottom: 6px;
 	cursor: pointer;
 	-webkit-transition: background-color 0.5s ease, -webkit-transform 0.2s ease;
 	transition: background-color 0.5s ease, -webkit-transform 0.2s ease;
@@ -117,7 +117,7 @@
 }
 
 body.nav-active .pixabuddy_menu-icon_middle {
-	height: 2px;
+	height: 3px;
 }
 
 .menu-icon__line-right {

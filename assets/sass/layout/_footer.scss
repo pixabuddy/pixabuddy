@@ -75,7 +75,7 @@
 
 				&-follow {
 					&__para {
-						font-size: 1.6rem;
+						font-size: 1.8rem;
 						color: $color-primary-medium-dark;
 						margin-top: 3rem;
 						letter-spacing: -0.02px;
@@ -86,6 +86,7 @@
 
 						@include respond(phone) {
 							width: 100%;
+							font-size: 2rem;
 						}
 					}
 
@@ -142,7 +143,7 @@
 				height: auto;
 
 				@include respond(phone) {
-					border-bottom: 0.4px solid rgba($color-primary-medium-dark, 0.2);
+					border-bottom: 1px dashed rgba($color-primary-medium-dark, 0.4);
 					padding: 2rem 0 !important;
 					@include flex-column_center;
 					flex-wrap: wrap;
@@ -209,6 +210,10 @@
 									text-decoration: none;
 									color: $color-primary;
 								}
+
+								@include respond(phone) {
+									font-size: 1.8rem;
+								}
 							}
 						}
 					}
@@ -229,6 +234,10 @@
 						padding: 5px 2rem 5px 0;
 						font-size: 1.6rem;
 						transition: all 0.3s;
+
+						@include respond(phone) {
+							font-size: 1.8rem;
+						}
 
 						&_first {
 							margin-right: 15px;
@@ -257,7 +266,8 @@
 							transition: all 0.3s;
 
 							@include respond(phone) {
-								margin-right: 15px;
+								margin-right: 9px;
+								font-size: 2rem;
 							}
 						}
 					}
@@ -312,7 +322,8 @@
 							}
 
 							@include respond(phone) {
-								font-size: 1.7rem;
+								font-size: 1.8rem;
+								line-height: 3rem;
 							}
 						}
 					}
@@ -325,14 +336,10 @@
 		@include flex-row_center;
 
 		&_text {
-			font-family: $heading-semibold;
+			font-family: $heading-bold;
 			color: $color-primary;
 			font-size: 3.2rem;
 			-webkit-user-select: none;
-
-			@include respond(phone) {
-				font-size: 2.5rem;
-			}
 		}
 	}
 

@@ -25,6 +25,10 @@
 			transform: scale(1.02);
 		}
 
+		@include respond(phone) {
+			margin-top: 28px;
+		}
+
 		&_img {
 			width: 100%;
 			img {
@@ -75,10 +79,18 @@
 					font-size: 1.5rem;
 					color: $color-grey-dark;
 
+					@include respond(phone) {
+						font-size: 1.7rem;
+					}
+
 					span {
 						color: $color-primary;
 						font-size: 1.6rem;
 						margin-right: 8px;
+
+						@include respond(phone) {
+							font-size: 1.85rem;
+						}
 					}
 				}
 			}

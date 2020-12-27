@@ -24,8 +24,7 @@
 			height: 70px;
 			border-radius: 50%;
 			background-color: $color-white;
-			// box-shadow: 0.5rem 1rem 2rem -0.3rem rgba($color-primary, 0.1);
-			box-shadow: 2px 4px 9px #010f1a1c;
+			box-shadow: 0 3px 6px #010f1a12;
 			padding: 4px;
 
 			@include respond(tab-land) {

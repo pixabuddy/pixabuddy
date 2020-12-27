@@ -19,7 +19,11 @@ $sql = "INSERT INTO subscribe (Name, Email)
 VALUES ('$name', '$email')";
 
 if ($conn->query($sql) === TRUE) {
-  echo "New record created successfully";
+  ?>
+    <script type="text/javascript">
+    window.location = "../thank-you/";
+    </script>      
+  <?php
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
