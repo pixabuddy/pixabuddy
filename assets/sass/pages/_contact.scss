@@ -129,22 +129,22 @@
 
 		&_box {
 			display: flex;
-			width: 300px;
+			// width: 300px;
 			margin-top: 2.5rem;
 			@include flex-row_center;
 			flex-wrap: wrap;
 
-			@include respond(big-desktop) {
-				width: 265px;
-			}
+			// @include respond(big-desktop) {
+			// 	width: 265px;
+			// }
 
-			@include respond(tab-land) {
-				width: 180px;
-			}
+			// @include respond(tab-land) {
+			// 	width: 180px;
+			// }
 
-			@include respond(tab-port) {
-				width: 130px;
-			}
+			// @include respond(tab-port) {
+			// 	width: 130px;
+			// }
 
 			@include respond(phone) {
 				width: 100% !important;

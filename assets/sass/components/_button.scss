@@ -230,7 +230,7 @@
 	padding: 16px 24px;
 	text-decoration: none !important;
 	border-radius: 12px;
-	box-shadow: -2px 5px 20px #0000002e;
+	box-shadow: -2px 5px 20px #00000017;
 	z-index: 1000;
 	transition: all .2s;
 
@@ -250,7 +250,7 @@
 		img {
 			width: 24px;
 			height: auto;
-			margin-right: 3px;
+			margin-right: 5px;
 		}
 	}
 
@@ -285,10 +285,10 @@
     align-items: center;
     color: #010f1a;
     font-family: Mulish-Medium;
-    padding: 10px;
+    padding: 6px;
     text-decoration: none !important;
     border-radius: 50%;
-		box-shadow: inset 0px 0px 7px #010f1a26, -2px 5px 20px #010f1a1f;
+		box-shadow: -2px 5px 26px #010f1a1f;
 		border: 2px solid #fff;
     z-index: 1000;
     transition: all .2s;
