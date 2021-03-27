@@ -225,7 +225,7 @@ body {
 	@include flex-column_center;
 
 	.animated-bar {
-		content: "";
+		content: '';
 		display: block;
 		height: 4px;
 		left: 0;
@@ -251,7 +251,7 @@ body {
 			animation-name: barAnimation;
 			animation-timing-function: linear;
 			background-color: $color-grey-light-1;
-			content: "";
+			content: '';
 			height: 100%;
 			position: absolute;
 			top: 0;
@@ -271,7 +271,7 @@ body {
 .heading-para {
 	@extend .paragraph;
 	color: $color-primary-medium-dark;
-	margin-top: 4rem;
+	margin-top: 3rem;
 	letter-spacing: -0.15px;
 	width: 65%;
 	font-size: 1.8rem;

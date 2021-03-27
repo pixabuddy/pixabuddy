@@ -28,13 +28,13 @@
 				padding-right: 3px;
 
 				img {
-					height: 55px;
+					height: 46px;
 
 					-webkit-user-drag: none;
 					-webkit-user-select: none;
 
 					@include respond(big-desktop) {
-						height: 70px;
+						height: 55px;
 					}
 
 					@include respond(tab-land) {
@@ -42,11 +42,11 @@
 					}
 
 					@include respond(tab-port) {
-						height: 40px;
+						height: 36px;
 					}
 
 					@include respond(phone) {
-						height: 38px;
+						height: 35px;
 					}
 				}
 			}
@@ -146,7 +146,7 @@ body.nav-active .pixabuddy_menu-icon_middle {
 
 .nav:before,
 .nav:after {
-	content: "";
+	content: '';
 	position: fixed;
 	width: 100vw;
 	height: 100vh;
@@ -247,7 +247,7 @@ body.nav-active .pixabuddy_menu-icon_middle {
 
 			&:after {
 				position: absolute;
-				content: "";
+				content: '';
 				bottom: 50%;
 				margin-top: -2px;
 				left: 50%;

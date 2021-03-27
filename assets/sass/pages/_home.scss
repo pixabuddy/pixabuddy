@@ -192,7 +192,7 @@
 						padding: 0;
 						justify-content: center;
 						margin-left: -3rem;
-    				margin-top: 0;
+						margin-top: 0;
 					}
 
 					@include respond(phone) {
@@ -231,7 +231,7 @@
 						}
 
 						&::before {
-							content: "";
+							content: '';
 							position: absolute;
 							left: 0px;
 							top: 0px;
@@ -264,7 +264,7 @@
 						}
 
 						&::after {
-							content: "";
+							content: '';
 							position: absolute;
 							left: 0px;
 							top: 0px;
@@ -378,7 +378,7 @@
 					}
 
 					@include respond(tab-land) {
-						left: -3rem;
+						left: -5rem;
 					}
 
 					@include respond(phone) {
@@ -689,7 +689,7 @@
 				padding: 2rem 0;
 				background-color: $color-white;
 				border-radius: 8px;
-				box-shadow: 0 14px 32px #010f1a0f;
+				box-shadow: 0 14px 32px $light-shadow;
 				transition: all 0.2s;
 
 				@include flex-column_center;
@@ -697,11 +697,11 @@
 				@include respond(phone) {
 					width: 47%;
 					margin-top: 2.4rem !important;
-					box-shadow: 0 6px 18px #010f1a0f;
+					box-shadow: 0 6px 18px $light-shadow;
 				}
 
 				&:hover {
-					box-shadow: 0 12px 20px -5px #010f1a12;
+					box-shadow: 0 12px 20px -5px $light-shadow-hover;
 					transform: rotate(-4deg) translateY(-5px) scale(1.05);
 				}
 

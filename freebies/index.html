@@ -18,7 +18,11 @@
 			sizes="180x180"
 			href="../assets/img/apple-touch-icon.png"
 		/>
-		<link rel="mask-icon" href="../assets/img/safari-pinned-tab.svg" color="#5bbad5" />
+		<link
+			rel="mask-icon"
+			href="../assets/img/safari-pinned-tab.svg"
+			color="#5bbad5"
+		/>
 		<link rel="icon" href="https://www.pixabuddy.com/assets/img/favicon.ico" />
 		<meta name="msapplication-TileColor" content="#da532c" />
 		<meta name="theme-color" content="#ffffff" />
@@ -88,7 +92,9 @@
 					<li class="nav__list-item">
 						<a href="../work/" class="hover-target">Work</a>
 					</li>
-					<li class="nav__list-item active-nav"><a href="../freebies/" class="hover-target">Freebies</a></li>
+					<li class="nav__list-item active-nav">
+						<a href="../freebies/" class="hover-target">Freebies</a>
+					</li>
 					<li class="nav__list-item">
 						<a href="../resources/" class="hover-target">Resources</a>
 					</li>
@@ -136,22 +142,20 @@
 
 					<div class="col-sm-12 col-md-6">
 						<div class="freebie_box">
-							<img src="../assets/img/freebie.png" alt="Freebie Blank Image">
+							<img src="../assets/img/freebie.png" alt="Freebie Blank Image" />
 						</div>
 					</div>
-
 				</div>
 			</div>
 		</section>
 
-	<!-- ============================================ -->
-  <!-- Subscribe section -->
-  <!-- ============================================ -->
+		<!-- ============================================ -->
+		<!-- Subscribe section -->
+		<!-- ============================================ -->
 
-  <section class="section-subscribe">
+		<!-- <section class="section-subscribe">
     <div class="container">
       <div class="row">
-        <!-- ================= Subscribe heading box ================= -->
         <div class="col-sm-12">
           <div class="heading-box u-margin-bottom-medium">
             <h2 class="heading-secondary wow fadeIn">Get in touch</h2>
@@ -159,23 +163,16 @@
             <p class="heading-para wow pulse">Stay connected, stay updated! <span class="heading-para_span">&#128293;</span></p>
           </div>
         </div>
-        <!-- ================= Subscribe heading box ================= -->
-        <!-- *************** Subscribe heading box offset *************** -->
         <div class="col-md-3 col-md-offset-3"></div>
-        <!-- *************** Subscribe heading box main *************** -->
         <div class="col-md-6 col-sm-12">
           <div class="subscribe-box">
             <form action="includes/subscribe.php" method="post" class="subscribe-box__form u-margin-bottom-medium"
               id="form2" onsubmit="return myFormValidationSubscribe()">
-
-              <!-- *************** Subscribe name field *************** -->
               <div class="form-group subscribe-box__form-name">
                 <label for="name-subscribe"><i class="fas fa-user"></i></label>
                 <input type="text" name="name-subscribe" id="name-subscribe" placeholder="Your name" autocomplete="off">
                 <span id="name_error-text" class="error-text"></span>
               </div>
-
-              <!-- *************** Subscribe email field *************** -->
               <div class="form-group subscribe-box__form-email">
                 <label for="email"><i class="fas fa-envelope"></i></label>
                 <input type="text" name="email-subscribe" id="email-subscribe" placeholder="Email address"
@@ -191,11 +188,57 @@
             </form>
           </div>
         </div>
-        <!-- *************** Subscribe heading box offset *************** -->
         <div class="col-md-3 col-md-offset-3"></div>
       </div>
     </div>
-  </section>
+  </section> -->
+
+		<!-- ============================================ -->
+		<!-- Section your turn part -->
+		<!-- ============================================ -->
+
+		<section class="section-your_turn u-margin-bottom-big">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="heading-box mb-4 wow fadeInUp">
+							<h2 class="heading-secondary">Your turn</h2>
+							<div class="animated-bar"></div>
+							<p class="heading-para">
+								I'm ready to bring bigger and stronger projects
+							</p>
+						</div>
+					</div>
+					<div class="col-sm-12">
+						<div class="your-turn_main">
+							<div class="your-turn_main-left">
+								<div class="your-turn_main-left_box">
+									<a
+										href="mailto:abhishek@pixabuddy.com?subject=New project"
+										class="subject-name"
+									>
+										Let’s start a project<span
+											><i class="fas fa-arrow-right"></i
+										></span>
+									</a>
+								</div>
+							</div>
+							<div class="your-turn_main-right">
+								<div class="your-turn_main-right_box">
+									<a
+										href="https://www.buymeacoffee.com/pixabuddy"
+										target="_blank"
+										class="subject-name"
+									>
+										Support me<span><i class="fas fa-arrow-right"></i></span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
 		<!-- ============================================ -->
 		<!-- Footer section -->
@@ -247,18 +290,30 @@
 											<span><i class="fab fa-twitter"></i></span>
 										</a>
 
-										<a href="https://www.behance.net/Pixabuddy" target="_blank" rel="noopener"
-                    class="footer-follow__social-link">
-                    <span><i class="fab fa-behance"></i></span>
-                  </a>
-                  <a href="https://dribbble.com/pixabuddy" target="_blank" rel="noopener"
-                    class="footer-follow__social-link">
-                    <span><i class="fab fa-dribbble"></i></span>
-                  </a>
-                  <a href="https://github.com/pixabuddy" target="_blank" rel="noopener"
-                    class="footer-follow__social-link">
-                    <span><i class="fab fa-github"></i></span>
-                  </a>
+										<a
+											href="https://www.behance.net/Pixabuddy"
+											target="_blank"
+											rel="noopener"
+											class="footer-follow__social-link"
+										>
+											<span><i class="fab fa-behance"></i></span>
+										</a>
+										<a
+											href="https://dribbble.com/pixabuddy"
+											target="_blank"
+											rel="noopener"
+											class="footer-follow__social-link"
+										>
+											<span><i class="fab fa-dribbble"></i></span>
+										</a>
+										<a
+											href="https://github.com/pixabuddy"
+											target="_blank"
+											rel="noopener"
+											class="footer-follow__social-link"
+										>
+											<span><i class="fab fa-github"></i></span>
+										</a>
 									</div>
 								</div>
 							</div>
@@ -287,9 +342,7 @@
 														>
 													</li>
 													<li class="footer-nav_ul-li">
-														<a
-															href="../freebies/"
-															class="footer-nav_ul-li_link"
+														<a href="../freebies/" class="footer-nav_ul-li_link"
 															>Freebies</a
 														>
 													</li>
@@ -391,10 +444,27 @@
 		</footer>
 
 		<!-- Floating visit KiwisMedia Profile btn -->
-		<a href="https://kiwismedia.com/@saha" id="floating_btn-kiwi" target="_blank" rel="noopener">Find me on <span><img src=../assets/img/kiwismedia-logo.png alt="Kiwismedia Icon Image"> KiwisMedia</span></a>
+		<a
+			href="https://kiwismedia.com/@saha"
+			id="floating_btn-kiwi"
+			target="_blank"
+			rel="noopener"
+			>Find me on
+			<span
+				><img src=../assets/img/kiwismedia-logo.png alt="Kiwismedia Icon Image">
+				KiwisMedia</span
+			></a
+		>
 
 		<!-- Floating visit KiwisMedia Profile btn for mobile -->
-		<a href="https://kiwismedia.com/@saha" id="floating_btn-kiwi-mobile" target="_blank" rel="noopener"><img src=../assets/img/kiwismedia-logo.png alt="Kiwismedia Icon Image"></a>
+		<a
+			href="https://kiwismedia.com/@saha"
+			id="floating_btn-kiwi-mobile"
+			target="_blank"
+			rel="noopener"
+			><img src=../assets/img/kiwismedia-logo.png alt="Kiwismedia Icon
+			Image"></a
+		>
 
 		<!-- ============================================ -->
 		<!-- Script part -->
@@ -414,7 +484,7 @@
 		<!-- for Latest back-to-top js version  -->
 		<script>
 			var $button = $.backToTop({
-				theme: "fawesome",
+				theme: 'fawesome'
 			});
 		</script>
 
@@ -424,12 +494,12 @@
 				e.preventDefault();
 				grecaptcha.ready(function () {
 					grecaptcha
-						.execute("6Lel5qcZAAAAABymY-z8OYTEVxtJcBtawo9hjpRR", {
-							action: "submit",
+						.execute('6Lel5qcZAAAAABymY-z8OYTEVxtJcBtawo9hjpRR', {
+							action: 'submit'
 						})
 						.then(function (token) {
 							//console.log(token);
-							document.getElementById("g-recaptcha-response").value = token;
+							document.getElementById('g-recaptcha-response').value = token;
 						});
 				});
 			}
@@ -437,35 +507,38 @@
 
 		<!-- Scripting for kiwi_btn-hiding -->
 		<script>
-			$(document).ready(function(){
-	
-					$(window).scroll(function() {    
-							var scroll = $(window).scrollTop();    
-							if (scroll >= 300) {
-									$("#floating_btn-kiwi").removeClass("floating_btn-kiwi_hide").addClass("floating_btn-kiwi");
-							} else {
-								$("#floating_btn-kiwi").removeClass("floating_btn-kiwi").addClass("floating_btn-kiwi_hide");
-							}
-					});
-			
+			$(document).ready(function () {
+				$(window).scroll(function () {
+					var scroll = $(window).scrollTop();
+					if (scroll >= 300) {
+						$('#floating_btn-kiwi')
+							.removeClass('floating_btn-kiwi_hide')
+							.addClass('floating_btn-kiwi');
+					} else {
+						$('#floating_btn-kiwi')
+							.removeClass('floating_btn-kiwi')
+							.addClass('floating_btn-kiwi_hide');
+					}
+				});
 			});
 		</script>
 
 		<!-- Scripting for kiwi_btn-hiding-mobile -->
 		<script>
-			$(document).ready(function(){
-	
-					$(window).scroll(function() {    
-							var scroll = $(window).scrollTop();    
-							if (scroll >= 300) {
-									$("#floating_btn-kiwi-mobile").removeClass("floating_btn-kiwi_hide-mobile").addClass("floating_btn-kiwi-mobile");
-							} else {
-								$("#floating_btn-kiwi-mobile").removeClass("floating_btn-kiwi-mobile").addClass("floating_btn-kiwi_hide-mobile");
-							}
-					});
-			
+			$(document).ready(function () {
+				$(window).scroll(function () {
+					var scroll = $(window).scrollTop();
+					if (scroll >= 300) {
+						$('#floating_btn-kiwi-mobile')
+							.removeClass('floating_btn-kiwi_hide-mobile')
+							.addClass('floating_btn-kiwi-mobile');
+					} else {
+						$('#floating_btn-kiwi-mobile')
+							.removeClass('floating_btn-kiwi-mobile')
+							.addClass('floating_btn-kiwi_hide-mobile');
+					}
+				});
 			});
 		</script>
-	
 	</body>
 </html>

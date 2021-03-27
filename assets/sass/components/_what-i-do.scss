@@ -3,13 +3,13 @@
 /* ============================================ */
 
 .section__what-i--do {
-	transition: all .2s;
+	transition: all 0.2s;
 
 	.doing-box {
 		padding: 3.6rem 5rem;
 		width: 100%;
 		margin-top: 4rem;
-		box-shadow: 0 16px 32px #010f1a0f;
+		box-shadow: 0 16px 32px $light-shadow;
 		border-radius: 12px;
 		@include flex-row_center;
 		transition: all 0.2s;
@@ -23,12 +23,12 @@
 		@include respond(phone) {
 			padding: 4rem 3.7rem;
 			margin-top: 3rem;
-			box-shadow: 0 12px 24px #010f1a0f;
+			box-shadow: 0 12px 24px $light-shadow;
 		}
 
 		&:hover {
 			margin-top: 3.8rem;
-			box-shadow: 0 16px 32px #010f1a12;
+			box-shadow: 0 16px 32px $light-shadow-hover;
 			transform: scale(1.04);
 
 			.doing-box__top-icon {
@@ -43,7 +43,7 @@
 				width: 92px;
 				height: auto;
 				margin-right: 10px;
-				transition: all .3s;
+				transition: all 0.3s;
 
 				@include respond(phone) {
 					width: 68px;
