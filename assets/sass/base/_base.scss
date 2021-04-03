@@ -49,7 +49,7 @@ html {
 /* ============================================ */
 
 body {
-	border: 2.4rem solid rgba($color-primary-light, 0.6);
+	border: 1.8rem solid rgba($color-primary-light, 0.6);
 	box-sizing: border-box;
 	background-color: $color-white !important;
 
@@ -62,27 +62,29 @@ body {
 	}
 }
 
-
 /* ============================================ */
 /* ================ side track ================ */
 /* ============================================ */
 
 html::-webkit-scrollbar {
-	width: 12px;
-	height: 12px;
+	width: 10px;
+	height: 10px;
 
 	&-thumb {
 		background: $color-primary;
-		border-radius: 12px;
-		box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.4), inset -2px -2px 2px rgba(0, 0, 0, 0.2);
+		border-radius: 10px;
+		box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.4),
+			inset -2px -2px 2px rgba(0, 0, 0, 0.2);
 	}
 
 	&-track {
-		background: linear-gradient(90deg, $color-primary-supporting, $color-primary-supporting);
+		background: linear-gradient(
+			90deg,
+			$color-primary-supporting,
+			$color-primary-supporting
+		);
 	}
 }
-
-
 
 /* ============================================ */
 /* ================ section padding ================ */
@@ -109,8 +111,8 @@ section {
 	margin-left: 0;
 }
 
-.row.no-gutters > [class^="col-"],
-.row.no-gutters > [class*=" col-"] {
+.row.no-gutters > [class^='col-'],
+.row.no-gutters > [class*=' col-'] {
 	padding-right: 0;
 	padding-left: 0;
 }

@@ -1,5 +1,4 @@
 .button {
-
 	&,
 	&:link,
 	&:visited {
@@ -48,18 +47,22 @@
 	}
 
 	&--main {
-		background-image: linear-gradient(to right bottom,
-				$color-primary,
-				$color-primary-supporting);
+		background-image: linear-gradient(
+			to right bottom,
+			$color-primary,
+			$color-primary-supporting
+		);
 		color: $color-white;
 		transition: all 0.3s;
 		-webkit-box-shadow: 0 7px 18px -10px rgba($color-primary, 0.6);
 		box-shadow: 0 7px 18px -10px rgba($color-primary, 0.6);
 
 		&:hover {
-			background-image: linear-gradient(to right bottom,
-					$color-primary-supporting,
-					$color-primary);
+			background-image: linear-gradient(
+				to right bottom,
+				$color-primary-supporting,
+				$color-primary
+			);
 			color: $color-white;
 		}
 
@@ -108,7 +111,7 @@
 	}
 
 	&::after {
-		content: "";
+		content: '';
 		display: inline-block;
 		height: 100%;
 		width: 100%;
@@ -194,10 +197,9 @@
 // Back to top btn customization
 
 .jquery-back-to-top {
-	
 	@include respond(phone) {
 		right: 13px !important;
-		bottom: 88px !important;
+		bottom: 20px !important;
 		width: 50px !important;
 		height: 50px !important;
 		line-height: 50px !important;
@@ -227,12 +229,12 @@
 	font-size: 1.8rem;
 	color: $color-primary-dark;
 	font-family: $heading-medium;
-	padding: 16px 24px;
+	padding: 14px 20px;
 	text-decoration: none !important;
-	border-radius: 12px;
+	border-radius: 10px;
 	box-shadow: -2px 5px 20px #00000017;
 	z-index: 1000;
-	transition: all .2s;
+	transition: all 0.2s;
 
 	@include respond(phone) {
 		display: none;
@@ -242,10 +244,10 @@
 		font-family: $heading-bold;
 		font-size: 1.8rem;
 		margin-left: 9px;
-		color: #142cd6;
+		color: $color-km-blue;
 		display: flex;
 		align-items: center;
-		transition: all .2s;
+		transition: all 0.3s;
 
 		img {
 			width: 24px;
@@ -261,9 +263,10 @@
 
 .floating_btn-kiwi:hover {
 	color: $color-primary-dark;
+	box-shadow: -2px 5px 26px $color-primary-light;
 
 	span {
-		color: #ed0f69;
+		color: $color-km-pink;
 	}
 }
 
@@ -275,23 +278,23 @@
 	@include respond(phone) {
 		display: block !important;
 		position: fixed;
-    bottom: 150px;
-    right: 13px;
-    background-color: #fff;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #010f1a;
-    font-family: Mulish-Medium;
-    padding: 6px;
-    text-decoration: none !important;
-    border-radius: 50%;
+		bottom: 136px;
+		right: 13px;
+		background-color: #fff;
+		width: 50px;
+		height: 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #010f1a;
+		font-family: Mulish-Medium;
+		padding: 6px;
+		text-decoration: none !important;
+		border-radius: 50%;
 		box-shadow: -2px 5px 26px #010f1a1f;
 		border: 2px solid #fff;
-    z-index: 1000;
-    transition: all .2s;
+		z-index: 1000;
+		transition: all 0.2s;
 	}
 
 	img {
@@ -303,5 +306,68 @@
 
 	&::focus {
 		outline: none !important;
+	}
+}
+
+// Buy me a coffee btn
+.buy-coffee {
+	position: fixed;
+	bottom: 100px;
+	right: 20px;
+	padding: 14px 20px;
+	border-radius: 10px;
+	background-color: $color-white;
+	box-shadow: -2px 5px 26px #010f1a1f;
+	display: flex;
+	justify-content: space-between;
+	overflow: hidden;
+	text-decoration: none !important;
+	transition: all 0.3s;
+
+	@include respond(phone) {
+		width: 50px;
+		height: 50px;
+		bottom: 78px;
+		right: 13px;
+		border-radius: 50%;
+		padding: 0;
+		@include flex-row_center;
+	}
+
+	&:hover {
+		box-shadow: -2px 5px 26px $color-primary-light;
+
+		.button-coffee__text {
+			color: $color-primary;
+		}
+	}
+
+	&__icon {
+		width: auto;
+		height: auto;
+		@include flex-row_center;
+		padding-right: 8px;
+
+		@include respond(phone) {
+			padding-right: 0;
+		}
+
+		img {
+			max-height: 25px;
+		}
+	}
+
+	&__text {
+		font-family: $heading-semibold;
+		font-size: 1.7rem;
+		color: $color-primary-dark;
+
+		@include respond(phone) {
+			display: none;
+		}
+	}
+
+	&_hide {
+		display: none !important;
 	}
 }

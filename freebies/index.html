@@ -466,6 +466,26 @@
 			Image"></a
 		>
 
+		<!-- Buy me a Coffee btn -->
+		<a
+			href="https://www.buymeacoffee.com/pixabuddy"
+			class="buy-coffee_hide"
+			id="buyCoffee"
+			target="_blank"
+			rel="noopener"
+		>
+			<div class="buy-coffee__icon">
+				<img
+					src="../assets/img/bmc-logo.svg"
+					alt="Buy a coffee for Pixabuddy"
+				/>
+			</div>
+
+			<div class="buy-coffee__text">
+				<span>Buy me a Coffee</span>
+			</div>
+		</a>
+
 		<!-- ============================================ -->
 		<!-- Script part -->
 		<!-- ============================================ -->
@@ -536,6 +556,45 @@
 						$('#floating_btn-kiwi-mobile')
 							.removeClass('floating_btn-kiwi-mobile')
 							.addClass('floating_btn-kiwi_hide-mobile');
+					}
+				});
+			});
+		</script>
+
+		<script>
+			$(function () {
+				var message = `Hey, I'm here! 🙋‍♂️`;
+				var original;
+
+				$(window)
+					.focus(function () {
+						if (original) {
+							document.title = original;
+						}
+					})
+					.blur(function () {
+						var title = $('title').text();
+						if (title != message) {
+							original = title;
+						}
+						document.title = message;
+					});
+			});
+		</script>
+
+		<!-- Scripting for Buy me a coffee btn -->
+		<script>
+			$(document).ready(function () {
+				$(window).scroll(function () {
+					var scroll = $(window).scrollTop();
+					if (scroll >= 300) {
+						$('#buyCoffee')
+							.removeClass('buy-coffee_hide')
+							.addClass('buy-coffee');
+					} else {
+						$('#buyCoffee')
+							.removeClass('buy-coffee')
+							.addClass('buy-coffee_hide');
 					}
 				});
 			});

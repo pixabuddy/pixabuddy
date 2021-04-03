@@ -731,49 +731,70 @@
 		</section>
 
 		<!-- ============================================ -->
-		<!-- Section your turn part -->
+		<!-- Subscribe section -->
 		<!-- ============================================ -->
 
-		<section class="section-your_turn u-margin-bottom-big">
+		<section class="section-subscribe">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12">
-						<div class="heading-box u-margin-bottom-medium wow fadeInUp">
-							<h2 class="heading-secondary">Your turn</h2>
+						<div class="heading-box u-margin-bottom-medium">
+							<h2 class="heading-secondary wow fadeIn">Get in touch</h2>
 							<div class="animated-bar"></div>
-							<p class="heading-para">
-								Get in touch now. Tell me more about yourself and how can I help
-								you
+							<p class="heading-para wow pulse">
+								Stay connected, stay updated!
+								<span class="heading-para_span">&#128293;</span>
 							</p>
 						</div>
 					</div>
-					<div class="col-sm-12">
-						<div class="your-turn_main">
-							<div class="your-turn_main-left">
-								<div class="your-turn_main-left_box">
-									<a
-										href="mailto:abhishek@pixabuddy.com?subject=New project"
-										class="subject-name"
-									>
-										Let’s start a project<span
-											><i class="fas fa-arrow-right"></i
-										></span>
-									</a>
+					<div class="col-md-3 col-md-offset-3"></div>
+					<div class="col-md-6 col-sm-12">
+						<div class="subscribe-box">
+							<form
+								action="includes/subscribe.php"
+								method="post"
+								class="subscribe-box__form u-margin-bottom-medium"
+								id="form2"
+								onsubmit="return myFormValidationSubscribe()"
+							>
+								<div class="form-group subscribe-box__form-name">
+									<label for="name-subscribe"
+										><i class="fas fa-user"></i
+									></label>
+									<input
+										type="text"
+										name="name-subscribe"
+										id="name-subscribe"
+										placeholder="Your name"
+										autocomplete="off"
+									/>
+									<span id="name_error-text" class="error-text"></span>
 								</div>
-							</div>
-							<div class="your-turn_main-right">
-								<div class="your-turn_main-right_box">
-									<a
-										href="https://www.buymeacoffee.com/pixabuddy"
-										target="_blank"
-										class="subject-name"
-									>
-										Support me<span><i class="fas fa-arrow-right"></i></span>
-									</a>
+								<div class="form-group subscribe-box__form-email">
+									<label for="email"><i class="fas fa-envelope"></i></label>
+									<input
+										type="text"
+										name="email-subscribe"
+										id="email-subscribe"
+										placeholder="Email address"
+										autocomplete="off"
+									/>
+									<span id="email_error-text" class="error-text"></span>
 								</div>
-							</div>
+
+								<input
+									type="hidden"
+									id="g-recaptcha-response"
+									name="g-recaptcha-response"
+								/><br />
+
+								<button type="submit" class="btn--subscribe wow fadeIn">
+									Send <span><i class="far fa-paper-plane"></i></span>
+								</button>
+							</form>
 						</div>
 					</div>
+					<div class="col-md-3 col-md-offset-3"></div>
 				</div>
 			</div>
 		</section>
@@ -1004,6 +1025,26 @@
 			Image"></a
 		>
 
+		<!-- Buy me a Coffee btn -->
+		<a
+			href="https://www.buymeacoffee.com/pixabuddy"
+			class="buy-coffee_hide"
+			id="buyCoffee"
+			target="_blank"
+			rel="noopener"
+		>
+			<div class="buy-coffee__icon">
+				<img
+					src="../assets/img/bmc-logo.svg"
+					alt="Buy a coffee for Pixabuddy"
+				/>
+			</div>
+
+			<div class="buy-coffee__text">
+				<span>Buy me a Coffee</span>
+			</div>
+		</a>
+
 		<!-- ============================================ -->
 		<!-- Script part -->
 		<!-- ============================================ -->
@@ -1074,6 +1115,23 @@
 						$('#floating_btn-kiwi-mobile')
 							.removeClass('floating_btn-kiwi-mobile')
 							.addClass('floating_btn-kiwi_hide-mobile');
+					}
+				});
+			});
+		</script>
+		<!-- Scripting for Buy me a coffee btn -->
+		<script>
+			$(document).ready(function () {
+				$(window).scroll(function () {
+					var scroll = $(window).scrollTop();
+					if (scroll >= 300) {
+						$('#buyCoffee')
+							.removeClass('buy-coffee_hide')
+							.addClass('buy-coffee');
+					} else {
+						$('#buyCoffee')
+							.removeClass('buy-coffee')
+							.addClass('buy-coffee_hide');
 					}
 				});
 			});
