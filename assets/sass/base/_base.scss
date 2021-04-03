@@ -125,3 +125,8 @@ section {
 	background-color: $color-primary;
 	color: $color-white;
 }
+
+// hide google captcha
+.grecaptcha-badge {
+	display: none;
+}

@@ -240,6 +240,9 @@ section {
   background-color: #00cefe;
   color: #fff; }
 
+.grecaptcha-badge {
+  display: none; }
+
 @font-face {
   font-family: Mulish-Black;
   src: url(../fonts/mulish/Mulish-Black.ttf); }
