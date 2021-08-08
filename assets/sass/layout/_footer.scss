@@ -130,7 +130,6 @@
 			width: 62%;
 			height: auto;
 			font-size: 1.6rem;
-			font-family: $para-regular;
 
 			@include respond(tab-port) {
 				width: 65%;
@@ -147,10 +146,15 @@
 				height: auto;
 
 				@include respond(phone) {
-					border-bottom: 1px dashed rgba($color-primary-medium-dark, 0.4);
 					padding: 2rem 0 !important;
 					@include flex-column_center;
 					flex-wrap: wrap;
+				}
+
+				&_third {
+					@include respond(phone) {
+						border-bottom: 1px dashed rgba($color-primary-medium-dark, 0.4);
+					}
 				}
 
 				&_third,
@@ -191,6 +195,7 @@
 
 						&-li {
 							padding: 5px 2rem 5px 0;
+							font-weight: 500;
 
 							@include respond(phone) {
 								padding: 8px 1rem;
@@ -312,7 +317,7 @@
 						&-up,
 						&-down {
 							font-size: 1.6rem;
-							font-family: $para-regular;
+
 							color: $color-primary-medium-dark;
 							text-align: right;
 
@@ -341,9 +346,9 @@
 		@include flex-row_center;
 
 		&_text {
-			font-family: $heading-bold;
 			color: $color-primary;
-			font-size: 3.2rem;
+			font-size: 4rem;
+			font-weight: 700;
 			-webkit-user-select: none;
 		}
 	}
@@ -353,7 +358,7 @@
 		margin: 3rem 0 7rem 0;
 
 		@include flex-row;
-		justify-content: space-between;
+		justify-content: center;
 
 		@include respond(phone) {
 			justify-content: center;
@@ -369,12 +374,13 @@
 		&_left-text,
 		&_right-text {
 			font-size: 1.6rem;
+			font-weight: 500;
 			letter-spacing: -0.02px;
 			color: $color-primary-medium-dark;
 
 			a {
 				text-decoration: none !important;
-				font-family: $heading-bold;
+
 				color: $color-primary;
 				transition: all 0.2s;
 

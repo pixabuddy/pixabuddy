@@ -2,6 +2,7 @@
 	&,
 	&:link,
 	&:visited {
+		font-weight: 600;
 		text-decoration: none;
 		padding: 1.3rem 2.8rem;
 		display: inline-block;
@@ -9,7 +10,7 @@
 		-webkit-transition: all 0.2s;
 		transition: all 0.2s;
 		position: relative;
-		font-family: $heading-medium;
+
 		font-size: 1.5rem;
 		letter-spacing: 0.5px;
 		border: none;
@@ -47,6 +48,7 @@
 	}
 
 	&--main {
+		font-weight: 600;
 		background-image: linear-gradient(
 			to right bottom,
 			$color-primary,
@@ -76,11 +78,11 @@
 		display: inline-block;
 		border-radius: 0.8rem;
 		font-size: $default-font-size;
+		font-weight: 600;
 		letter-spacing: 0.5px;
 		border: none;
 		cursor: pointer;
 		padding: 1.1rem 2.5rem;
-		font-family: $heading-regular !important;
 		background-color: $color-white;
 		color: rgba($color-primary-medium-dark, 1);
 		-webkit-box-shadow: 0 10px 18px -11px rgba($color-primary-dark, 1);
@@ -139,8 +141,8 @@
 
 	&:link,
 	&:visited {
-		font-family: $heading-semibold;
 		font-size: $default-font-size;
+		font-weight: 600;
 		color: $color-primary;
 		display: inline-block;
 		text-decoration: none;
@@ -228,7 +230,7 @@
 	align-items: center;
 	font-size: 1.8rem;
 	color: $color-primary-dark;
-	font-family: $heading-medium;
+
 	padding: 14px 20px;
 	text-decoration: none !important;
 	border-radius: 10px;
@@ -241,7 +243,6 @@
 	}
 
 	span {
-		font-family: $heading-bold;
 		font-size: 1.8rem;
 		margin-left: 9px;
 		color: $color-km-blue;
@@ -250,8 +251,8 @@
 		transition: all 0.3s;
 
 		img {
-			width: 24px;
-			height: auto;
+			width: auto;
+			height: 27px;
 			margin-right: 5px;
 		}
 	}
@@ -288,7 +289,7 @@
 		align-items: center;
 		color: #010f1a;
 		font-family: Mulish-Medium;
-		padding: 6px;
+		padding: 8px;
 		text-decoration: none !important;
 		border-radius: 50%;
 		box-shadow: -2px 5px 26px #010f1a1f;
@@ -358,7 +359,6 @@
 	}
 
 	&__text {
-		font-family: $heading-semibold;
 		font-size: 1.7rem;
 		color: $color-primary-dark;
 

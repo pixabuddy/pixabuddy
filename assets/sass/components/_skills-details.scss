@@ -105,7 +105,6 @@
 			margin-top: 1rem;
 
 			& .abilities-name {
-				font-family: $heading-semibold;
 				font-size: 1.6rem;
 				color: $color-primary-medium-dark;
 				line-height: 2.2rem;
@@ -174,7 +173,6 @@
 		}
 
 		&-name {
-			font-family: $heading-regular;
 			font-size: 1.6rem;
 			word-spacing: 0.25rem;
 			letter-spacing: 0.02rem;
@@ -207,7 +205,7 @@
 				border-radius: 10rem;
 
 				&::before {
-					content: "";
+					content: '';
 					display: block;
 					height: 100%;
 					background-color: $color-primary;
@@ -241,7 +239,8 @@
 			}
 
 			&_text {
-				font-size: 1rem;
+				font-size: 1.3rem;
+				font-weight: 600;
 				margin-top: 0.6rem;
 
 				display: flex;
@@ -407,7 +406,6 @@
 					font-size: 2rem;
 					color: $color-primary-medium-dark;
 					margin-top: 4px;
-					font-family: $heading-semibold;
 
 					@include respond(tab-land) {
 						font-size: 1.5rem;

@@ -10,8 +10,8 @@
 		margin-top: -14px;
 
 		p {
-			font-family: $heading-extrabold;
 			font-size: 15rem;
+			font-weight: 700;
 			color: rgba($color-primary-light, 1);
 			letter-spacing: -5px;
 			-webkit-user-select: none;
@@ -58,7 +58,7 @@
 			&-heading {
 				font-size: 3.2rem;
 				color: $color-primary-dark;
-				font-family: $heading-bold;
+
 				letter-spacing: 0;
 
 				@include respond(tab-land) {
@@ -226,7 +226,6 @@
 
 			.design {
 				&-title {
-					font-family: $heading-medium;
 					font-size: 2.7rem;
 					color: $color-primary-medium-dark;
 					letter-spacing: -0.2px;
@@ -292,14 +291,12 @@
 }
 
 .section-portfolio {
-
 	&_adjusted {
 		padding-top: 0;
 	}
 
 	.heading-box {
 		.heading-time_details {
-			font-family: $para-regular;
 			font-size: 2rem;
 			color: $color-primary-dark;
 			margin: 5px 0 4rem 0;

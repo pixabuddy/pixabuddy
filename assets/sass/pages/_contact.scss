@@ -17,8 +17,8 @@
 		margin-top: -14px;
 
 		p {
-			font-family: $heading-extrabold;
 			font-size: 15rem;
+			font-weight: 700;
 			color: rgba($color-primary-light, 1);
 			letter-spacing: -5px;
 			-webkit-user-select: none;
@@ -77,7 +77,7 @@
 		}
 
 		.for_big-small {
-			display: none; 
+			display: none;
 			@include respond(phone) {
 				display: block !important;
 			}
@@ -212,13 +212,13 @@
 					}
 
 					.kiwi-img-box {
-						width: 30px;
-						height: 30px;
+						width: 28px;
+						height: 28px;
 						@include flex-row_center;
 
 						@include respond(big-desktop) {
-							width: 35px;
-							height: 35px;
+							width: 34px;
+							height: 34px;
 						}
 
 						@include respond(tab-land) {
@@ -232,8 +232,8 @@
 						}
 
 						@include respond(phone) {
-							width: 21px;
-							height: 21px;
+							width: 20px;
+							height: 20px;
 						}
 
 						img {

@@ -1,0 +1,27 @@
+
+RewriteOptions inherit
+RewriteEngine on
+
+RewriteCond %{HTTP_REFERER} !^http://pixabuddy.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://pixabuddy.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.pixabuddy.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.pixabuddy.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://pixabuddy.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://pixabuddy.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.pixabuddy.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.pixabuddy.com$      [NC]
+# RewriteRule .*\.(jpg|jpeg|gif|png|bmp)$ - [F,NC]
+
+ErrorDocument 404 /error/error.html
+RewriteCond %{HTTP_HOST} ^pixabuddy\.com$
+RewriteRule ^/?$ "http\:\/\/www\.pixabuddy\.com\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^pixabuddy\.com$
+RewriteRule ^about\/$ "http\:\/\/www\.pixabuddy\.com\/about\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^pixabuddy\.com$
+RewriteRule ^work\/$ "http\:\/\/www\.pixabuddy\.com\/work\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^pixabuddy\.com$
+RewriteRule ^freebies\/$ "http\:\/\/www\.pixabuddy\.com\/freebies\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^pixabuddy\.com$
+RewriteRule ^resources\/$ "http\:\/\/www\.pixabuddy\.com\/resources\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^pixabuddy\.com$
+RewriteRule ^contact\/$ "http\:\/\/www\.pixabuddy\.com\/contact\/" [R=301,L]

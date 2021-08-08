@@ -102,7 +102,9 @@
 							<span class="menu-icon__line menu-icon__line-left"></span>
 							<span class="menu-icon__line pixabuddy_menu-icon_middle"></span>
 							<span
-								class="menu-icon__line menu-icon__line-last menu-icon__line-right"
+								class="
+									menu-icon__line menu-icon__line-last menu-icon__line-right
+								"
 							></span>
 						</div>
 					</div>
@@ -212,10 +214,10 @@
 					<!-- ============== Contact form part ============== -->
 					<div class="col-sm-12 col-md-10 col-lg-9">
 						<form
-							action="../includes/submit.php"
-							method="POST"
+							action="../send_mail-contact.php"
+							method="post"
 							class="contact-page__form wow fadeInUp"
-							id="form1"
+							id="formContact"
 							onsubmit="return myFormValidation()"
 						>
 							<div class="row">
@@ -254,16 +256,30 @@
 								<!-- *************** Contact form your subject field *************** -->
 								<div class="col-md-6 col-sm-12">
 									<div class="form-group">
-										<label for="subject">Subject:</label>
-										<input
-											type="text"
-											class="form-control"
-											id="subject"
-											placeholder="i.e.Webdesign"
-											name="subject"
-											autocomplete="off"
-										/>
-										<span id="subject_error-text" class="error-text"></span>
+										<label for="services">Select Service</label>
+										<select
+											name="services[]"
+											class="custom-select"
+											id="services"
+										>
+											<option selected disabled value="">
+												Choose a service
+											</option>
+											<option value="UI/UX Design">UI/UX Design</option>
+											<option value="Web Design">Web Design</option>
+											<option value="Web Development">Web Development</option>
+											<option value="Web Dev ( Design + Development )">
+												Web Dev ( Design + Development )
+											</option>
+											<option value="SEO">
+												SEO ( Search engine optimization )
+											</option>
+											<option value="Google Business Listing">
+												Google My Business Listing
+											</option>
+											<option value="Others">Others</option>
+										</select>
+										<span id="services_error-text" class="error-text"></span>
 									</div>
 								</div>
 
@@ -308,7 +324,13 @@
 								<div class="contact-btn__box">
 									<button
 										type="submit"
-										class="button button--main btn--animated contact-from__submit-btn wow fadeIn"
+										class="
+											button button--main
+											btn--animated
+											contact-from__submit-btn
+											wow
+											fadeIn
+										"
 									>
 										Submit
 										<span><i class="fas fa-paper-plane"></i></span>
@@ -345,6 +367,24 @@
 								<!-- *************** Social profile 1 *************** -->
 								<div class="social-main_box-icon">
 									<a
+										href="https://www.fueler.io/Saha"
+										target="_blank"
+										class="
+											social-main_box-icon_link
+											social-main_box-icon_link-last_child
+										"
+									>
+										<div class="kiwi-img-box">
+											<img
+												src="../assets/img/fueler-icon__dark.svg"
+												alt="Fueler-logo"
+											/>
+										</div>
+									</a>
+								</div>
+								<!-- *************** Social profile 2 *************** -->
+								<div class="social-main_box-icon">
+									<a
 										href="https://www.instagram.com/pixabuddy/"
 										target="_blank"
 										rel="noopener"
@@ -353,10 +393,10 @@
 										<i class="fab fa-instagram"></i>
 									</a>
 								</div>
-								<!-- *************** Social profile 2 *************** -->
+								<!-- *************** Social profile 3 *************** -->
 								<div class="social-main_box-icon">
 									<a
-										href="https://www.behance.net/Pixabuddy"
+										href="https://www.behance.net/abhisheksaha1"
 										target="_blank"
 										rel="noopener"
 										class="social-main_box-icon_link"
@@ -364,7 +404,20 @@
 										<i class="fab fa-behance"></i>
 									</a>
 								</div>
-								<!-- *************** Social profile 3 *************** -->
+
+								<!-- *************** Social profile 4 *************** -->
+								<div class="social-main_box-icon">
+									<a
+										href="https://twitter.com/designerSaha"
+										target="_blank"
+										rel="noopener"
+										class="social-main_box-icon_link"
+									>
+										<i class="fab fa-twitter"></i>
+									</a>
+								</div>
+								<!-- *************** Social profile 5 *************** -->
+
 								<div class="social-main_box-icon">
 									<a
 										href="https://dribbble.com/pixabuddy"
@@ -375,18 +428,8 @@
 										<i class="fab fa-dribbble"></i>
 									</a>
 								</div>
-								<!-- *************** Social profile 4 *************** -->
-								<div class="social-main_box-icon">
-									<a
-										href="https://twitter.com/pixabuddy"
-										target="_blank"
-										rel="noopener"
-										class="social-main_box-icon_link"
-									>
-										<i class="fab fa-twitter"></i>
-									</a>
-								</div>
-								<!-- *************** Social profile 5 *************** -->
+								<!-- *************** Social profile 6 *************** -->
+
 								<div class="social-main_box-icon">
 									<a
 										href="https://github.com/pixabuddy"
@@ -397,18 +440,18 @@
 										<i class="fab fa-github"></i>
 									</a>
 								</div>
-								<!-- *************** Social profile 6 *************** -->
+								<!-- *************** Social profile 7 *************** -->
 								<div class="social-main_box-icon">
 									<a
-										href="https://medium.com/@pixabuddy"
+										href="https://www.linkedin.com/in/pixabuddy/"
 										target="_blank"
 										rel="noopener"
 										class="social-main_box-icon_link"
 									>
-										<i class="fab fa-medium-m"></i>
+										<i class="fab fa-linkedin-in"></i>
 									</a>
 								</div>
-								<!-- *************** Social profile 7 *************** -->
+								<!-- *************** Social profile 8 *************** -->
 								<div class="social-main_box-icon">
 									<a
 										href="https://www.facebook.com/pixabuddy/"
@@ -417,17 +460,6 @@
 										class="social-main_box-icon_link"
 									>
 										<i class="fab fa-facebook-f"></i>
-									</a>
-								</div>
-								<!-- *************** Social profile 8 *************** -->
-								<div class="social-main_box-icon">
-									<a
-										href="https://www.linkedin.com/in/pixa-buddy-078556196"
-										target="_blank"
-										rel="noopener"
-										class="social-main_box-icon_link"
-									>
-										<i class="fab fa-linkedin-in"></i>
 									</a>
 								</div>
 								<!-- *************** Social profile 9 *************** -->
@@ -443,18 +475,15 @@
 								</div>
 
 								<!-- ------------ Social profile 10 ------------ -->
+
 								<div class="social-main_box-icon">
 									<a
-										href="https://kiwismedia.com/@Saha"
+										href="https://medium.com/@pixabuddy"
 										target="_blank"
-										class="social-main_box-icon_link social-main_box-icon_link-last_child"
+										rel="noopener"
+										class="social-main_box-icon_link"
 									>
-										<div class="kiwi-img-box">
-											<img
-												src="../assets/img/kiwismedia-logo.png"
-												alt="kiwismedia-logo"
-											/>
-										</div>
+										<i class="fab fa-medium-m"></i>
 									</a>
 								</div>
 							</div>
@@ -491,14 +520,6 @@
 
 									<div class="footer-follow__social">
 										<a
-											href="https://www.facebook.com/pixabuddy/"
-											target="_blank"
-											rel="noopener"
-											class="footer-follow__social-link"
-										>
-											<span><i class="fab fa-facebook-f"></i></span>
-										</a>
-										<a
 											href="https://www.instagram.com/pixabuddy/"
 											target="_blank"
 											rel="noopener"
@@ -507,7 +528,7 @@
 											<span><i class="fab fa-instagram"></i></span>
 										</a>
 										<a
-											href="https://twitter.com/pixabuddy"
+											href="https://twitter.com/designerSaha"
 											target="_blank"
 											rel="noopener"
 											class="footer-follow__social-link"
@@ -516,7 +537,7 @@
 										</a>
 
 										<a
-											href="https://www.behance.net/Pixabuddy"
+											href="https://www.behance.net/abhisheksaha1"
 											target="_blank"
 											rel="noopener"
 											class="footer-follow__social-link"
@@ -546,7 +567,7 @@
 								<div class="row no-gutters">
 									<!-- *************** Footer main right box 1 *************** -->
 									<div class="col-sm-12 col-md-6 col-lg-4">
-										<div class="footer-main_right-box">
+										<div class="footer-main_right-box pb-0">
 											<div class="footer-nav">
 												<ul class="footer-nav_ul">
 													<li class="footer-nav_ul-li">
@@ -571,6 +592,15 @@
 															>Freebies</a
 														>
 													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<!-- *************** Footer main right box 3 *************** -->
+									<div class="col-sm-12 col-md-6 col-lg-4">
+										<div class="footer-main_right-box pt-0">
+											<div class="footer-nav">
+												<ul class="footer-nav_ul">
 													<li class="footer-nav_ul-li">
 														<a
 															href="../resources/"
@@ -591,28 +621,6 @@
 														>
 													</li>
 												</ul>
-											</div>
-										</div>
-									</div>
-									<!-- *************** Footer main right box 3 *************** -->
-									<div class="col-sm-12 col-md-6 col-lg-4">
-										<div
-											class="footer-main_right-box footer-main_right-box_third"
-										>
-											<div class="footer-contact_details">
-												<a
-													href="tel:+91-7908-018-278"
-													class="footer-contact_details-link footer-contact_details-link_first"
-												>
-													<span><i class="fas fa-phone-alt"></i></span>Call
-													Me</a
-												>
-												<a
-													href="mailto:abhishek@pixabuddy.com?subject=Hello!"
-													class="footer-contact_details-link"
-													><span><i class="fas fa-envelope"></i></span>Email
-													Me</a
-												>
 											</div>
 										</div>
 									</div>
@@ -658,10 +666,6 @@
 							<p class="footer-bottom_left-text">
 								© 2021 by Pixabuddy. All rights reserved.
 							</p>
-							<p class="footer-bottom_right-text">
-								This website Designed & Developed by
-								<a href="http://pixabuddy.com/">Pixabuddy</a>
-							</p>
 						</div>
 					</div>
 				</div>
@@ -670,26 +674,24 @@
 
 		<!-- Floating visit KiwisMedia Profile btn -->
 		<a
-			href="https://kiwismedia.com/@saha"
+			href="https://www.fueler.io/Saha"
 			id="floating_btn-kiwi"
 			target="_blank"
 			rel="noopener"
 			>Find me on
-			<span
-				><img src=../assets/img/kiwismedia-logo.png alt="Kiwismedia Icon Image">
-				KiwisMedia</span
-			></a
-		>
+			<span><img src="../assets/img/fueler.png" alt="Fueler Icon Image" /></span
+		></a>
 
 		<!-- Floating visit KiwisMedia Profile btn for mobile -->
 		<a
-			href="https://kiwismedia.com/@saha"
+			href="https://www.fueler.io/Saha"
 			id="floating_btn-kiwi-mobile"
 			target="_blank"
 			rel="noopener"
-			><img src=../assets/img/kiwismedia-logo.png alt="Kiwismedia Icon
-			Image"></a
-		>
+			><img
+				src="https://i.ibb.co/Q97Pgpk/fueler-icon.png"
+				alt="Fueler Icon Image"
+		/></a>
 
 		<!-- Buy me a Coffee btn -->
 		<a

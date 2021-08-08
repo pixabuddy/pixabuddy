@@ -1,74 +1,10 @@
-// Importing Fonts from local folder heading, button & special charecter
-
-@font-face {
-	font-family: Mulish-Black;
-	src: url(../fonts/mulish/Mulish-Black.ttf);
-}
-
-@font-face {
-	font-family: Mulish-Bold;
-	src: url(../fonts/mulish/Mulish-Bold.ttf);
-}
-
-@font-face {
-	font-family: Mulish-ExtraBold;
-	src: url(../fonts/mulish/Mulish-ExtraBold.ttf);
-}
-
-@font-face {
-	font-family: Mulish-SemiBold;
-	src: url(../fonts/mulish/Mulish-SemiBold.ttf);
-}
-
-@font-face {
-	font-family: Mulish-Medium;
-	src: url(../fonts/mulish/Mulish-Medium.ttf);
-}
-
-@font-face {
-	font-family: Mulish-Regular;
-	src: url(../fonts/mulish/Mulish-Regular.ttf);
-}
-
-@font-face {
-	font-family: Mulish-MediumItalic;
-	src: url(../fonts/mulish/Mulish-MediumItalic.ttf);
-}
-
-@font-face {
-	font-family: Mulish-Light;
-	src: url(../fonts/mulish/Mulish-Light.ttf);
-}
-
-@font-face {
-	font-family: Mulish-Italic;
-	src: url(../fonts/mulish/Mulish-Italic.ttf);
-}
-
-// Importing Fonts from local folder for default
-
-@font-face {
-	font-family: Avenir-Medium;
-	src: url(../fonts/avnir/AvenirLTStd-Medium.otf);
-}
-
-@font-face {
-	font-family: Avenir-Book;
-	src: url(../fonts/avnir/AvenirLTStd-Book.otf);
-}
-
-@font-face {
-	font-family: Avenir-Roman;
-	src: url(../fonts/avnir/AvenirLTStd-Roman.otf);
-}
-//  Starting body
-
 body {
-	font-family: $heading-regular, sans-serif !important;
-	letter-spacing: 0.04rem;
+	font-family: 'Mulish', sans-serif;
+	// letter-spacing: 0.04rem;
 	font-size: 16px;
 	line-height: 1.7;
 	color: $color-grey-dark;
+	font-weight: 500;
 }
 
 //  Starting Heading
@@ -82,7 +18,7 @@ body {
 	&--main {
 		display: block;
 		color: $color-primary;
-		font-family: $heading-bold;
+
 		letter-spacing: -1.5px;
 		font-size: 5.2rem;
 		word-spacing: 5px;
@@ -106,13 +42,13 @@ body {
 /* ------------------ Heading box only for secondary heading ------------------ */
 
 .heading-secondary {
-	font-family: $heading-extrabold;
 	background-image: linear-gradient(
 		to right bottom,
 		$color-primary,
 		$color-primary-supporting
 	);
 	font-size: 4.6rem;
+	font-weight: 800;
 	-webkit-background-clip: text;
 	letter-spacing: -0.06px;
 	display: inline-block;
@@ -152,8 +88,8 @@ body {
 }
 
 .heading-tertiary {
-	font-family: $heading-bold;
 	font-size: 3.4rem;
+	font-weight: 600;
 	letter-spacing: -0.2px;
 	color: $color-primary-dark;
 
@@ -168,6 +104,7 @@ body {
 	color: $color-grey-dark-2;
 	letter-spacing: -0.01px;
 	line-height: 2.9rem;
+	font-weight: 500;
 
 	@include respond(tab-land) {
 		line-height: 2.7rem;
@@ -197,7 +134,8 @@ body {
 .heading-tertiary__about {
 	color: $color-primary-medium-dark;
 	font-size: 2.6rem;
-	font-family: $heading-semibold;
+	font-weight: 600;
+
 	line-height: 37px;
 	-webkit-user-select: none;
 
@@ -291,7 +229,7 @@ body {
 
 	a {
 		text-decoration: none !important;
-		font-family: $heading-semibold;
+
 		color: $color-primary;
 		transition: all 0.2s;
 

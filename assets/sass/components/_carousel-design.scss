@@ -3,12 +3,16 @@
 /* ============================================ */
 
 .carousel_design {
+	clip-path: polygon(0 4%, 100% 0, 100% 93%, 0 97%);
+	background-color: rgba(234, 247, 249, 0.6);
+	padding: 14rem 0;
+
 	&-box {
 		width: 100%;
 		height: auto;
 		background-color: #fff;
 		border-radius: 12px;
-		box-shadow: 0 4px 30px $light-shadow;
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
 		overflow: hidden;
 		margin-top: 40px;
 		@include flex-column;
@@ -21,7 +25,7 @@
 		}
 
 		&:hover {
-			box-shadow: 0 4px 30px $light-shadow-hover;
+			box-shadow: 0 4px 30px rgba(0, 0, 0, 0.09);
 			transform: scale(1.02);
 		}
 
@@ -59,7 +63,7 @@
 
 			&-heading {
 				font-size: 2.1rem;
-				font-family: $heading-bold;
+
 				margin: 14px 0 20px 0;
 				line-height: 2.8rem;
 				letter-spacing: -0.1px;

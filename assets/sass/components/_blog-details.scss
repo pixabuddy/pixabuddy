@@ -11,7 +11,7 @@
 		height: auto;
 		border-radius: 10px;
 		overflow: hidden;
-		box-shadow: 0 4px 30px $light-shadow;
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
 		transition: all 0.2s;
 
 		@include flex-column;
@@ -23,7 +23,7 @@
 		}
 
 		&:hover {
-			box-shadow: 0 4px 30px $light-shadow-hover;
+			box-shadow: 0 4px 30px rgba(0, 0, 0, 0.09);
 			transform: scale(1.02);
 		}
 
@@ -59,7 +59,7 @@
 
 			.blog-tittle {
 				font-size: 2rem;
-				font-family: $heading-bold;
+				font-weight: 600;
 				line-height: 2.8rem;
 				letter-spacing: -0.1px;
 				margin-bottom: 1rem;
@@ -154,7 +154,7 @@
 
 					span {
 						font-size: 1.5rem;
-						font-family: $heading-medium;
+
 						color: $color-primary-medium-dark;
 						margin-left: 8px;
 						margin-top: 2px;
