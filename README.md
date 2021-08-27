@@ -1,4 +1,1 @@
-<img src="https://www.pixabuddy.com/assets/img/pixabuddy-meta-image.png" alt="Pixabuddy meta image">
-
-# Pixabuddy | UI/UX, Graphic, Web Designer & Developer in Raiganj
-Looking for the Best Designer for your Website, UI/UX, Apps, Graphic Design & Digital Marketing at an affordable cost, Pixabuddy assured you the Best!
+### Hello there, I'm Abhishek <img src="https://user-images.githubusercontent.com/1303154/88677602-1635ba80-d120-11ea-84d8-d263ba5fc3c0.gif" width="28px" alt="hi">
