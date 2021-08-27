@@ -2,16 +2,17 @@
 
 ## 🌍 Social
 
-[![linkedin](social/twitter.svg)](https://twitter.com/designerSaha)
-[![linkedin](social/insta.svg)](https://www.instagram.com/pixabuddy/)
-[![linkedin](social/fueler.svg)](https://fueler.io/Saha)
-[![linkedin](social/behance.svg)](https://www.behance.net/abhisheksaha1)
-[![linkedin](social/dribbble.svg)](https://dribbble.com/pixabuddy)
-[![linkedin](social/linkedin.svg)](https://www.linkedin.com/in/pixabuddy/)
-[![linkedin](social/medium.svg)](https://pixabuddy.medium.com/)
-[![linkedin](social/figma.svg)](https://www.figma.com/@pixabuddy)
-[![linkedin](social/codepen.svg)](https://codepen.io/pixabuddy)
-[![linkedin](social/gmail.svg)](pixabuddy@gmail.com)
+[![Fueler](social/fueler.svg)](https://fueler.io/Saha)
+[![Twitter](social/twitter.svg)](https://twitter.com/designerSaha)
+[![Instagram](social/insta.svg)](https://www.instagram.com/pixabuddy/)
+[![Behance](social/behance.svg)](https://www.behance.net/abhisheksaha1)
+[![Dribbble](social/dribbble.svg)](https://dribbble.com/pixabuddy)
+[![Linkedin](social/linkedin.svg)](https://www.linkedin.com/in/pixabuddy/)
+[![Pixabuddy](social/pixabuddy.svg)](https://www.pixabuddy.com/)
+[![Medium](social/medium.svg)](https://pixabuddy.medium.com/)
+[![Figma](social/figma.svg)](https://www.figma.com/@pixabuddy)
+[![CodePen](social/codepen.svg)](https://codepen.io/pixabuddy)
+[![Gmail](social/gmail.svg)](pixabuddy@gmail.com)
 
 <!-- - [Twitter](https://twitter.com/designerSaha)
 - [Instagram](https://www.instagram.com/pixabuddy/)
