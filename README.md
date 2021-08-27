@@ -12,7 +12,7 @@
 [![Medium](social/medium.svg)](https://pixabuddy.medium.com/)
 [![Figma](social/figma.svg)](https://www.figma.com/@pixabuddy)
 [![CodePen](social/codepen.svg)](https://codepen.io/pixabuddy)
-[![Gmail](social/gmail.svg)](pixabuddy@gmail.com)
+[![Gmail](social/gmail.svg)](mailto:pixabuddy@gmail.com?subject=Hello👋)
 
 <!-- - [Twitter](https://twitter.com/designerSaha)
 - [Instagram](https://www.instagram.com/pixabuddy/)
