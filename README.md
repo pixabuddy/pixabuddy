@@ -2,8 +2,16 @@
 
 ## 🌍 Social
 
-[![linkedin](social/twitter.svg)](https://www.linkedin.com/in/pixabuddy/)
-[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/designerSaha)
+[![linkedin](social/twitter.svg)](https://twitter.com/designerSaha)
+[![linkedin](social/insta.svg)](https://www.instagram.com/pixabuddy/)
+[![linkedin](social/fueler.svg)](https://fueler.io/Saha)
+[![linkedin](social/behance.svg)](https://www.behance.net/abhisheksaha1)
+[![linkedin](social/dribbble.svg)](https://dribbble.com/pixabuddy)
+[![linkedin](social/linkedin.svg)](https://www.linkedin.com/in/pixabuddy/)
+[![linkedin](social/medium.svg)](https://pixabuddy.medium.com/)
+[![linkedin](social/figma.svg)](https://www.figma.com/@pixabuddy)
+[![linkedin](social/codepen.svg)](https://codepen.io/pixabuddy)
+[![linkedin](social/gmail.svg)](pixabuddy@gmail.com)
 
 <!-- - [Twitter](https://twitter.com/designerSaha)
 - [Instagram](https://www.instagram.com/pixabuddy/)
