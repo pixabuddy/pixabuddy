@@ -1,4 +1,4 @@
-### Hello there, I'm Abhishek <img src="https://user-images.githubusercontent.com/1303154/88677602-1635ba80-d120-11ea-84d8-d263ba5fc3c0.gif" width="28px" alt="Hello gif">
+### Hello there, I'm Abhishek <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="28px" alt="Hello gif">
 
 ## 🌍 Social
 
@@ -13,6 +13,10 @@
 [![Figma](social/figma.svg)](https://www.figma.com/@pixabuddy)
 [![CodePen](social/codepen.svg)](https://codepen.io/pixabuddy)
 [![Gmail](social/gmail.svg)](mailto:pixabuddy@gmail.com?subject=Hello👋)
+
+<p align="left"> <a href="https://twitter.com/designerSaha" target="blank"><img src="https://img.shields.io/twitter/follow/designerSaha?color=%231DA1F2&logo=Twitter&style=for-the-badge" alt="Abhishek Saha" /></a> </p>
+
+- 🧑‍💻 I’m currently working on [fueler.io](https://fueler.io/)
 
 <!-- - [Twitter](https://twitter.com/designerSaha)
 - [Instagram](https://www.instagram.com/pixabuddy/)
