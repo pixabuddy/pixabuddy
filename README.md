@@ -20,9 +20,9 @@
 
 ## 🧑‍💻 About me
 
-- ⚡️ Currently building [fueler.io](https://fueler.io/)
-- 🎁 Freebies for community [dopeui.co](https://dopeui.co/)
-- 🎨 3+ years of experience as a UX/UI Designer
+- ⚡️ &nbsp; Currently building [fueler.io](https://fueler.io/)
+- 🎁 &nbsp; Freebies for community [dopeui.co](https://dopeui.co/)
+- 🎨 &nbsp; 3+ years of experience as a UX/UI Designer
 
 ## 🪄 Tools I use
 
