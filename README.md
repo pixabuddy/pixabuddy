@@ -2,10 +2,10 @@
 
  <p>I'm a UI/UX Designer & Front-end Developer with ⚡4+ years of experience in creating User-Friendly, Beautiful, Modern & Minimal User Interfaces and Digital Designs for multiple devices, from smartphones to desktops.</p>
 
-- ⚡️ &nbsp; Senior UI/UX Designer @BLKBOX.ai (https://www.tryblackbox.ai/)
-- 🎁 &nbsp; Freebies for community [dopeui.co](https://dopeui.co/)
-- 🎨 &nbsp; 4+ years of experience as a UX/UI Designer
-- 💎 &nbsp; Results-driven and Responsible Designer who can code
+ ⚡️ &nbsp; Senior UI/UX Designer @BLKBOX.ai (https://www.tryblackbox.ai/)
+ 🎁 &nbsp; Freebies for community [dopeui.co](https://dopeui.co/)
+ 🎨 &nbsp; 4+ years of experience as a UX/UI Designer
+ 💎 &nbsp; Results-driven and Responsible Designer who can code
 
 <p align="left"> <a href="https://twitter.com/designerSaha" target="blank"><img src="https://img.shields.io/twitter/follow/designerSaha?color=%231DA1F2&logo=Twitter&style=for-the-badge" alt="Abhishek Saha" /></a> </p>
 
@@ -17,11 +17,12 @@
 [![Pixabuddy](social/pixabuddy.svg)](https://www.pixabuddy.com/)
 [![Dribbble](social/dribbble.svg)](https://dribbble.com/pixabuddy)
 [![Linkedin](social/linkedin.svg)](https://www.linkedin.com/in/pixabuddy/)
+[![Fueler](social/fueler.svg)](https://fueler.io/Saha)
 [![Medium](social/medium.svg)](https://pixabuddy.medium.com/)
 [![Figma](social/figma.svg)](https://www.figma.com/@pixabuddy)
 [![CodePen](social/codepen.svg)](https://codepen.io/pixabuddy)
 [![Gmail](social/gmail.svg)](mailto:pixabuddy@gmail.com?subject=Hello👋)
-[![Fueler](social/fueler.svg)](https://fueler.io/Saha)
+
 
 <!-- ## 🪄 &nbsp; Tech Stack -->
 
