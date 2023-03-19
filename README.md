@@ -14,7 +14,6 @@
 [![Twitter](social/twitter.svg)](https://twitter.com/designerSaha)
 [![Instagram](social/insta.svg)](https://www.instagram.com/pixabuddy/)
 [![Behance](social/behance.svg)](https://www.behance.net/abhisheksaha1)
-<!-- [![Pixabuddy](social/pixabuddy.svg)](https://www.pixabuddy.com/) -->
 [![Dribbble](social/dribbble.svg)](https://dribbble.com/pixabuddy)
 [![Linkedin](social/linkedin.svg)](https://www.linkedin.com/in/pixabuddy/)
 [![Fueler](social/fueler.svg)](https://fueler.io/Saha)
@@ -24,6 +23,7 @@
 [![Gmail](social/gmail.svg)](mailto:pixabuddy@gmail.com?subject=Hello👋)
 
 
+<!-- [![Pixabuddy](social/pixabuddy.svg)](https://www.pixabuddy.com/) -->
 <!-- ## 🪄 &nbsp; Tech Stack -->
 
 ## 💛 &nbsp; Support me
