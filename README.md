@@ -2,7 +2,7 @@
 
  <p>I'm a UI/UX Designer & Front-end Developer with ⚡4+ years of experience in creating User-Friendly, Beautiful, Modern & Minimal User Interfaces and Digital Designs for multiple devices, from smartphones to desktops.</p>
 
-- ⚡️ &nbsp; Currently building [fueler.io](https://fueler.io/)
+- ⚡️ &nbsp; Senior UI/UX Designer @BLKBOX.ai (https://www.tryblackbox.ai/)
 - 🎁 &nbsp; Freebies for community [dopeui.co](https://dopeui.co/)
 - 🎨 &nbsp; 3+ years of experience as a UX/UI Designer
 - 💎 &nbsp; Results-driven and Responsible Designer who can code
@@ -11,7 +11,6 @@
 
 ## 🌍 &nbsp; Connect with me
 
-[![Fueler](social/fueler.svg)](https://fueler.io/Saha)
 [![Twitter](social/twitter.svg)](https://twitter.com/designerSaha)
 [![Instagram](social/insta.svg)](https://www.instagram.com/pixabuddy/)
 [![Behance](social/behance.svg)](https://www.behance.net/abhisheksaha1)
@@ -22,6 +21,7 @@
 [![Figma](social/figma.svg)](https://www.figma.com/@pixabuddy)
 [![CodePen](social/codepen.svg)](https://codepen.io/pixabuddy)
 [![Gmail](social/gmail.svg)](mailto:pixabuddy@gmail.com?subject=Hello👋)
+[![Fueler](social/fueler.svg)](https://fueler.io/Saha)
 
 <!-- ## 🪄 &nbsp; Tech Stack -->
 
