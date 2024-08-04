@@ -2,7 +2,7 @@
 
  <p>UI/UX Designer & Front-End Developer with ⚡5+  years of experience crafting user-centered interfaces and digital designs across AdTech, EdTech, HealthTech, FoodTech, and Web3. Passionate about understanding user behavior and creating impactful solutions that drive business success and improve client retention.</p>
 
-- ⚡️ &nbsp; Senior UI/UX Designer @BLKBOX.ai (https://www.tryblackbox.ai/)
+- ⚡️ &nbsp; Senior UI/UX Designer @BLKBOX.ai (https://blkbox.ai/)
 - 🎁 &nbsp; Freebies for community [dopeui.co](https://dopeui.co/)
 - 🎨 &nbsp; 5+ years of experience as a UI/UX Designer
 - 💎 &nbsp; Results-driven and Responsible Designer who can code
