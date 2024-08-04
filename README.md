@@ -1,6 +1,6 @@
 ### <h1>Hello there, I'm Abhishek <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="28px" alt="Hello gif"></h1>
 
- <p>UI/UX Designer & Front-End Developer with ⚡5+  years of experience crafting user-centered interfaces and digital designs across AdTech, EdTech, HealthTech, FoodTech, and Web3.Passionate about understanding user behavior and creating impactful solutions that drive business success and improve client retention.</p>
+ <p>UI/UX Designer & Front-End Developer with ⚡5+  years of experience crafting user-centered interfaces and digital designs across AdTech, EdTech, HealthTech, FoodTech, and Web3. Passionate about understanding user behavior and creating impactful solutions that drive business success and improve client retention.</p>
 
 - ⚡️ &nbsp; Senior UI/UX Designer @BLKBOX.ai (https://www.tryblackbox.ai/)
 - 🎁 &nbsp; Freebies for community [dopeui.co](https://dopeui.co/)
